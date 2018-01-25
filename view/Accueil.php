@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="Site-Faidherbe/ressource/logo faidherbe.jpg">
+    <link rel="icon" href="logo faidherbe.jpg">
 
     <title>Page d'accueil </title>
 
