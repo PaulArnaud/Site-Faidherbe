@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<?php require('header.php') ?>
+  	<?php require('../Communs/header.php') ?>
     <title>Page Mon Profil </title>
   </head>
 
   <body>
 
-  <?php require('navbar.php') ?>
+  <?php require('../Communs/navbar.php') ?>
 
     <main role="main" class="container">
 		<h1 id="hautdepage"> Site du Faidherbard </h1>
@@ -15,7 +15,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="card mb-4 box-shadow">
-						<img class="card-img-top" src="27140089_10211185943229175_211050063_o.jpg" alt="Card image cap">
+						<img class="card-img-top" src="../ressource/27140089_10211185943229175_211050063_o.jpg" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-text"> Ceci est le khâlot de Samuel </p>
 							<div class="d-flex justify-content-between align-items-center">
@@ -30,7 +30,7 @@
 			
 				<div class="col-md-4">
 					<div class="card mb-4 box-shadow">
-						<img class="card-img-top" src="27145284_10211185941469131_336102147_o.jpg" alt="Card image cap">
+						<img class="card-img-top" src="../ressource/27145284_10211185941469131_336102147_o.jpg" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-text">Ceci est le khâlot de Samuel</p>
 							<div class="d-flex justify-content-between align-items-center">
@@ -45,7 +45,7 @@
 				
 				<div class="col-md-4">
 					<div class="card mb-4 box-shadow">
-						<img class="card-img-top" src="27144379_1738827099500712_1553683735_o.jpg" alt="Card image cap">
+						<img class="card-img-top" src="../ressource/27144379_1738827099500712_1553683735_o.jpg" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-text">Ceci est le khâlot de Fanny</p>
 							<div class="d-flex justify-content-between align-items-center">
@@ -60,7 +60,7 @@
 				
 				<div class="col-md-4">
 					<div class="card mb-4 box-shadow">
-						<img class="card-img-top" src="27144490_1738826642834091_792436024_o.jpg" alt="Card image cap">
+						<img class="card-img-top" src="../ressource/27144490_1738826642834091_792436024_o.jpg" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-text">Ceci est le khâlot de Karim</p>
 							<div class="d-flex justify-content-between align-items-center">
@@ -115,6 +115,6 @@
     </main>
 	
 	
-	<?php require('scriptjava.php') ?>
+	<?php require('../Communs/scriptjava.php') ?>
   </body>
 </html>

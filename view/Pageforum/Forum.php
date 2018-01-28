@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php require('header.php') ?>
+    <?php require('../Communs/header.php') ?>
     <title>Page Forum </title>
   </head>
 
   <body>
 
-  <?php require('navbar.php') ?>
+  <?php require('../Communs/navbar.php') ?>
 
     <main role="main" class="container">
 		<div class="media">
-			<img class="mr-3" src="forum-icon.png" alt="Generic placeholder image" width="100" height="100">
+			<img class="mr-3" src="../ressource/forum-icon.png" alt="Generic placeholder image" width="100" height="100">
 			<div class="media-body">
 				<h5 class="mt-0">Petit cadre</h5>
 				On ne sait pas on ne sait plus
@@ -19,6 +19,6 @@
 	</div>
     </main>
 
-    <?php require('scriptjava.php') ?>
+    <?php require('../Communs/scriptjava.php') ?>
   </body>
 </html>

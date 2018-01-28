@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-		<?php require('header.php') ?>
+		<?php require('../Communs/header.php') ?>
     <title>Page d'accueil </title>
   </head>
 
   <body>
 
-		<?php require('navbar.php') ?>
+		<?php require('../Communs/navbar.php') ?>
 
     <main role="main" class="container">
 		<div class="starter-template">
@@ -45,10 +45,10 @@
 		  </div>
 		</div>
 		<div class="card text-white bg-success mb-3">
-		  <div class="card-header">Voici le lien vers les serments</div>
+		  <div class="card-header">Voici le lien vers les chants </div>
 		  <div class="card-body">
-			<h5 class="card-title">Les serments de Faidherbe</h5>
-			<p class="card-text"> <a class="nav-link" href="Khalot.php"> Khâlot </a> </p>
+			<h5 class="card-title">Les chants de Faidherbe</h5>
+			<p class="card-text"> <a class="nav-link" href="C:\wamp64\www\Site-Faidherbe\view\Pageaccueil\Chants\Chants.php"> Chants </a> </p>
 		  </div>
 		</div>
 		<div class="card text-white bg-secondary mb-3">
@@ -61,6 +61,6 @@
 
     </main>
 
-		<?php require('scriptjava.php') ?>
+		<?php require('../Communs/scriptjava.php') ?>
   </body>
 </html>

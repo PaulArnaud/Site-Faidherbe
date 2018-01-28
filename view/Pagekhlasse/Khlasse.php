@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-		<?php require('header.php') ?>
+		<?php require('../Communs/header.php') ?>
     <title>Page Khlâsse</title>
   </head>
 
   <body>
 
-  <?php require('navbar.php') ?>
+  <?php require('../Communs/navbar.php') ?>
 
     <main role="main" class="container">
 		<div class="starter-template">
@@ -45,7 +45,7 @@
 		</div>
     </main>
 		
-    <?php require('scriptjava.php') ?>
+    <?php require('../Communs/scriptjava.php') ?>
 		
   </body>
 </html>
