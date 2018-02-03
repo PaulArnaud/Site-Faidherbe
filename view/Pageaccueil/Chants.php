@@ -8,6 +8,7 @@
 		<?php require('../Communs/navbar.php') ?>
 		<main role="main" class="container">
 			<?php require('navbarchant.php') ?>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-sm text-center">

@@ -10,6 +10,7 @@
 		<link href="Communs/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom styles for this template -->
 		<link href="Communs/css/Connection.css" rel="stylesheet">
+		<link rel="icon" href="ressource/logo faidherbe.jpg">
 	</head>
 	<body class="text-center">
 		<form class="form-signin">
@@ -29,7 +30,7 @@
 			</div>
 			 -->
 			<button class="btn btn-lg btn-primary btn-block" type="submit"> Se connecter </button>
-			<button class="btn btn-lg btn-primary btn-block" type="submit"> S'inscrire </button>
+			<a class="btn btn-lg btn-primary btn-block" type="submit" href="Inscription.php"> S'inscrire </a>
 			<p class="mt-5 mb-3 text-muted">
 				&copy; Faidherbard
 			</p>

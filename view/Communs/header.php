@@ -8,3 +8,4 @@
 
 <!-- Custom styles for this template -->
 <link href="../Communs/css/Accueil.css" rel="stylesheet">
+<link href="../Communs/css/product.css" rel="stylesheet">
