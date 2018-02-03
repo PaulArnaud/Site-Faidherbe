@@ -68,8 +68,6 @@
 			</div>
 		</div>
 		
-
-
 		<?php require('../Communs/scriptjava.php') ?>
 	</body>
 </html>

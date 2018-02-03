@@ -16,6 +16,8 @@
 				</div>
 			</div>
 
+			<hr class="featurette-divider">
+
 			<div class="row mb-2">
 				<div class="col-md-6">
 					<div class="card flex-md-row mb-4 box-shadow h-md-250 border border-dark ">
