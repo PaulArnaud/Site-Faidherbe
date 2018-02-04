@@ -4,6 +4,7 @@
 		<?php require('../Communs/header.php') ?>
 		<title>Page Khlâsse</title>
 	</head>
+
 	<body>
 		<?php require('../Communs/navbar.php') ?>
 		<main role="main" class="container">
@@ -26,43 +27,14 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>
-									2017
-								</td>
-								<td>
-									HK1
-								</td>
-								<td>
-									22
-								</td>
-							</tr>
-							<tr>
-								<td>
-									2015
-								</td>
-								<td>
-									BCPSTA
-								</td>
-								<td>
-									2
-								</td>
-							</tr>
-							<tr>
-								<td>
-									2015
-								</td>
-								<td>
-									HX3
-								</td>
-								<td>
-									15
-								</td>
-							</tr>
-						</tbody>
-					</div>
+						<tr>
+						<?php require("../../controller/SelectKlass.php") ?>
+						</tr>
+						</tbody>	
+					</table>
 				</div>
-			</main>
-			<?php require('../Communs/scriptjava.php') ?>
-		</body>
-	</html>
+			</div>
+		</main>
+		<?php require('../Communs/scriptjava.php') ?>
+	</body>
+</html>
