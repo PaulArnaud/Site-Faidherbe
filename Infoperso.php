@@ -6,7 +6,7 @@
     </head>
     
 
-    <body class="text-center">
+    <body class="text-center container">
         <main>
             <h3> Modification des informations personnelles </h3>
             <h5> Général </h5>
