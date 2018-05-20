@@ -18,6 +18,9 @@
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 4"> Agro </a></li>
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 5"> HEC </a></li>
 						</ul>
+						<ul class="navbar-nav px-3">
+							<li class="nav-item text-nowrap"><a class="nav-link" href="index.php"> Retour à l'accueil </a></li>
+						</ul>
 					</form>
 				</div>
 			</nav>
