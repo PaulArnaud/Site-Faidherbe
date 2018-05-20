@@ -20,7 +20,6 @@
 				</ul>
 			</div>
 		</nav>
-        <section>
 		<div ng-show="tab === 1">
 			<?php require('accueil.php') ?>
 		</div>
@@ -33,7 +32,6 @@
 		<div ng-show="tab === 4">
 			<?php require('forum.php') ?>
 		</div>
-        </section>
 		<?php require('footer.php') ?>
 	</body>
 </html>
