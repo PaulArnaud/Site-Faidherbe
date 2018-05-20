@@ -8,7 +8,7 @@
 			
 			<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-				<div class="container justify-content-md-center">
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 					<form class="form-inline">
 						<ul class="navbar-nav">
 							<li class="nav-item"><a class="nav-link" href ng-click ="ch = 1"> Faidherbe </a></li>
