@@ -6,7 +6,7 @@
 	</head>
 	<body ng-init="tab = 1" >
 		<main>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
