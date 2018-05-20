@@ -5,8 +5,7 @@
 		<title> Page Chants </title>
 	</head>
 	<body ng-init="ch = 1">
-
-			<button class="btn-dark btn-lg fixed-bottom btn-lg" role="button"><a href="index.php">Retour à l'accueil</a></button>
+			
 			<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="container justify-content-md-center">
@@ -17,6 +16,7 @@
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 3"> Khagneux </a></li>
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 4"> Agro </a></li>
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 5"> HEC </a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php"  > Retour à l'accueil </a></li>
 						</ul>
 					</form>
 				</div>
