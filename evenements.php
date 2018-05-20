@@ -5,7 +5,7 @@
 		<title>Page Evenements </title>
 	</head>
 	<body>
-		<a href="index.php" class="btn-dark btn-lg" role="button">Retour à l'accueil</a>
+		<button class="btn-dark btn-lg fixed-bottom btn-lg" role="button"><a href="index.php">Retour à l'accueil</a></button>
 		<main role="main" class="container">
             <h1> Recensement de tous les événements </h1>
 		</main>
