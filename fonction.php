@@ -5,7 +5,7 @@
 		<title>Page Fonctions </title>
 	</head>
 	<body>
-		<button href="index.php" class="btn-dark btn-lg fixed-bottom btn-sm" role="button">Retour à l'accueil</a>
+		<button href="index.php" class="btn-dark btn-lg fixed-bottom btn-sm" role="button">Retour à l'accueil</button>
 		<main role="main" class="container">
 			<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark border border-dark">
 				<div class="px-0 text-center">
