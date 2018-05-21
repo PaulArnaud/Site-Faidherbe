@@ -10,7 +10,8 @@
 
     <body class="text-center" > 
         <form "form-signin" >
-            <img class="mb-4" src="ressource/logo faidherbe.jpg" alt="" width="150" height="150"> 
+            <img class="mb-4" src="logo faidherbe.jpg" alt="" width="150" height="150">
+            
             <div class="form-group">
                 <label for="Nom"></label>
                 <input type="nom" class="form-control-lg" id="inputnom" placeholder="Votre nom" required >
@@ -25,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label for="Motivation"></label>
-                <textarea class="form-control-lg" id="zonetexte" rows="5" placeholder ="Expliquez nous vos motivations en quelques mots" required ></textarea>
+                <textarea class="form-control-lg" id="zonetexte"  placeholder ="Expliquez nous vos motivations en quelques mots" required ></textarea>
             </div>
             </div>
             <button type="submit" class="btn btn-primary">Envoyer</button>
