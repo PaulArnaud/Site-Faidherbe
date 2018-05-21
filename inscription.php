@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
 		<link rel="stylesheet" href="bootstrap.min.css">
-		<script src="angular.min.js"></script>
+        <script src="angular.min.js"></script>
+        <link href="form-validation.css" rel="stylesheet">
         <title> Page Inscription </title>
     </head>
 
