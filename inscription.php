@@ -22,6 +22,7 @@
             </div>
             <div class="form-group">
                 <label for="Email1"></label>
+                <span class="input-group-text">@</span>
                 <input type="email" class="form-control-lg" id="inputemail" placeholder="Votre mail" required>
             </div>
             <div class="form-group">
