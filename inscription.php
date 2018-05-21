@@ -22,9 +22,6 @@
             </div>
             <div class="input-group">
                 <label for="Email1"></label>
-                <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
-                </div>
                 <input type="email" class="form-control-lg" id="inputemail" placeholder="Votre mail" required>
             </div>
             <div class="input-group">
