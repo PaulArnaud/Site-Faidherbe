@@ -16,8 +16,8 @@
 			<input type="email" id="inputEmail" class="form-control" placeholder=" Mail" required autofocus>
 			<label for="inputPassword" class="sr-only"> Mot de Passe </label>
 			<input type="password" id="inputPassword" class="form-control" placeholder="Mot de Passe" required>
-			<button class="btn btn-lg btn-primary btn-block" type="submit"> Se connecter </button>
-			<a class="btn btn-lg btn-primary btn-block" type="submit" href="inscription.php"> S'inscrire </a>
+			<button class="btn btn-lg btn-block" type="submit"> Se connecter </button>
+			<a class="btn btn-lg btn-block" type="submit" href="inscription.php"> S'inscrire </a>
 			<p class="mt-5 mb-3 text-muted">
 				&copy; Faidherbard
 			</p>
