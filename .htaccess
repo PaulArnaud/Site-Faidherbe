@@ -1,2 +1,2 @@
 RewriteEngine On
-ReWriteRule (.*) webroot/$1 [L]
+ReWriteRule (.*) index.php [L]
