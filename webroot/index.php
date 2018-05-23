@@ -1,5 +1,5 @@
 <?php 
-define('WEBROOT',)
+define('WEBROOT',dirname(__FILE__));
 ?>
 
 <pre>
