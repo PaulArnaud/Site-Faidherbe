@@ -12,7 +12,7 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href ng-click = "tab =1"> Accueil </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 2"> Khlâsse </a></li>
-					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> Mon profil </a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> <i class="material-icons">computer</i> Mon profil </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 4"> Forum </a></li>
 				</ul>
 				<ul class="navbar-nav px-3">
