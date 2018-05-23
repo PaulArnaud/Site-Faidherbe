@@ -2,6 +2,9 @@
 <html lang="en" ng-app="">
 	<head>
 		<?php require('header.php') ?>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<title> Ceci est l'index </title>
 	</head>
 	<body ng-init="tab = 1" >
@@ -12,7 +15,7 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href ng-click = "tab =1"> Accueil </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 2"> Khlâsse </a></li>
-					<li class="nav-item glyphicon glyphicon-user"><a class="nav-link" href ng-click ="tab =3"> </a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> <span class="glyphicon glyphicon-user"></span> </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 4"> Forum </a></li>
 				</ul>
 				<ul class="navbar-nav px-3">
