@@ -2,8 +2,6 @@
 <html lang="en" ng-app="">
 	<head>
 		<?php require('header.php') ?>
-
-
 		<title> Ceci est l'index </title>
 	</head>
 	<body ng-init="tab = 1" >
@@ -14,7 +12,7 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href ng-click = "tab =1"> Accueil </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 2"> Khlâsse </a></li>
-					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> <span class="glyphicon-user"></span> </a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> Mon profil </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 4"> Forum </a></li>
 				</ul>
 				<ul class="navbar-nav px-3">
