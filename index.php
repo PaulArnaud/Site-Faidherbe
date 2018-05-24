@@ -1,6 +1,4 @@
 <?php
-var_dump($_GET);
-
 $url = '';
 if (isset($_GET['url'])){
     $url = explode('/',$_GET['url']);
@@ -12,6 +10,6 @@ else if ($url[0] == 'chants'){
     require('chants.php');
 }
 else {
-    require('accueil.php');
+    require('main.php');
 }
 ?>
