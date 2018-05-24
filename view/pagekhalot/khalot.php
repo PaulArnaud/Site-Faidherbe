@@ -116,19 +116,19 @@
 			<div class="container marketing">
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Cor de chasse</h2>
 						<p> Vainqueur de la Chasse aux Trésors </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Chameau</h2>
 						<p> A l'endroit, célibataire ; à l'envers, pris </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Abeille</h2>
 						<p> Labeur et minutie </p>
 					</div>
@@ -138,19 +138,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Sphynx</h2>
 						<p> Polyglotte </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Squelette</h2>
 						<p> Amour de l'anatomie (renversé : du sexe opposé) </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Coq * </h2>
 						<p> Grande gueule, en sachant l'ouvrir </p>
 					</div>
@@ -160,19 +160,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Poule * </h2>
 						<p> Fille très chaude... </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Chouette *</h2>
 						<p> Oiseau de nuit </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Epée ** </h2>
 						<p> Fin baiseur </p>
 					</div>
@@ -182,19 +182,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Orchidée ** </h2>
 						<p> Fine baiseuse </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Eclair **</h2>
 						<p> Ejaculateur précoce </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Lyre </h2>
 						<p> Amour de la musique </p>
 					</div>
@@ -204,19 +204,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Palette </h2>
 						<p> Amour de la peinture </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Livre</h2>
 						<p> Amour de la littérature </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Plume </h2>
 						<p> Amour de l'écriture </p>
 					</div>
@@ -226,19 +226,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Epervier </h2>
 						<p> Amour de l'aviation </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Ancre</h2>
 						<p> Amour de la marine </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Plume </h2>
 						<p> Amour de l'écriture </p>
 					</div>
@@ -248,19 +248,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Fourchette  </h2>
 						<p> Amour des plaisirs de la table </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Grappe de raisin</h2>
 						<p> Amour du bon vin </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Bacchus * </h2>
 						<p> Dignité dans l'ivresse </p>
 					</div>
@@ -270,19 +270,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Bouteille bordelaise * </h2>
 						<p> Une par cuite certifiée </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Bouteille de Champagne *</h2>
 						<p> Une par coma éthylique certifié</p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2> Parapluie * </h2>
 						<p> A vomi dans son khâlot </p>
 					</div>
@@ -292,19 +292,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Sou troué  </h2>
 						<p> Nuit au poste pour motif universitaire </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Faux </h2>
 						<p> Ennuis divers avec l'administration </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2> Tête de mort sans fémur </h2>
 						<p> Echec aux écrits </p>
 					</div>
@@ -314,19 +314,19 @@
 
 				<div class="row">
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Tête de vache </h2>
 						<p> Echec aux oraux </p>
 					</div>
 
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2>Fer à cheval  </h2>
 						<p> Chanceux </p>
 					</div>
 					
 					<div class="col-lg-4 text-center">
-						<img class="rounded-circle" src="stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
+						<img class="rounded-circle" src="/img/stickers-la-goudale.jpg" alt="Generic placeholder image" width="140" height="140">
 						<h2> Palme simple </h2>
 						<p> Une par note d'au moins 18 au Bac </p>
 					</div>
