@@ -1,3 +1,3 @@
 <?php
-require('/view/pageprincipale/main.php');
+echo 1 + 2 + 3 ;
 ?>
