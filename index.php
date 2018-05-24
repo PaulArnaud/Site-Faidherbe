@@ -1,2 +1,5 @@
-<?php
-    echo file_get_contents('view/pageprincipale/main.php');
+<!doctype html>
+<html lang="en" ng-app="">
+	<a href="/view/pageprincipale/main.php"> Lien </a>
+</html>
+
