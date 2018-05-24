@@ -4,12 +4,12 @@ if (isset($_GET['url'])){
     $url = explode('/',$_GET['url']);
 }
 if ($url == ''){
-    require('main.php');
+    require('view/pageprincipale/main.php');
 }
 else if ($url[0] == 'chants'){
-    require('chants.php');
+    require('view/pagechants/chants.php');
 }
 else {
-    require('main.php');
+    require('view/pageprincipale/main.php');
 }
 ?>

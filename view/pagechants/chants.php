@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="">
 	<head>
-		<?php require('header.php') ?>
+		<?php require('../communs/header.php') ?>
 		<title> Page Chants </title>
 	</head>
 	<body ng-init="ch = 1" class="container">
@@ -22,21 +22,21 @@
 				</div>
 			</nav>
 			<div ng-show="ch === 1">
-				<?php require('Faidherbe.php') ?>
+				<?php require('faidherbe.php') ?>
 			</div>
 			<div ng-show="ch === 2">
-				<?php require('Taupin.php') ?>
+				<?php require('taupin.php') ?>
 			</div>
 			<div ng-show="ch === 3">
-				<?php require('Khagneux.php') ?>
+				<?php require('khagneux.php') ?>
 			</div>
 			<div ng-show="ch === 4">
-				<?php require('Agro.php') ?>
+				<?php require('agro.php') ?>
 			</div>
 			<div ng-show="ch === 5">
-				<?php require('Hec.php') ?>
+				<?php require('hec.php') ?>
 			</div>
 
-		<?php require('footer.php') ?>
+		<?php require('../communs/footer.php') ?>
 	</body>
 </html>

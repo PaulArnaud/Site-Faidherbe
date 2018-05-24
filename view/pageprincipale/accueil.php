@@ -16,7 +16,7 @@
 				<p class="lead">
 					Retrouvez ici toutes les photos les plus belles de ces années folles.
 				</p>
-				<a class="btn btn-outline-light" href="gallerie.php">Gallerie</a>
+				<a class="btn btn-outline-light" href="../pagegallerie/gallerie.php">Gallerie</a>
 			</div>
 		</div>
 
@@ -26,7 +26,7 @@
 				<p class="lead">
 					Retrouvez ici les fonctions.
 				</p>
-				<a class="btn btn-outline-light" href="fonction.php">Fonctions</a>
+				<a class="btn btn-outline-light" href="../pagefonction/fonction.php">Fonctions</a>
 			</div>
 		</div>
 
@@ -36,7 +36,7 @@
 				<p class="lead">
 					Retrouvez tous les chants traditionnels de Faidherbe.
 				</p>
-				<a class="btn btn-outline-light" href="chants.php">Chants</a>
+				<a class="btn btn-outline-light" href="../pagechants/chants.php">Chants</a>
 			</div>
 		</div>
 		<div class=" position-relative bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -45,7 +45,7 @@
 				<p class="lead">
 					Retrouvez tous les différents événements incontournables de Faidherbe.
 				</p>
-				<a class="btn btn-outline-light" href="evenements.php">Evénements</a>
+				<a class="btn btn-outline-light" href="../pageevenements/evenements.php">Evénements</a>
 			</div>
 		</div>
 		<div class=" position-relative bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -54,7 +54,7 @@
 				<p class="lead">
 					Retrouvez tous les insignes et leur signification.
 				</p>
-				<a class="btn btn-outline-light" href="Khalot.php">Khâlots</a>
+				<a class="btn btn-outline-light" href="../pagekhalot/khalot.php">Khâlots</a>
 			</div>
 		</div>
 		<div class="position-relative bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">

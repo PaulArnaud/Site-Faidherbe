@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<?php require('header.php') ?>
+		<?php require('../communs/header.php') ?>
 		<title>Page Mon Profil </title>
     </head>
     
@@ -142,6 +142,6 @@
                 </div>
             </form>
         </main>
-		<?php require('footer.php') ?>
+		<?php require('../communs/footer.php') ?>
 	</body>
 </html>
