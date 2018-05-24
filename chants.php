@@ -16,7 +16,7 @@
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 3"> Khagneux </a></li>
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 4"> Agro </a></li>
 							<li class="nav-item"><a class="nav-link" href  ng-click ="ch = 5"> HEC </a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php"  > Retour à l'accueil </a></li>
+							<li class="nav-item"><a class="nav-link" href="main.php"  > Retour à l'accueil </a></li>
 						</ul>
 					</form>
 				</div>
