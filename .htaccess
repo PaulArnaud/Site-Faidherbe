@@ -1,2 +1,2 @@
 RewriteEngine On
-ReWriteRule (.*) index.php [L]
+ReWriteRule (.*) main.php [L]
