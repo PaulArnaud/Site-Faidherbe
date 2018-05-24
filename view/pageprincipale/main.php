@@ -24,10 +24,10 @@
 			<?php require('/view/pageprincipale/accueil.php') ?>
 		</div>
 		<div ng-show="tab === 2">
-			<?php require('/view/pageprincipale/.php') ?>
+			<?php require('/view/pageprincipale/khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
-			<?php require('/view/pageprincipale/.php') ?>
+			<?php require('/view/pageprincipale/profil.php') ?>
 		</div>
 		<div ng-show="tab === 4">
 			<?php require('/view/pageprincipale/forum.php') ?>
