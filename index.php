@@ -1,3 +1,3 @@
 <?php
-echo PROUT
+require("main.php");
 ?>
