@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app ="FaidherbeEnPoche">
     <head>
     <?php require('/view/communs/header.php') ?>
     </head>
