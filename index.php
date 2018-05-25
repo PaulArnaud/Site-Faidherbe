@@ -4,10 +4,10 @@
     define("DS",DIRECTORY_SEPARATOR);
     define("CORE",ROOT.DS."core");
     echo WEBROOT;
-    echo !!!!!!
+    echo !!!!!!;
     echo ROOT;
-    echo !!!!!!
+    echo !!!!!!;
     echo DS;<
-    echo !!!!!!
+    echo !!!!!!;
     echo CORE;
 ?>
