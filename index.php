@@ -7,5 +7,4 @@
         <a href="/view/pageprincipale/main.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Site complet</a>
 	</body>
     <?php require('/view/communs/footer.php') ?>
-    <?php echo ça marche pas  ?>
 </html>
