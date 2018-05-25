@@ -3,5 +3,6 @@
     define("ROOT",dirname(WEBROOT));
     define("DS",DIRECTORY_SEPARATOR);
     define("CORE",WEBROOT.DS."core");
-    echo WEBROOT , ROOT , DS , CORE ;
+    define("BASE_URL",$_SERVER["SCRIPT_NAME"]);
+    echo WEBROOT , ROOT , DS , CORE , BASE_URL;
 ?>
