@@ -1,3 +1,6 @@
 ReWriteEngine On
 
-ReWriteRule (.*) webroot/$1 [L]
+ReWriteCond %{REQUEST_FILENAME} !-d
+ReWriteCond %{REQUEST_FILENAME} !-f
+
+ReWriteRule (.*) index.php/$1 [L]
