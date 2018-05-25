@@ -1,7 +1,4 @@
 <?php
-    echo alllllloooooooo
+    define("WEBROOT",dirname(__FILE__));
+    echo WEBROOT;
 ?>
-<pre>
-<?php   print_r($_SERVER);
-        echo dirname(__FILE__); ?>
-</pre>
