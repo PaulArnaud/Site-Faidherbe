@@ -1,5 +1,0 @@
-RewriteEngine On
-
-# Rewrite --- https://faidherbeenpoche.herokuapp.com => https://faidherbeenpoche.herokuapp.com/index.php
-
-RewriteRule ^$ /index.php?&%{QUERY_STRING}
