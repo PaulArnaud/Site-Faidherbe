@@ -1,5 +1,5 @@
 <?php
-
+    echo alllllloooooooo
 ?>
 <pre>
 <?php   print_r($_SERVER);
