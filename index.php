@@ -7,7 +7,7 @@
     echo !!!!!!;
     echo ROOT;
     echo !!!!!!;
-    echo DS;<
+    echo DS;
     echo !!!!!!;
     echo CORE;
 ?>
