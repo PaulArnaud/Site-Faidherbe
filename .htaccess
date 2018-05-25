@@ -1,0 +1,3 @@
+ReWriteEngine On
+
+ReWriteRule (.*) webroot/$1 [L]
