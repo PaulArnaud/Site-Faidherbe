@@ -8,3 +8,4 @@
 	</body>
     <?php require('/view/communs/footer.php') ?>
 </html>
+<?php echo ça marche pas  ?>
