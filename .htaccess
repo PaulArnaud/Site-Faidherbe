@@ -1,3 +1,8 @@
-ReWriteEngine On
+RewriteEngine On
+Options FollowSymLinks
 
-ReWriteRule ^(.*) index.php
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [L]
