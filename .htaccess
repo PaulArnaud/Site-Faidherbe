@@ -1,2 +1,1 @@
-RewriteEngine On
-DirectoryIndex index.php /view/pageprincipale/main.php
+RewriteEngine Off
