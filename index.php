@@ -5,6 +5,6 @@
     define("BASE_URL",dirname(dirname($_SERVER["SCRIPT_NAME"])));
     /*require(CORE.DS.'includes.php');*/
     require_once('/config/connect.php');
-    echo myPDO()->query('SELECT * FROM khlasse');
+    $res = myPDO()->query('SELECT * FROM khlasse');
     //new Dispatcher();
 ?>
