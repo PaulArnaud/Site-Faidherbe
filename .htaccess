@@ -3,4 +3,4 @@ ReWriteEngine On
 ReWriteCond %{REQUEST_FILENAME} !-d
 ReWriteCond %{REQUEST_FILENAME} !-f
 
-ReWriteRule (.*) /app/index.php/$1 [L]
+ReWriteRule (.*) index.php/$1 [L]
