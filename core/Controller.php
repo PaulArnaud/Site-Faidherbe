@@ -21,7 +21,7 @@ class Controller{
         ob_start();
         require($view);
         $content_for_layout = ob_get_clean();
-        require ROOT.DS.'view'.DS.'layout'.DS.$this -> layout.'.php';
+        require(ROOT.DS.'view'.DS.'layout'.DS.$this -> layout.'.php');
         $this -> rendered = true ;
     }
 
@@ -33,6 +33,14 @@ class Controller{
             $this -> vars[$key] = $value;
         }
         
+    }
+
+    public function loadModel($name){
+        $file = ROOT.DS.'models'.DS.$name.'.php';
+        require_once($file);
+        if (!isset($this-> $name) ){
+            $this -> $name =  new $name();
+        }
     }
 
 }
