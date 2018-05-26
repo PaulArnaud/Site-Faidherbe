@@ -1,6 +1,8 @@
-ReWriteEngine On
+RewriteEngine On
+Options FollowSymLinks
 
-ReWriteCond %{REQUEST_FILENAME} !-d
-ReWriteCond %{REQUEST_FILENAME} !-f
+RewriteBase /
 
-ReWriteRule (.*) index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /#/$1 [L]
