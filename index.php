@@ -7,4 +7,5 @@
     echo WEBROOT , ROOT , DS , CORE , BASE_URL;
     
     require(CORE.DS.'includes.php');
+    new dispatcher();
 ?>
