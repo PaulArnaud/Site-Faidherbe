@@ -1,36 +1,17 @@
 <?php
-require_once(ROOT.DS.'config'.DS.'conf.php');
-class Connect {
-    
-  public static $pdo;
-  private $hostname;
-  private $login;
-  private $password;
-  private $database_name;
-
-
-  public static function Init(){
-    $hostname = Conf::getHostname();
-    //echo $hostname;
-    $login = Conf::getLogin();
-    //echo $login;
-    $password = Conf::getPassword();
-    //echo $password;
-    $database_name = Conf::getDatabase();
-    //echo $database_name;
-    try{
-      self::$pdo = new PDO("pgsql:host=$hostname;dbname=$database_name",$login,$password);
-      self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      //var_dump( self::$pdo) ;
-    } 
-    catch (PDOException $e) {
-      if (Conf::getDebug()) {
-        echo $e->getMessage(); // affiche un message d'erreur
-      } else {
-        echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
-      }
-      die();
+function myPDO() {
+    // Base de données Heroku Décibels
+    $dsn = "pgsql:host=ec2-54-228-181-43.eu-west-1.compute.amazonaws.com;dbname=d84nlnmfgu4vji";
+    $login = "csgwojauygcbjo";
+    $mdp = "d0fe7c66c47196fea644214cf2cd232a65f0a805ce28d3d798115e11df7b68b0";
+    // Création de la connexion
+    try {
+        $bd = new PDO($dsn, $login, $mdp);
+        $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
+    catch (Exception $e) {
+        echo 'Error creating PDO -> ';
+        var_dump($e->getMessage());
     }
-  }
-Connect::Init();
+    return $bd;
+}
