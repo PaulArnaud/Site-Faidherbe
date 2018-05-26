@@ -19,7 +19,7 @@ class Connect {
     $database_name = Conf::getDatabase();
     //echo $database_name;
     try{
-      self::$pdo = new PDO("pgadmin:host=$hostname;dbname=$database_name", $login, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+      self::$pdo = new PDO("pgsql:host=$hostname;dbname=$database_name", $login, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
       self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       //var_dump( self::$pdo) ;
     } 
