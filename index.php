@@ -6,4 +6,5 @@
     define("BASE_URL",dirname(dirname($_SERVER["SCRIPT_NAME"])));
     echo WEBROOT , ROOT , DS , CORE , BASE_URL;
     
+    require(CORE.DS.'includes.php');
 ?>
