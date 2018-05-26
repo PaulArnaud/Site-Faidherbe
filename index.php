@@ -21,7 +21,7 @@
 			<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 			<input type="password" id="inputPassword" class="form-control" placeholder="Mot de Passe" required>
 			
-			<button class="btn btn-lg btn-block" type="submit"> Se connecter </button>
+			<button class="btn btn-lg btn-block" type="submit" href="/view/pageprincipale/main.php"> Se connecter </button>
 			<a class="btn btn-lg btn-block" type="submit" href="inscription.php"> S'inscrire </a>
 			<p class="mt-5 mb-3 text-muted">
 				&copy; Faidherbard
