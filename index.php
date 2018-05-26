@@ -4,13 +4,13 @@
     <meta charset="utf-8">
 		<link rel="stylesheet" href="/lib/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="/lib/angular.min.js"></script>
-		<link href="connnexion.css" rel="stylesheet">
+		<link href="Connnexion.css" rel="stylesheet">
 		<title> Ceci est la page de connexion </title>
 	</head>
 	<body class="text-center">
 
 		<form class="form-signin">
-			<img class="mb-4" src="logo faidherbe.jpg" alt="" width="150" height="150">
+			<img class="mb-4" src="/img/logo faidherbe.jpg" alt="" width="150" height="150">
 			<h1 class="h3 mb-3 font-weight-normal"> Bienvenue </h1>
 
 			<label for="inputEmail" class="sr-only"> Mail </label>
