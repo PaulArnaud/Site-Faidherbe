@@ -5,5 +5,5 @@
     define("BASE_URL",dirname(dirname($_SERVER["SCRIPT_NAME"])));
     /*require(CORE.DS.'includes.php');*/
     require(ROOT.DS.'config'.DS.'connect.php');
-    new Dispatcher();
+    //new Dispatcher();
 ?>
