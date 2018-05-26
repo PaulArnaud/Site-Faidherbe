@@ -1,5 +1,6 @@
 <?php
-require('dispatcher.php');
+require('Request.php');
+require('Dispatcher.php');
 
 
 ?>

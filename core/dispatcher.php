@@ -1,8 +1,11 @@
 <?php
-class dispatcher{
+class Dispatcher{
 
+    var $request;
+    
     function __construct(){
-        echo 'lol';
+        $this->request = new Request(); 
+        echo $this -> request -> url;
     }
 }
 ?>
