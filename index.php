@@ -8,11 +8,6 @@
 		<title> Ceci est la page de connexion </title>
 	</head>
 	<body class="text-center">
-        <?php require('config/connect.php');
-            $req = myPDO()->query('SELECT * FROM khlasse');
-            $object = $req->fetchAll(PDO::FETCH_CLASS, "khlasse");
-            echo $object;
-        ?>
 
 		<form class="form-signin container">
 			<img class="mb-4" src="/img/logo faidherbe.jpg" alt="" width="150" height="150">
