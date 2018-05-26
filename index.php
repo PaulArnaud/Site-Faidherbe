@@ -8,6 +8,7 @@
 		<title> Ceci est la page de connexion </title>
 	</head>
 	<body class="text-center">
+        <?php require('config/connect.php') ?>
 
 		<form class="form-signin container">
 			<img class="mb-4" src="/img/logo faidherbe.jpg" alt="" width="150" height="150">
