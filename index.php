@@ -9,7 +9,7 @@
 	</head>
 	<body class="text-center">
 
-		<form class="form-signin container">
+		<!--<form class="form-signin container">
 			<img class="mb-4" src="/img/logo faidherbe.jpg" alt="" width="150" height="150">
 			<h1 class="h3 mb-3 font-weight-normal"> Bienvenue </h1>
 
@@ -26,10 +26,11 @@
 			<p class="mt-5 mb-3 text-muted">
 				&copy; Faidherbard
 			</p>
-		</form>
+		</form>-->
 
 		<div class ="container">
-		<?php require('/config/connect.php');
+		<?php 
+		require('/config/connect.php');
 		$result = myPDO() -> query('SELECT id_khlasse,id_type,annee FROM khlasse');
 		echo 'prout 123 ';
 		print_r(myPDO());
