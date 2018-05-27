@@ -30,7 +30,7 @@
 
 		<div class ="container">
 		<?php 
-		require('/config/connect.php');
+		require_once('/config/connect.php');
 		$result = myPDO() -> query('SELECT id_khlasse,id_type,annee FROM khlasse');
 		echo 'prout 123 ';
 		print_r(myPDO());
