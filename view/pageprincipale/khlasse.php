@@ -22,16 +22,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                            <?php
-                            require('')
-                            require('/controller/controller_khlasse.php');
-                            $control = new khlasseController();/*
-                            $data = $control -> getAllKhlasse();
-                            for ($data : $value){
-                                echo $value['annee'];
-                                echo $value['id_khlasse'];
-                            }*/
-                            ?>
+                            
                             </tr>
                         </tbody>
                     </table>
