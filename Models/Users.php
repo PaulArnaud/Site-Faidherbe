@@ -6,8 +6,8 @@ class Users
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
 	{
-		require_once('Pdo.php');
-		$bdheroku = connexion();
+		require_once('connect.php');
+		$bdheroku = myPDO();
 		$req = $bdheroku->prepare("SELECT usersid FROM Users WHERE userscookiecode='".$cookiecode."'");
 		$req->execute();
 		$data=$req->fetch();
@@ -15,8 +15,8 @@ class Users
 	}
   public static function Get_Users_Mail($userid)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+		$bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT usersmail FROM Users WHERE usersid= :userid");
     $req->bindParam(':userid',$userid);
     $req->execute();
@@ -25,8 +25,8 @@ class Users
   }
   public static function Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+		$bdheroku = myPDO();
     $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender, userscookiecode, userspassword) VALUES (:firstname,:lastname,:nick,:mail,:gender,:cookiecode,:password)');
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
@@ -39,8 +39,8 @@ class Users
   }
   public static function Get_All_Users()
   {
-    require_once('Pdo.php');
-    $bdheroku=connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT * FROM Users');
     $req->execute();
     while($data=$req->fetch())
@@ -50,8 +50,8 @@ class Users
 		return $result;
   }
   public static function Get_Users_Role($userid){
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT usersrole FROM Users WHERE usersid= :usersid");
     $req->bindParam(':usersid',$userid);
     $req->execute();
@@ -60,8 +60,8 @@ class Users
   }
   public static function Set_User_Cookie($usersnick,$usercookie)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare('UPDATE Users SET userscookiecode= :cookie WHERE usersnick= :nick');
     $req->bindParam(':cookie',$usercookie);
     $req->bindParam(':nick',$usersnick);
@@ -69,8 +69,8 @@ class Users
   }
   public static function checkLogin($userNick,$userPassword)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT userspassword FROM Users WHERE usersnick= :usersnick');
     $req->bindParam(':usersnick',$userNick);
     $data = $req->fetch();
@@ -78,16 +78,16 @@ class Users
   }
   public static function Get_Userid_By_Nick($userNick)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT usersid FROM Users WHERE usersnick=\'".$userNick."\'");
     $data = $req->fetch();
     return $data['usersid'];
   }
   public static function Check_Password($usernick,$userpw)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT userspassword FROM Users WHERE usersnick= '".$usernick."'");
     //$req->bindParam(':usersnick',$usernick);
     $req->execute();
@@ -96,8 +96,8 @@ class Users
   }
   public static function Delete_User($userid)
   {
-    require_once('Pdo.php');
-    $bdheroku = connexion();
+    require_once('connect.php');
+    $bdheroku = myPDO();
     $req = $bdheroku->prepare('DELETE FROM Users WHERE usersid= :usersid');
     $req->bindParam(':usersid',$userid);
     $req->execute();
