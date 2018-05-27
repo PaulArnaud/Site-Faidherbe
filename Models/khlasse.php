@@ -1,6 +1,6 @@
 <?php
-require_once('../../config/connect.php');
-require_once('../../models/model.php');
+require('../../config/connect.php');
+require('../../models/model.php');
 
 class khlasse extends model{
 
@@ -14,7 +14,8 @@ class khlasse extends model{
     }
 
     public function getAllKhlasse(){
-        $req = myPDO() -> query ('SELECT * FROM  khlasse');
+        echo '456';
+        $req = myPDO()->query ('SELECT * FROM  khlasse');
         $object = $req -> fetchAll(PDO::FETCH_CLASS, "khlasse");
         return $object;
     }

@@ -1,9 +1,5 @@
 <?php
-function myPDO() {
-    // Base de données Heroku Décibels
-    /*$dsn = "pgsql:host=ec2-54-228-181-43.eu-west-1.compute.amazonaws.com;dbname=d84nlnmfgu4vji";
-    $login = "csgwojauygcbjo";
-    $mdp = "d0fe7c66c47196fea644214cf2cd232a65f0a805ce28d3d798115e11df7b68b0";*/
+function myPDO(){
     $dsn = "pgsql:"
     ."host=ec2-54-228-181-43.eu-west-1.compute.amazonaws.com;"
     ."dbname=d84nlnmfgu4vji;"
@@ -11,15 +7,12 @@ function myPDO() {
     ."port=5432;"
     ."sslmode=require;"
     ."password=d0fe7c66c47196fea644214cf2cd232a65f0a805ce28d3d798115e11df7b68b0";
-    // Création de la connexion
-    
-    try {
-        $bd = new PDO($dsn);
-        //$bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);        
+    try{
+        $db = new PDO($dsn);
     }
-    catch (Exception $e) {
-        echo 'Error creating PDO -> ';
-        var_dump($e->getMessage());
+    catch (Exception $e)
+    {
+        die('Erreur : ' . $e->getMessage());
     }
-    return $bd;
+    return($db);
 }
