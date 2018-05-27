@@ -23,9 +23,10 @@
                         <tbody>
                             <tr>
                             <?php 
-                            echo '123 prout';
+                            
                             require('../../controller/controller_khlasse.php');
                             $controller = new khlasseController();
+                            print_r($controller);
                             $data = $controller->getAllKhlasse();
                             print_r($data);
                             foreach ($data as $value) {
