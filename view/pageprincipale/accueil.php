@@ -7,6 +7,7 @@
 				<p class="lead font-weight-normal">
 					Sur ce site vous êtes libres de faire ce que vous voulez dans la limite du respect. Il est conçu dans un objectif de réseau. Vous pourriez donc retrouvez vos anciens compagnons. Alors c'est parti, découvrez la 8ème merveille du monde.
 				</p>
+				<h3> <?php echo $annee ;?> </h3>
 			</div>
 		</div>
 
