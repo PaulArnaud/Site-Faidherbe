@@ -28,9 +28,9 @@
 			</p>
 		</form>-->
 
-		<div class ="container">
+		<div>
 		<?php 
-		print_r($_SERVER);
+		//print_r($_SERVER);
 		require('config/connect.php');
 		$req = myPDO()->query('SELECT * FROM khlasse');
         $object = $req->fetchAll(PDO::FETCH_CLASS, "khlasse");
