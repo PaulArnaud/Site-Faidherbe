@@ -31,7 +31,8 @@
 		<div class ="container">
 		<?php 
 		print_r($_SERVER);
-		print_r('config/connect.php');
+		require('config/connect.php');
+		print_r(myPDO());
 		?>
 		</div>
 
