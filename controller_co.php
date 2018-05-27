@@ -1,6 +1,6 @@
 
 <?php
-require_once("../model/Users.php");
+require_once("Users.php");
 $email=htmlspecialchars($_POST['inputEmail']);
 $password=htmlspecialchars($_POST['password']);
 if(empty($email) || empty($password)){
