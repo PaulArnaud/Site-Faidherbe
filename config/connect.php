@@ -1,5 +1,5 @@
 <?php
-function myPDO() {
+function myPDO(){
     // Base de données Heroku FaidherbeEnPoche
     $dsn = "pgsql:host=ec2-54-228-181-43.eu-west-1.compute.amazonaws.com;dbname=d84nlnmfgu4vji";
     $login = "csgwojauygcbjo";
@@ -15,3 +15,4 @@ function myPDO() {
     }
     return $bd;
 }
+?>

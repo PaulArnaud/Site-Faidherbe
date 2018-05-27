@@ -29,13 +29,13 @@
                             print_r($controller);
 
                             $data = $controller->getAllKhlasse();
-                           /* 
+                            
                             foreach ($data as $value) {
                                 echo '<td>'.$value['annee'].'</td>';
                                 echo '<td>'.$value['id_khlasse'].'</td>';
                                 echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';
                                 echo '</tr>';
-                            }*/
+                            }
                             ?>
                             </tr>
                         </tbody>

@@ -28,45 +28,6 @@
 			</p>
 		</form>
 
-		<div>
-		
-		<?php 
-		//print_r($_SERVER);
-		require('config/connect.php');
-		try
-		{
-		// On se connecte à MySQL
-		$bdd = myPDO();
-		}
-		catch(Exception $e)
-		{
-		// En cas d'erreur, on affiche un message et on arrête tout
-			die('Erreur : '.$e->getMessage());
-		}
-
-		// Si tout va bien, on peut continuer
-
-		// On récupère tout le contenu de la table jeux_video
-		$reponse = $bdd->query('SELECT nomkhlasse,annee from khlasse K,typekhlasse T where T.id_typekhlasse = K.id_type');
-
-		// On affiche chaque entrée une à une
-		while ($donnees = $reponse->fetch())
-		{
-		?>
-			<p>
-			<strong>Annee</strong> : <?php echo $donnees['annee']; ?><br />
-			
-			
-			<?php echo $donnees['nomkhlasse']; ?> nom de la khalsse </p>
-		<?php
-		}
-
-		$reponse->closeCursor(); 
-		?>
-		</div>
-	
-
-
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
