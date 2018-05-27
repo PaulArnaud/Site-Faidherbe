@@ -32,6 +32,20 @@
 		<div ng-show="tab === 4">
 			<?php require('/view/pageprincipale/forum.php') ?>
 		</div>
+		<div ng-show="tab === 5">
+			<?php require('/view/pagegallerie/gallerie.php') ?>
+		</div>
+		<div ng-show="tab === 6">
+			<?php require('/view/pagefonction/fonction.php') ?>
+		</div>
+		<div ng-show="tab === 7">
+			<?php require('/view/pageevenements/evenements.php') ?>
+		</div>
+		<div ng-show="tab === 8">
+			<?php require('/view/pagechants/chants.php') ?>
+		</div>
+
+
 		<?php require('/view/communs/footer.php') ?>
 	</body>
 </html>
