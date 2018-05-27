@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="">
 	<head>
-		<?php require('/view/communs/header.php') ?>
+		<?php require('/app/view/communs/header.php') ?>
 		<title> Ceci est l'index </title>
 	</head>
 	<body ng-init="tab = 1" >
@@ -21,7 +21,7 @@
 			</div>
 		</nav>
 		<div ng-show="tab === 1">
-			<?php require('/view/pageprincipale/accueil.php') ?>
+			<?php require('/app/view/pageprincipale/accueil.php') ?>
 		</div>
 		<div ng-show="tab === 2">
 			<?php require('/view/pageprincipale/khlasse.php') ?>
@@ -46,6 +46,6 @@
 		</div>
 
 
-		<?php require('/view/communs/footer.php') ?>
+		<?php require('/app/view/communs/footer.php') ?>
 	</body>
 </html>
