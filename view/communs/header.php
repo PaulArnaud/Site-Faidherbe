@@ -1,3 +1,3 @@
 <meta charset="utf-8">
-<link rel="stylesheet" href="/app/lib/bootstrap.min.css">
-<script src="/app/lib/angular.min.js"></script>
+<link rel="stylesheet" href="/lib/bootstrap.min.css">
+<script src="/lib/angular.min.js"></script>

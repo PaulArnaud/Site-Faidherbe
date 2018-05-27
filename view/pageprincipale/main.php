@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="FaidherbeEnPoche">
 	<head>
-		<?php require('/app/view/communs/header.php') ?>
+		<?php require('/view/communs/header.php') ?>
 		<title> Ceci est l'index </title>
 	</head>
 	<body ng-init="tab = 1" >
@@ -21,7 +21,7 @@
 			</div>
 		</nav>
 		<div ng-show="tab === 1">
-			<?php require('/app/view/pageprincipale/accueil.php') ?>
+			<?php require('/view/pageprincipale/accueil.php') ?>
 		</div>
 		<div ng-show="tab === 2">
 			<?php require('/view/pageprincipale/khlasse.php') ?>
@@ -32,20 +32,6 @@
 		<div ng-show="tab === 4">
 			<?php require('/view/pageprincipale/forum.php') ?>
 		</div>
-		<div ng-show="tab === 5">
-			<?php require('/view/pagegallerie/gallerie.php') ?>
-		</div>
-		<div ng-show="tab === 6">
-			<?php require('/view/pagefonction/fonction.php') ?>
-		</div>
-		<div ng-show="tab === 7">
-			<?php require('/view/pageevenements/evenements.php') ?>
-		</div>
-		<div ng-show="tab === 8">
-			<?php require('/view/pagechants/chants.php') ?>
-		</div>
-
-
-		<?php require('/app/view/communs/footer.php') ?>
+		<?php require('/view/communs/footer.php') ?>
 	</body>
 </html>

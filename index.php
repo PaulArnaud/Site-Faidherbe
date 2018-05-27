@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="FaidherbeEnPoche">
 	<head>
     <meta charset="utf-8">
 		<link rel="stylesheet" href="/lib/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,12 +21,28 @@
 			<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 			<input type="password" id="inputPassword" class="form-control" placeholder="Mot de Passe" required>
 			
-			<a class="btn btn-lg btn-block" type="submit" href="/app/view/pageprincipale/main.php"> Se connecter </a>
+			<a class="btn btn-lg btn-block" type="submit" href="/view/pageprincipale/main.php"> Se connecter </a>
 			<a class="btn btn-lg btn-block" type="submit" href="inscription.php"> S'inscrire </a>
 			<p class="mt-5 mb-3 text-muted">
 				&copy; Faidherbard
 			</p>
 		</form>
+
+		<div>
+		<?php require('/config/connect.php');
+		$result = myPDO() -> query('SELECT * FROM khlasse');
+		$data = $result->fetchAll(PDO::FETCH_ASSOC);
+    	foreach ($data as $value) {
+        echo '<tr id="'.$value['ID_Klass'].'">';
+        echo '<td>'.$value['AnneeKlass'].'</td>';
+        echo '<td>'.$value['NomKlass'].'</td>';
+        echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';
+        echo '</tr>';
+		}
+		$result->closeCursor();
+		unset($result);
+		?>
+
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
