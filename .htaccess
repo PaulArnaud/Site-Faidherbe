@@ -1,1 +1,3 @@
-RewriteEngine Off
+RewriteEngine On
+
+ReWriteRule index.php [L]
