@@ -22,7 +22,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                            <?php require('../../controller/controller_khlasse.php');
+                            <?php 
+                            echo '123 prout';
+                            require('../../controller/controller_khlasse.php');
                             $controller = new khlasseController();
                             $data = $controller->getAllKhlasse();
                             print_r($data);
