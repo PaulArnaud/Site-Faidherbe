@@ -77,12 +77,12 @@ class Users
     return($data['userpassword']==$userPassword);
   }
   
-  public static function Check_Password($nom,$userpw)
+  public static function Check_Password($email,$userpw)
   {
     require_once('config/connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT userpassword FROM user WHERE nom= :nom");
-    $req->bindParam(':nom',$nom);
+    $req = $bdheroku->prepare("SELECT userpassword FROM user WHERE email= :email");
+    $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
     return($data['userspassword'] == $userpw);
