@@ -1,7 +1,7 @@
 <?php
-require_once('/BD/connexionBD.php');
+require_once('/config/connect.php');
 
-class typekhlasse{
+class typekhlasse extends model{
 
     var $id_typekhlasse;
     var $nomkhlasse;
@@ -18,6 +18,8 @@ class typekhlasse{
         $object = $req->fetchAll(PDO::FETCH_CLASS, "typekhlasse");
         return $object;
     }
+
+
 }
 
 ?>
