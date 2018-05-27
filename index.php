@@ -32,9 +32,35 @@
 		<?php 
 		//print_r($_SERVER);
 		require('config/connect.php');
-		$req = myPDO()->query('SELECT nomkhlasse,annee FROM khlasse K,typekhlasse T WHERE T.id_typekhlasse = K.id_type');
-        $object = $req->fetchAll(PDO::FETCH_CLASS, "khlasse");
-        print_r($object);
+		try
+		{
+		// On se connecte à MySQL
+		$bdd = myPDO();
+		}
+		catch(Exception $e)
+		{
+		// En cas d'erreur, on affiche un message et on arrête tout
+			die('Erreur : '.$e->getMessage());
+		}
+
+		// Si tout va bien, on peut continuer
+
+		// On récupère tout le contenu de la table jeux_video
+		$reponse = $bdd->query('SELECT nomkhlasse,annee from khlasse K,typekhlasse T where T.id_typekhlasse = K.id_type');
+
+		// On affiche chaque entrée une à une
+		while ($donnees = $reponse->fetch())
+		{
+		?>
+			<p>
+			<strong>Annee</strong> : <?php echo $donnees['annee']; ?><br />
+			
+			
+			<?php echo $donnees['nomkhlasse']; ?> nom de la khalsse </p>
+		<?php
+		}
+
+		$reponse->closeCursor(); 
 		?>
 		</div>
 
