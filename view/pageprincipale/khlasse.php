@@ -1,3 +1,5 @@
+<?php require('/controller/controller_khlasse.php'); ?>
+
 <!doctype html>
 <html lang="en">
 	<body>
