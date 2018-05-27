@@ -5,7 +5,7 @@ $email=htmlspecialchars($_POST['inputEmail']);
 $password=htmlspecialchars($_POST['password']);
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
-  //header("Location: ../Erreur.php?=".$message);
+  //header("Location: Erreur.php?=".$message);
 }
 else
 {
@@ -18,7 +18,7 @@ else
   }
   else {
     $message="Mauvais mdp";
-    //header("Location: ../Erreur.php?=".$message);
+    header("Location: ../Erreur.php?=".$message);
   }
 }
 ?>
