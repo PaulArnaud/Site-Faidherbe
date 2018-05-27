@@ -33,7 +33,7 @@
 		print_r($_SERVER);
 		require_once('/config/connect.php');
 		$result = myPDO() -> query('SELECT id_khlasse,id_type,annee FROM khlasse');
-		echo 'prout 123 ';
+		print_r('prout 123 ');
 		print_r(myPDO());
 		$data = $result->fetchAll(PDO::FETCH_ASSOC);
     	foreach ($data as $value) {
