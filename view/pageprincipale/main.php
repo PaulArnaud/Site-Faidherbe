@@ -28,7 +28,6 @@
 			<?php require('accueil.php') ?>
 		</div>
 		<div ng-show="tab === 2">
-			<?php require_once('/controller/controller_khlasse.php') ?>
 			<?php require('khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
