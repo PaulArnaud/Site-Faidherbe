@@ -35,11 +35,11 @@
 			$control = new khlasseController();
 			$data = $control -> getAllKhlasse();
 			print_r($data);
-			/*
-			for ($data : $value){
+			
+			for ($data as $value){
 				echo $value['annee'];
 				echo $value['id_khlasse'];
-			}*/
+			}
 			?>
 
 		</div>
