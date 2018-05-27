@@ -31,6 +31,7 @@
 		<div class ="container">
 		<?php require('/config/connect.php');
 		$result = myPDO() -> query('SELECT id_khlasse,id_type,annee FROM khlasse');
+		print_r(myPDO());
 		$data = $result->fetchAll(PDO::FETCH_ASSOC);
     	foreach ($data as $value) {
         echo '<tr id="'.$value['id_khlasse'].'">';
