@@ -30,7 +30,7 @@
 		<div>
 		<h1> resultat</h1>
 		<?php
-		require('controller/controller_khlasse.php');
+		require_once('controller/controller_khlasse.php');
 		$control = new khlasseController();
 		$data = $control -> getAllKhlasse();
 		for ($data : $value){
