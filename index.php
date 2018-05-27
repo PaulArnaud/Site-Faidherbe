@@ -34,12 +34,9 @@
 			require_once('controller/controller_khlasse.php');
 			$control = new khlasseController();
 			$data = $control -> getAllKhlasse();
-			print_r($data);
+			$anne = $data[0]['annee'];
+			echo $annee;
 			
-			for ($data as $value){
-				echo $value['annee'];
-				echo $value['id_khlasse'];
-			}
 			?>
 
 		</div>
