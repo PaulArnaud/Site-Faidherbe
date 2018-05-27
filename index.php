@@ -28,20 +28,21 @@
 			</p>
 		</form>
 
-		<div>
+		<div class ="container">
 		<?php require('/config/connect.php');
-		$result = myPDO() -> query('SELECT * FROM khlasse');
+		$result = myPDO() -> query('SELECT id_khlasse,id_type,annee FROM khlasse');
 		$data = $result->fetchAll(PDO::FETCH_ASSOC);
     	foreach ($data as $value) {
-        echo '<tr id="'.$value['ID_Klass'].'">';
-        echo '<td>'.$value['AnneeKlass'].'</td>';
-        echo '<td>'.$value['NomKlass'].'</td>';
+        echo '<tr id="'.$value['id_khlasse'].'">';
+        echo '<td>'.$value['id_type'].'</td>';
+        echo '<td>'.$value['annee'].'</td>';
         echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';
         echo '</tr>';
 		}
 		$result->closeCursor();
 		unset($result);
 		?>
+		</div>
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
