@@ -31,11 +31,13 @@
 		<div>
 		<h1> resultat</h1>
 			<?php
+			echo 'nimp';
 			require_once('controller/controller_khlasse.php');
 			$control = new khlasseController();
 			$data = $control -> getAllKhlasse();
 			$anne = $data[0]-> getAnnee();
 			echo '<h2> essai 123 </h2>' .$annee;
+			echo 'prout';
 			
 			?>
 
