@@ -34,7 +34,7 @@
 			require_once('controller/controller_khlasse.php');
 			$control = new khlasseController();
 			$data = $control -> getAllKhlasse();
-			$anne = $data[0]['annee'];
+			$anne = $data[0]-> getAnnee();
 			echo $annee;
 			
 			?>

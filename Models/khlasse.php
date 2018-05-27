@@ -8,6 +8,10 @@ class khlasse extends model{
     var $id_type;
     var $annee;
 
+    public function getAnnee(){
+        return $this->annee;
+    }
+
     public function getIdMax() {
         $maxId = myPDO()->query('SELECT MAX(id_khlasse) FROM khlasse');
         return $maxId->fetch()[0];
