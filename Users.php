@@ -62,7 +62,7 @@ class Users
   {
     require_once('config/connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('UPDATE user SET userscookiecode= :cookie WHERE email= :email');
+    $req = $bdheroku->prepare('UPDATE user SET cookiecode= :cookie WHERE email= :email');
     $req->bindParam(':cookie',$usercookie);
     $req->bindParam(':email',$email);
     $req->execute();
