@@ -32,7 +32,8 @@
 		<?php 
 		print_r($_SERVER);
 		require('config/connect.php');
-		print_r(myPDO());
+		$res = myPDO();
+		print_r($res);
 		?>
 		</div>
 
