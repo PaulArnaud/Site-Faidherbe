@@ -58,7 +58,7 @@ class Users
     $data = $req->fetch();
     return($data['isAdmin']);
   }
-  public static function Set_User_Cookie($usercookie,$email)
+  public static function Set_User_Cookie($email,$usercookie)
   {
     require_once('config/connect.php');
 		$bdheroku = myPDO();
