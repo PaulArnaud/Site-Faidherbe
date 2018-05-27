@@ -26,7 +26,7 @@
 		
 		<?php 
 		//print_r($_SERVER);
-		require('config/connect.php');
+		require('../../config/connect.php');
 		try
 		{
 		// On se connecte à MySQL
