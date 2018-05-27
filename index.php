@@ -32,8 +32,9 @@
 		<?php 
 		print_r($_SERVER);
 		require('config/connect.php');
-		$res = myPDO();
-		print_r($res);
+		$req = myPDO()->query('SELECT * FROM khlasse');
+        $object = $req->fetchAll(PDO::FETCH_CLASS, "khlasse");
+        print_r($object);
 		?>
 		</div>
 
