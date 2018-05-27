@@ -35,7 +35,7 @@
 			$control = new khlasseController();
 			$data = $control -> getAllKhlasse();
 			$anne = $data[0]-> getAnnee();
-			print_r($annee);
+			echo '<h2> essai 123 </h2>' .$annee;
 			
 			?>
 
