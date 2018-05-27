@@ -1,4 +1,5 @@
 <?php
+echo '206';
 require('/config/connect.php');
 require('/models/model.php');
 
@@ -7,6 +8,7 @@ class khlasse extends model{
     var $id_khlasse;
     var $id_type;
     var $annee;
+
 
     public function getAnnee(){
         return $this->annee;
