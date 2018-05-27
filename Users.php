@@ -8,7 +8,7 @@ class Users
 	{
 		require_once('config/connect.php');
 		$bdheroku = myPDO();
-		$req = $bdheroku->prepare("SELECT id_user FROM user WHERE userscookiecode='".$cookiecode."'");
+		$req = $bdheroku->prepare("SELECT id_user FROM user WHERE cokiecode='".$cookiecode."'");
 		$req->execute();
 		$data=$req->fetch();
 		return $data["usersid"]; //Verifier si null
