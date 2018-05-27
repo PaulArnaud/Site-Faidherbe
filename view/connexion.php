@@ -13,9 +13,9 @@
 			<img class="mb-4" src="/img/logo faidherbe.jpg" alt="" width="150" height="150">
 			<h1 class="h3 mb-3 font-weight-normal"> Bienvenue </h1>
 
-			<label for="inputEmail" class="sr-only"> Mail </label>
+			<label class="sr-only"> Mail </label>
 			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			<input type="email" id="inputEmail" name="Email" class="form-control" placeholder=" Mail" required autofocus>
+			<input id="inputEmail" name="Email" class="form-control" placeholder=" Mail" required autofocus>
 	
 			<label for="inputPassword" class="sr-only"> Mot de Passe </label>
 			<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
