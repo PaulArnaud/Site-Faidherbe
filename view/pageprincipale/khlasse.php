@@ -25,6 +25,7 @@
                             <?php require('../../controller/controller_khlasse.php');
                             $controller = new khlasseController();
                             $data = $controller->getAllKhlasse();
+                            print_r($data);
                             foreach ($data as $value) {
                                 echo '<td>'.$value['annee'].'</td>';
                                 echo '<td>'.$value['id_khlasse'].'</td>';
