@@ -18,8 +18,6 @@ class typekhlasse extends model{
         $object = $req->fetchAll(PDO::FETCH_CLASS, "typekhlasse");
         return $object;
     }
-
-
 }
 
 ?>

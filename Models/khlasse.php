@@ -1,5 +1,6 @@
 <?php
-require_once('/config/connect.php');
+require_once('../../config/connect.php');
+require_once('../../models/model.php');
 
 class khlasse extends model{
 

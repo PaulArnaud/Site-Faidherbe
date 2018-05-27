@@ -21,7 +21,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr></tr>
+                            <tr>
+                            <?php require('../../controller/controller_khlasse.php');
+                            $controller = new khlasseController();
+                            $data = $controller->getAllKhlasse();
+                            foreach ($data as $value) {
+                                echo '<td>'.$value['annee'].'</td>';
+                                echo '<td>'.$value['id_khlasse'].'</td>';
+                                echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';
+                                echo '</tr>';
+                            }
+                            ?>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
