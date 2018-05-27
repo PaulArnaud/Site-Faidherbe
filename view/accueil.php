@@ -10,9 +10,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link"  href="Accueil.php">Accueil</a></li>
-					<li class="nav-item"><a class="nav-link"  href="Deposit.php">Désposer une annonce</a></li>
-					<li class="nav-item"><a  class="nav-link" href="Consult.php">Consulter les annonces</a></li>
+					<li class="nav-item"><a class="nav-link"  href="accueil.php">Accueil</a></li>
 					<?php if(isLogged()){ ?>
 					<li class="nav-item"><a class="nav-link"  href="Personnal_orders.php">Mes commandes</a></li>
 					<?php } ?>
