@@ -14,7 +14,7 @@ else
     $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
 		setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
 		Users::Set_User_Cookie($email,$cookie);
-		header("Location : Accueil.php");
+		header("Location : ../Accueil.php");
   }
   else {
     $message="Mauvais mdp";
