@@ -32,7 +32,7 @@
 		<?php 
 		//print_r($_SERVER);
 		require('config/connect.php');
-		$req = myPDO()->query('SELECT * FROM khlasse');
+		$req = myPDO()->query('SELECT nomkhlasse,annee FROM khlasse K,typekhlasse T WHERE T.id_typekhlasse = K.id_type');
         $object = $req->fetchAll(PDO::FETCH_CLASS, "khlasse");
         print_r($object);
 		?>
