@@ -32,8 +32,9 @@
 		<h1> resultat</h1>
 			<?php
 			require_once('controller/controller_khlasse.php');
-			$control = new khlasseController();/*
+			$control = new khlasseController();
 			$data = $control -> getAllKhlasse();
+			/*
 			for ($data : $value){
 				echo $value['annee'];
 				echo $value['id_khlasse'];
