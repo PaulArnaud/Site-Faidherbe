@@ -1,4 +1,4 @@
-<?php require('/controller/controller_khlasse.php'); ?>
+<?php require_once('/controller/controller_khlasse.php'); ?>
 
 <!doctype html>
 <html lang="en">
