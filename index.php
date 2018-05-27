@@ -27,6 +27,15 @@
 				&copy; Faidherbard
 			</p>
 		</form>
+
+		<div class ="container"> 
+			<?php 
+			require('config/connect.php');
+			$req = myPDO();
+			$data = $req -> query('SELECT * FROM khlasse');
+			print_r($data);
+			?>
+		</div>
 	
 
 

@@ -2,8 +2,8 @@
 require_once('../../models/khlasse.php');
 
 class khlasseController{
-    private $khlasse;
-    private $params;
+    public $khlasse;
+    public $params;
 
     function __construct($params = null){
         $this->khlasse = new khlasse();
