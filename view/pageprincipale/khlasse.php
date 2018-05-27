@@ -23,9 +23,6 @@
                         <tbody>
                             <tr>
                             <?php 
-                            require('../../config/connect.php');
-                            $res = myPDO();
-                            print_r($res);  
                             require('../../controller/controller_khlasse.php');
                             $controller = new khlasseController();
                             print_r($controller);
