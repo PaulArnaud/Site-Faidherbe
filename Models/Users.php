@@ -81,8 +81,8 @@ class Users
   {
     require_once('../config/connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT userspassword FROM user WHERE email= '".$email."'");
-    //$req->bindParam(':usersnick',$usernick);
+    $req = $bdheroku->prepare("SELECT userspassword FROM user WHERE email= :email");
+    $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
     return($data['userspassword'] == $userpw);

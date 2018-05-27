@@ -1,5 +1,5 @@
 <?php
-require_once("model/user.php");
+require_once("model/Users.php");
 function isLogged(){
   if(isset($_COOKIE['cookieperso'])){
     $cookie=$_COOKIE['cookieperso'];
