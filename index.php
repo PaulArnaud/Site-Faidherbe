@@ -31,20 +31,7 @@
 		<div class ="container">
 		<?php 
 		print_r($_SERVER);
-		require_once('/config/connect.php');
-		$result = myPDO() -> query('SELECT id_khlasse,id_type,annee FROM khlasse');
-		print_r('prout 123 ');
-		print_r(myPDO());
-		$data = $result->fetchAll(PDO::FETCH_ASSOC);
-    	foreach ($data as $value) {
-        echo '<tr id="'.$value['id_khlasse'].'">';
-        echo '<td>'.$value['id_type'].'</td>';
-        echo '<td>'.$value['annee'].'</td>';
-        echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';
-        echo '</tr>';
-		}
-		$result->closeCursor();
-		unset($result);
+		print_r('config/connect.php');
 		?>
 		</div>
 
