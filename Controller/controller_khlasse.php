@@ -1,4 +1,5 @@
 <?php
+require_once('/models/khlasse.php');
 
 class khlasseController{
     private $khlasse;
