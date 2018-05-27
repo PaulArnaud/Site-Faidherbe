@@ -8,6 +8,7 @@ function myPDO() {
     try {
         $bd = new PDO($dsn, $login, $mdp);
         $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo 'prout 123 ';
     }
     catch (Exception $e) {
         echo 'Error creating PDO -> ';
