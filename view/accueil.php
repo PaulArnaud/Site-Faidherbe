@@ -21,11 +21,11 @@
 					<li class="nav-item"><a class="nav-link"  href ng-click ="tab = 5"><i class="material-icons">security</i></a></li>
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
-					<li class="nav-item pull-right "><a class="nav-link" href="Connexion.php"><i class="material-icons">power_setting</i></a></li>
+					<li class="nav-item"><a class="nav-link" href="Connexion.php"><i class="material-icons">power_setting</i></a></li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
-					<li class="nav-item pull-right ">
-						<a class="nav-link my-2 my-sm-0"  title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="material-icons">exit_to_app</i></a>
+					<li class="nav-item my-2 my-sm-0 ">
+						<a class="nav-link"  title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="material-icons">exit_to_app</i></a>
 					</li>
 					<?php } ?>
 				</ul>
