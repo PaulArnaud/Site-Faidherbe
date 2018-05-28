@@ -188,7 +188,7 @@ class Users
     }
     return $result;
   }*/
-
+/*
   public static function Get_Khlasse($khlasseID){
     require_once('connect.php');
     $bdheroku = myPDO();
@@ -197,5 +197,5 @@ class Users
     $req->execute();
     $data=$req->fetch()){
     return $data;
-  }
+  }*/
 } ?>
