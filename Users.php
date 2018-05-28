@@ -162,17 +162,27 @@ class Users
   public static function Set_Khlasse($type,$year){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  VALUES ((SELECT count(*) FROM khlasse)+1,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse =:typekh),:ann');
-    $req->bindParam(':typekh',$type);
+    $req1 = $bdheroku->prepare('SELECT count(*) FROM khlasse)');
+    $req1->execute();
+    $res1 = $req1 -> fetch();
+    $req2 $bdheroku->prepare('SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse =:typekh');
+    $req2->bindParam(':typekh',$type);
+    $req2 -> execute();
+    $res2 = $req2 -> fetch();
+
+    $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  VALUES (:id_khlasse,:id_type,:annee)');
+    
+    $req->bindParam(':id_khlasse',$res1);
+    $req->bindParam(':id_type',$res2);
     $req->bindParam(':ann',$year);
+
     try {
       $req->execute();
-      return true;
   }
   catch (Exception $e) {
       // error during execute (bad request)
       http_response_code(400);
-      return false;
   }
+  return $res1,$res2 ; 
   }
 } ?>
