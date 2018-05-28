@@ -53,11 +53,11 @@ class Users
   public static function Get_Users_Role($userid){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT isAdmin FROM users WHERE id_user= :usersid');
+    $req = $bdheroku->prepare('SELECT users.isAdmin FROM users WHERE id_user= :usersid');
     $req->bindParam(':usersid',$userid);
     $req->execute();
     $data = $req->fetch();
-    return($data['isAdmin']);
+    return($data['users.isAdmin']);
   }
   public static function Set_User_Cookie($email,$usercookie)
   {
