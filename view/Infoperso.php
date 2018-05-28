@@ -83,11 +83,11 @@
                     </div>
                     <div class="modal-body">
                         <h6> Nom de l'école </h6>
-                        <input type="text" class="form-control" placeholder="<?php echo 'polytechnique' ?>">
+                        <input type="text" class="form-control" placeholder=>
                     </div>
                     <div class="modal-body">
                         <h6> Domaine de l'école </h6>
-                        <input type="text" class="form-control" placeholder="<?php echo 'mathématiques' ?>">
+                        <input type="text" class="form-control" placeholder=>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
