@@ -1,5 +1,5 @@
 	<body>
-		<button class="btn-dark btn-lg fixed-bottom btn-lg" role="button"><a href ng-click="tab = 1">Retour à l'accueil</a></button>
+		<br>
 		<main role="main" class="container">
 			<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark border border-dark">
 				<div class="px-0 text-center">
