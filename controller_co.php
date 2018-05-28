@@ -1,15 +1,9 @@
 
 <?php
 require_once("Users.php");
-$email=htmlspecialchars($_GET['Email']);
-echo $email;
-
+$email=htmlspecialchars($_GET['Email'])
 $password=htmlspecialchars($_GET['password']);
-echo $password;
-echo $password;
-var_dump(Users::Check_Password($email,$password));
-echo '123';
-/*
+
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
