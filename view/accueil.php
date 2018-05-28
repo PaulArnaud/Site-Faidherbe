@@ -47,9 +47,7 @@
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
 		</div>
-		<div ng-show="tab === 2">
-			<?php require('controller_page_khlasse.php') ?>
-		</div>
+		
 		<div ng-show="tab === 3">
 			<?php require('view/profil.php') ?>
 		</div>
