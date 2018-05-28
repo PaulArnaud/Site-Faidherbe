@@ -51,7 +51,7 @@
 			<?php require_once('controller_page_khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
-			<?php require('view/profil.php') ?>
+			<?php require_once('controller_page_profil.php') ?>
 		</div>
 		<div ng-show="tab === 4">
 			<?php require('view/forum.php') ?>

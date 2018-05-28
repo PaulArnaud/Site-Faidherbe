@@ -100,7 +100,18 @@ class Users
     $req->bindParam(':usersid',$userid);
     $req->execute();
   }*/
-
+  public static function Get_Info(){
+    require_once('connect.php');
+      $bdheroku = myPDO();
+      $cook = $_COOKIE["cookieperso"];
+      $req = $bdheroku->prepare('SELECT * FROM  users WHERE cookiecode = :cook');
+      $req->bindParam(':cook',$cook);
+      $req->execute();
+      while($data=$req->fetch()){
+          $result[] = $data;
+      }
+      return $result;
+  }
   public static function Get_All_Khlasse()
   {
       require_once('connect.php');

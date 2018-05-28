@@ -11,7 +11,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                                                            Nom Prénom                            
+                             <?php echo $profil['nom']; echo $profil['prenom'];?>                      
                         </h5>
                         <p class="card-text">
                             <br>
@@ -29,9 +29,7 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">
-                                                            Etude postFaidherbe :                                
-                            <br>
-                            Entreprise :                                
+                            Etude postFaidherbe :                          
                             <br>
                             Domaine d'activité :                                
                             <br>
@@ -41,23 +39,21 @@
                 </div>
                 <div class="card text-white bg-dark mb-3">
                     <div class="card-header">
-                                                    Me contacter                        
+                        Me contacter                        
                     </div>
                     <div class="card-body">
                         <p class="card-text">
-                                                            Adresse Mail :                                
+                                Adresse Mail : <?php echo $profil['email']; ?>                        
                             <br>
-                            Numéro Portable :                                
+                            Numéro Portable :  <?php echo $profil['num_portable']; ?>                           
                             <br>
-                            Numéro fixe :                                
+                            Facebook : <?php echo $profil['facebook']; ?>                               
                             <br>
-                            Facebook :                                
-                            <br>
-                            Linkedin :                             
+                            Linkedin : <?php echo $profil['linkedin']; ?>                        
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!--<div class="col-md-4">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="../ressource/27140089_10211185943229175_211050063_o.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -72,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </main>
     </body>
