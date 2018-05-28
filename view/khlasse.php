@@ -9,20 +9,20 @@
 					<table class="table table-striped table-sm table-bordered table-dark table-hover">
 						<thead class="thead-dark">
 							<tr>
-								<th>
+								<th class="text-center">
 									Année
 								</th>
-								<th>
+								<th class="text-center">
 									Khlâsse
 								</th>
-								<th>
+								<th class="text-center">
 									Nombre d'actifs
 								</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['id_khlasse'].'">';echo '<td>'.$value['annee'].'</td>';echo '<td>'.$value['nomtype'].'</td>';echo '<td> <a class="btn btn-outline-light" href=#>'.$value[3].'</a>';echo '</tr>';}?></tr>
+								<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['id_khlasse'].'">';echo '<td class="text-center">'.$value['annee'].'</td>';echo '<td class="text-center">'.$value['nomtype'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light " href=#>'.$value[3].'</a>';echo '</tr>';}?></tr>
 							</tbody>
 						</table>
 					</div>
