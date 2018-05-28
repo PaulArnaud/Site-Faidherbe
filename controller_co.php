@@ -1,13 +1,15 @@
 
 <?php
 require_once("Users.php");
-$email=htmlspecialchars($_GET['Email'])
+$email=htmlspecialchars($_GET['Email']);
+echo $email;
+
 $password=htmlspecialchars($_GET['password']);
 echo $password;
-echo $email;
-//var_dump(Users::Check_Password($email,$password));
+echo $password;
+var_dump(Users::Check_Password($email,$password));
+echo '123';
 
-/*
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
@@ -18,8 +20,6 @@ else
 
   if(Users::Check_Password($email,$password)){
     $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
-
-    var_dump($cookie);/*
 		setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
 		Users::Set_User_Cookie($email,$cookie);
 		header("Location: Accueil.php");
