@@ -8,6 +8,7 @@ $password=htmlspecialchars($_GET['password']);
 echo $password;
 echo Users::Check_Password($email,$password);
 echo '123';
+/*
 try {
   require('/connect.php');
 }
@@ -21,6 +22,7 @@ echo $data['email'];
 echo '456';
 echo $data['userpassword'];
 echo '789';
+*/
 
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
