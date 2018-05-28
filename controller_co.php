@@ -16,7 +16,7 @@ if(Users::Check_Password($email,$password)){
   setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
   print_r($cookie);
   Users::Set_User_Cookie($email,$cookie);
-  header("Location: Accueil.php");
+  header("Location: accueil.php");
 }
 /*
 else
