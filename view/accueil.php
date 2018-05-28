@@ -34,8 +34,9 @@
 		<div>
 		<?php 
 		echo 'prout';
-		var_dump(isset($_COOKIE['cookieperso']));
 		var_dump(isLogged());
+		$user=Users::Get_User_Id($_COOKIE['cookieperso']);
+   		var_dump(!empty($user));
 
 		?>
 		</div>	
