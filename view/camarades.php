@@ -2,7 +2,7 @@
 	<main role="main" class="container text-center">
 		<div class="starter-template">
 			<h1> Site du Faidherbard </h1>
-			<h2> Tableau des camarades de la Khlasse :<?php /*echo $khlasse['nomkhlasse'];*/?> de l'année : <?php/* echo $khlasse['annee'];*/?>  </h2>
+			<h2> Tableau des camarades de la Khlasse :<?php echo $khlasse['nomkhlasse'];?> de l'année : <?php echo $khlasse['annee'];?>  </h2>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm table-bordered table-dark table-hover">
 					<thead class="thead-dark">
