@@ -5,9 +5,11 @@ function isLogged(){
   if(isset($_COOKIE['cookieperso'])){
     $cookie=$_COOKIE['cookieperso'];
     $user=Users::Get_User_Id($cookie);
-    return($user);
+    return(!empty($user));
   }
-  else return false;
+  else {
+    return false;
+  }
 }
 
 function loggedOnly(){

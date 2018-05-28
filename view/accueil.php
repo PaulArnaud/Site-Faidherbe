@@ -34,7 +34,7 @@
 		<div>
 		<?php 
 		echo 'prout';
-		var_dump($_COOKIE['cookieperso']);
+		var_dump(isset($_COOKIE['cookieperso']));
 		var_dump(isLogged());
 
 		?>
