@@ -164,7 +164,7 @@ class Users
     $bdheroku = myPDO();
     $req1 = $bdheroku->prepare('SELECT count(*) FROM khlasse)');
     $req1->execute();
-    $res1 = $req1 -> fetch();
+    $res1 = 1 + $req1 -> fetch();
     $req2 $bdheroku->prepare('SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse =:typekh');
     $req2->bindParam(':typekh',$type);
     $req2 -> execute();
