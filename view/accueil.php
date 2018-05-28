@@ -44,6 +44,18 @@
 		<div ng-show="tab === 4">
 			<?php require_once('view/forum.php') ?>
 		</div>
+		<div ng-show="tab === 5">
+			<?php require_once('view/gallerie.php') ?>
+		</div>
+		<div ng-show="tab === 6">
+			<?php require_once('view/fonctions.php') ?>
+		</div>
+		<div ng-show="tab === 7">
+			<?php require_once('view/chants.php') ?>
+		</div>
+		<div ng-show="tab === 8">
+			<?php require_once('view/khalot.php') ?>
+		</div>
 	</body>
 </html>
 

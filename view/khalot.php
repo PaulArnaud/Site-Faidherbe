@@ -1,9 +1,3 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<?php require('../communs/header.php') ?>
-		<title>Page Khalot </title>
-	</head>
 	<body>
 		<button class="btn-dark btn-lg fixed-bottom btn-lg" role="button"><a href="../pageprincipale/main.php">Retour à l'accueil</a></button>
 		<main role="main" class ="container">
@@ -334,6 +328,4 @@
 
 			</div>
 		</main>
-		<?php require('footer.php') ?>
 	</body>
-</html>
