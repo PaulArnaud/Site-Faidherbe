@@ -79,7 +79,7 @@ class Users
   
   public static function Check_Password($email,$userpw)
   {
-    require_once('/connect.php');
+    require_once('connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT userpassword,email FROM users WHERE email= :email");
     $req->bindParam(':email',$email);
