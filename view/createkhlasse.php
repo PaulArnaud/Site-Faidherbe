@@ -12,7 +12,7 @@
                     <div class="col">
                         <input type="text" class="form-control" name="annee">
                     </div>
-                    <button class="btn btn-lg btn-dark" type="submit" ng-click="tab=2"> Enregistrer </button>
+                    <button class="btn btn-lg btn-dark" type="submit"> Enregistrer </button>
                 </div>
 			</div>
 		</form>
