@@ -1,8 +1,8 @@
 <body>
 	<main class="card text-center">
 		<form action="controller_newkhlasse.php" method="post" >
-			<div class="row card-body center-block">
-				<div class="form-group col-md-4">
+			<div class="row card-body text-center">
+				<div class="form-group col-md-4 center-block">
                     <div class="col">
                     <label for="inputState">Créer une khlasse</label>
                     <select id="inputState" class="form-control" name="type">
