@@ -10,7 +10,7 @@ var_dump($cookie);
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
-}
+}/*
 else
 {
   //$password=sha1(sha1($password));
@@ -24,5 +24,5 @@ else
     $message="Mauvais mdp";
     header("Location: Erreur.php?=".$message);
   }
-}
+}*/
 ?>
