@@ -153,7 +153,9 @@ class Users
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT nomkhlasse FROM typekhlasse');
     $req->execute();
-    $data=$req->fetch();
-    return $data;
+    while($data=$req->fetch()){
+      $result[] = $data;
+    }
+    return $result;
   }
 } ?>
