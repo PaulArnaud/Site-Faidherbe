@@ -1,15 +1,8 @@
 <?php
-
-//require('model.php');
-
+echo'224';
+/*
 class Khlasse{
-    public static function getAnnee(){
-        return $this->annee;
-    }
 
-    public function getID(){
-        return $this->id_khlasse;
-    }
     public static function Get_All_Khlasse()
     {
       require_once('connect.php');
@@ -80,6 +73,6 @@ class Khlasse{
     }
 
 
-}
+}*/
 
 ?>
