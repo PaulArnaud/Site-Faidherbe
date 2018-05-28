@@ -1,6 +1,6 @@
 <?php
 require('connect.php');
-require('model.php');
+//require('model.php');
 
 class khlasse extends model{
 
