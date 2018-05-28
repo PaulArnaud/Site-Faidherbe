@@ -31,18 +31,18 @@
 				</ul>
 			</div>
 		</nav>
-
+						
 		<div ng-show="tab === 1">
-			<?php include('view/presentation.php') ?>
+			<?php require_once('view/presentation.php') ?>
 		</div>
 		<div ng-show="tab === 2">
-			<?php include('view/khlasse.php') ?>
+			<?php require_once('view/khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
-			<?php include('view/profil.php') ?>
+			<?php require_once('view/profil.php') ?>
 		</div>
 		<div ng-show="tab === 4">
-			<?php include('view/forum.php') ?>
+			<?php require_once('view/forum.php') ?>
 		</div>
 	</body>
 </html>
