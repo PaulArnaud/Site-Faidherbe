@@ -20,7 +20,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<?php /*foreach ($camarades as $value) {echo '<tr id="'.$value['id_user'].'">';echo '<td class="text-center">'.$value['nom'].'</td>';echo '<td class="text-center">'.$value['prenom'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light " >''</a>';echo '</tr>';}*/?></tr>
+							<?php foreach ($camarades as $value) {echo '<tr id="'.$value['id_user'].'">';echo '<td class="text-center">'.$value['nom'].'</td>';echo '<td class="text-center">'.$value['prenom'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light " >''</a>';echo '</tr>';}?></tr>
 						</tbody>
 					</table>
 				</div>
