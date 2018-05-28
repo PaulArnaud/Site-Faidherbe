@@ -107,10 +107,8 @@ class Users
       $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin FROM  users WHERE cookiecode = :cook');
       $req->bindParam(':cook',$cook);
       $req->execute();
-      while($data=$req->fetch()){
-          $result[] = $data;
-      }
-      return $result;
+      $data=$req->fetch();
+      return $data;
   }
   public static function Get_All_Khlasse()
   {
@@ -118,7 +116,9 @@ class Users
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) FROM a_etudie A WHERE A.id_khlasse= E.id_khlasse) FROM  khlasse E,typekhlasse T WHERE T.id_typekhlasse = E.id_type');
       $req->execute();
-      $data=$req->fetch();
-      return $data;
+      while($data=$req->fetch()){
+          $result[] = $data;
+      }
+      return $result;
   }
 } ?>
