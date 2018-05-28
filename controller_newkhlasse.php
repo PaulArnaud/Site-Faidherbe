@@ -2,6 +2,7 @@
 require_once("Users.php");
 $typekhlasse=htmlspecialchars($_POST['type']);
 $annee=htmlspecialchars($_POST['annee']);
+/*
 if(empty($typekhlasse) || empty($annee)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
@@ -12,3 +13,5 @@ if(Users::Check_Password($email,$password)){
   Users::Set_User_Cookie($email,$cookie);
   header("Location: accueil.php");
 }
+*/
+?>

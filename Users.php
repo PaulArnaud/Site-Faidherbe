@@ -148,12 +148,12 @@ class Users
     return $data;
     }
 
-    public static function Get_Types(){
-      require_once('connect.php');
-      $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT nomkhlasse FROM typekhlasse');
-      $req->execute();
-      $data=$req->fetch();
-      return $data;
-    }
+  public static function Get_Types(){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $req = $bdheroku->prepare('SELECT nomkhlasse FROM typekhlasse');
+    $req->execute();
+    $data=$req->fetch();
+    return $data;
+  }
 } ?>
