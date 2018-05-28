@@ -32,12 +32,6 @@
 			</div>
 		</nav>
 
-		<div>
-		<?php var_dump(isLogged());
-		//var_dump($_COOKIE);
-		//var_dump(Users::Get_User_Id($cookie);
-		?>
-		</div>
 		<div ng-show="tab === 1">
 			<?php include('view/presentation.php') ?>
 		</div>
