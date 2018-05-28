@@ -5,7 +5,6 @@ function isLogged(){
   if(isset($_COOKIE['cookieperso'])){
     $cookie=$_COOKIE['cookieperso'];
     $user=Users::Get_User_Id($cookie);
-
     return(!empty($user));
   }
   else return false;
