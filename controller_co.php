@@ -3,13 +3,13 @@
 require_once("Users.php");
 $email=htmlspecialchars($_GET['Email'])
 $password=htmlspecialchars($_GET['password']);
-
+/*
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
 }
 else
-{
+{*/
   //$password=sha1(sha1($password));
 
   if(Users::Check_Password($email,$password)){
@@ -24,5 +24,5 @@ else
     $message="Mauvais mdp";
     header("Location: Erreur.php?=".$message);
   }
-}*/
+//}
 ?>
