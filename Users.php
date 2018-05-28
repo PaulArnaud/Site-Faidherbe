@@ -176,7 +176,7 @@ class Users
     }
   }
 
-
+/*
   public static function Get_All_Camarades($khlasseID){
     require_once('connect.php');
     $bdheroku = myPDO();
@@ -187,5 +187,5 @@ class Users
       $result[] = $data;
     }
     return $result;
-  }
+  }*/
 } ?>
