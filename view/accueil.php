@@ -31,7 +31,10 @@
 				</ul>
 			</div>
 		</nav>
-						
+		<div>
+		<?php echo 'prout';
+		?>
+		</div>	
 		<div ng-show="tab === 1">
 			<?php require_once('view/presentation.php') ?>
 		</div>
