@@ -7,7 +7,7 @@
                     <label for="inputState">Type de Khlasse</label>
                     <select id="inputState" class="form-control" name="type">
                         <option selected>Choose...</option>
-                        <?php foreach ($types as $value){echo '<option>'.$value['nomkhlasse]'.'</option>';} ?></select>
+                        <?php foreach ($types as $value){echo '<option>'.$value['nomkhlasse'].'</option>';} ?></select>
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" name="annee">
