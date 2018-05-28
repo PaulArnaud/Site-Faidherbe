@@ -1,7 +1,4 @@
 <body>
-    <h1> <?php var_dump($types);
-    var_dump($types[0]);
-     ?> </h1>
 	<main>
 		<form action="controller_newkhlasse.php" method="post" >
 			<div class="row">
@@ -10,7 +7,7 @@
                     <label for="inputState">Type de Khlasse</label>
                     <select id="inputState" class="form-control" name="type">
                         <option selected>Choose...</option>
-                        <?php /*foreach ($types as $value){echo '<option>'.$value['nomkhlasse]'.'</option>';} */?></select>
+                        <?php foreach ($types as $value){echo '<option>'.$value['nomkhlasse]'.'</option>';} ?></select>
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" name="annee">
