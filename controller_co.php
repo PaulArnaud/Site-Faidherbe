@@ -3,8 +3,10 @@
 require_once("Users.php");
 $email=htmlspecialchars($_GET['Email'])
 $password=htmlspecialchars($_GET['password']);
-
+echo $password;
+echo $email;
 var_dump(Users::Check_Password($email,$password));
+
 /*
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
