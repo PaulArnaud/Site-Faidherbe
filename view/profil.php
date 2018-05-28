@@ -10,7 +10,9 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
-                        <?php echo $profil["nom"];?> <p>'   '</p> <? echo $profil['prenom'];?>                      
+                        Prenom : <? echo $profil['prenom'];?>    
+                        <br>
+                        Nom : <?php echo $profil["nom"];?>                    
                     </h5>
                     <p class="card-text">
                         <br>
