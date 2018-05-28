@@ -1,13 +1,13 @@
-<!doctype html>
-<html lang="en">
+
 	<body>
+        <?php var_dump($profil); ?>
         <main role="main" class="container">
             <h1 id="hautdepage" class="text-center"><u> Mon profil </u></h1>
             <a href="/view/pageprincipale/Infoperso.php" class="btn-dark btn-lg" role="button">Modifier mes infos</a>
             <div class="album py-5 bg-light">
                 <div class="card text-white bg-dark mb-3">
                     <div class="card-header">
-                                                    Mes informations générales                        
+                        Mes informations générales                        
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
@@ -72,4 +72,4 @@
             </div>
         </main>
     </body>
-</html>
+

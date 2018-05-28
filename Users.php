@@ -104,7 +104,7 @@ class Users
     require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-      $req = $bdheroku->prepare('SELECT * FROM  users WHERE cookiecode = :cook');
+      $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin FROM  users WHERE cookiecode = :cook');
       $req->bindParam(':cook',$cook);
       $req->execute();
       while($data=$req->fetch()){
