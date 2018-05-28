@@ -6,7 +6,7 @@ class Users
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
 	{
-		require_once('config/connect.php');
+		require_once('connect.php');
 		$bdheroku = myPDO();
 		$req = $bdheroku->prepare("SELECT id_user FROM user WHERE cokiecode='".$cookiecode."'");
 		$req->execute();
@@ -15,7 +15,7 @@ class Users
 	}
   public static function Get_Users_Mail($userid)
   {
-    require_once('config/connect.php');
+    require_once('connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT email FROM user WHERE id_user= :userid");
     $req->bindParam(':userid',$userid);
@@ -39,7 +39,7 @@ class Users
   }*/
   public static function Get_All_Users()
   {
-    require_once('config/connect.php');
+    require_once('connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT * FROM user');
     $req->execute();
@@ -50,7 +50,7 @@ class Users
 		return $result;
   }
   public static function Get_Users_Role($userid){
-    require_once('config/connect.php');
+    require_once('connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT isAdmin FROM user WHERE id_user= :usersid");
     $req->bindParam(':usersid',$userid);
@@ -60,7 +60,7 @@ class Users
   }
   public static function Set_User_Cookie($email,$usercookie)
   {
-    require_once('config/connect.php');
+    require_once('connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('UPDATE user SET cookiecode= :cookie WHERE email= :email');
     $req->bindParam(':cookie',$usercookie);
@@ -69,7 +69,7 @@ class Users
   }
   public static function checkLogin($email,$userPassword)
   {
-    require_once('config/connect.php');
+    require_once('connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT userpassword FROM user WHERE email= :email');
     $req->bindParam(':email',$email);
@@ -79,7 +79,7 @@ class Users
   
   public static function Check_Password($email,$userpw)
   {
-    require_once('config/connect.php');
+    require_once('connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare("SELECT userpassword FROM user WHERE email= :email");
     $req->bindParam(':email',$email);

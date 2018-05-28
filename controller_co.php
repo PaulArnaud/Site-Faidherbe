@@ -18,7 +18,7 @@ else
   }
   else {
     $message="Mauvais mdp";
-    header("Location: ../Erreur.php?=".$message);
+    header("Location: Erreur.php?=".$message);
   }
 }
 ?>
