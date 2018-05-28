@@ -176,7 +176,7 @@ class Users
     }
   }
 
-/*
+
   public static function Get_All_Camarades($khlasseID){
     require_once('connect.php');
     $bdheroku = myPDO();
@@ -187,5 +187,15 @@ class Users
       $result[] = $data;
     }
     return $result;
-  }*/
+  }
+
+  public static function Get_Khlasse($khlasseID){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $req = $bdheroku -> prepare('SELECT nomkhlasse,annee FROM typekhlasse T,khlasse K WHERE K.id_khlasse = T.id_khlasse AND K.id_khlasse = :idkhlasse');
+    $req->bindParam(':idkhlasse',$khlasseID);
+    $req->execute();
+    $data=$req->fetch()){
+    return $data;
+  }
 } ?>

@@ -1,5 +1,3 @@
-<!doctype html>
-<html lang="en">
 	<body class="container">
         <main role="main" class="container position-relative">
             <div class="media">
@@ -15,4 +13,3 @@
             </div>
         </main>
     </body>
-</html>
