@@ -33,6 +33,8 @@
 		</nav>
 		<div>
 		<?php echo 'prout';
+		var_dump($_COOKIE['cookieperso']);
+		
 		?>
 		</div>	
 		<div ng-show="tab === 1">
