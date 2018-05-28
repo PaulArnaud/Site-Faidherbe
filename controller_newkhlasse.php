@@ -9,11 +9,9 @@ $bdheroku = myPDO();
 $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  VALUES ((SELECT count(*) FROM khlasse)+1,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse =:typekh),:ann');
 var_dump($req);
 $req->bindParam(':typekh',$type);
-var_dump($req);
 $req->bindParam(':ann',$year);
-var_dump($req);
-$req->execute();
-var_dump($req);
+$data = $req->execute();
+var_dump($data);
 //var_dump(Users::Set_Khlasse($typekhlasse,$annee));
 //header('Location: index.php');
 
