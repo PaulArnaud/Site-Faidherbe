@@ -141,7 +141,7 @@ class Users
     require_once('connect.php');
     $bdheroku = myPDO();
     $cook = $_COOKIE["cookieperso"];
-    $req = $bdheroku->prepare('SELECT nomecole,domaine FROM ecole E, users U, a_etudie_postfaidherbe P where P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.cookiecode = : cook');
+    $req = $bdheroku->prepare('SELECT nomecole,domaine FROM ecole E, users U, a_etudie_postfaidherbe P where P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.cookiecode = :cook');
     $req->bindParam(':cook',$cook);
     $req->execute();
     $data=$req->fetch();
