@@ -33,28 +33,28 @@
 		</nav>
 
 		<div ng-show="tab === 1">
-			<?php require_once('view/presentation.php') ?>
+			<?php require('view/presentation.php') ?>
 		</div>
 		<div ng-show="tab === 2">
-			<?php require_once('view/khlasse.php') ?>
+			<?php require('view/khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
-			<?php require_once('view/profil.php') ?>
+			<?php require('view/profil.php') ?>
 		</div>
 		<div ng-show="tab === 4">
-			<?php require_once('view/forum.php') ?>
+			<?php require('view/forum.php') ?>
 		</div>
 		<div ng-show="tab === 5">
-			<?php require_once('view/gallerie.php') ?>
+			<?php require('view/gallerie.php') ?>
 		</div>
 		<div ng-show="tab === 6">
-			<?php require_once('view/fonctions.php') ?>
+			<?php require('view/fonction.php') ?>
 		</div>
 		<div ng-show="tab === 7">
-			<?php require_once('view/chants.php') ?>
+			<?php require('view/chants.php') ?>
 		</div>
 		<div ng-show="tab === 8">
-			<?php require_once('view/khalot.php') ?>
+			<?php require('view/khalot.php') ?>
 		</div>
 	</body>
 </html>
