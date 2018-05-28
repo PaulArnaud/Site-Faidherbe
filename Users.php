@@ -8,7 +8,7 @@ class Users
 	{
 		require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT id_user FROM users WHERE cookiecode= :cc");
+    $req = $bdheroku->prepare('SELECT id_user FROM users WHERE cookiecode= :cc');
     $req->bindParam(':cc',$cookiecode);
 		$req->execute();
 		$data=$req->fetch();
@@ -18,7 +18,7 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT email FROM users WHERE id_user= :userid");
+    $req = $bdheroku->prepare('SELECT email FROM users WHERE id_user= :userid');
     $req->bindParam(':userid',$userid);
     $req->execute();
     $data = $req->fetch();
@@ -53,7 +53,7 @@ class Users
   public static function Get_Users_Role($userid){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT users.isAdmin FROM users WHERE id_user= :usersid");
+    $req = $bdheroku->prepare('SELECT isAdmin FROM users WHERE id_user= :usersid');
     $req->bindParam(':usersid',$userid);
     $req->execute();
     $data = $req->fetch();
@@ -82,7 +82,7 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT userpassword,email FROM users WHERE email= :email");
+    $req = $bdheroku->prepare('SELECT userpassword,email FROM users WHERE email= :email');
     $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
