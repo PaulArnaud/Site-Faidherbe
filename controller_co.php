@@ -1,8 +1,8 @@
 
 <?php
 require_once("Users.php");
-$email=htmlspecialchars($_POST['Email']);
-$password=htmlspecialchars($_POST['password']);
+$email=htmlspecialchars($_GET['Email']);
+$password=htmlspecialchars($_GET['password']);
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
