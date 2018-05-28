@@ -100,4 +100,16 @@ class Users
     $req->bindParam(':usersid',$userid);
     $req->execute();
   }*/
+
+  public static function Get_All_Khlasse()
+  {
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $req = $bdheroku->prepare('SELECT nomptype,annee,(SELECT count(*) FROM a_etudie A WHERE A.id_khlasse= E.id_khlasse) FROM  khlasse E,typekhlasse');
+      $req->execute();
+      while($data=$req->fetch()){
+          $result[] = $data;
+      }
+      return $result;
+  }
 } ?>
