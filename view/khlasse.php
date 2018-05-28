@@ -22,7 +22,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['annee'].'">';echo '<td>'.$value['id_khlasse'].'</td>';echo '<td>'.$value['id_type'].'</td>';echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';echo '</tr>';}?></tr>
+								<?php var_dump($listkhlasse);/*foreach ($listkhlasse as $value) {echo '<tr id="'.$value['annee'].'">';echo '<td>'.$value['id_khlasse'].'</td>';echo '<td>'.$value['id_type'].'</td>';echo '<td> <a class="btn btn-outline-light" href=#>Chiffre</a>';echo '</tr>';}*/?></tr>
 							</tbody>
 						</table>
 					</div>
