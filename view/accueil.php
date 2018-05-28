@@ -27,7 +27,7 @@
 					<?php } ?>
 					<?php if(isAdmin()){ ?>
 					<li class="nav-item">
-						<a class="nav-link"  href ng-click ="tab = 5"><i class="material-icons">security</i></a>
+						<a class="nav-link"  href ng-click ="tab = 20"><i class="material-icons">security</i></a>
 					</li>
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
@@ -75,9 +75,6 @@
 			<?php require_once('controller_page_newkhlasse.php') ?>
 		</div>
 		<div ng-show="tab === 11">
-			<?php require_once('controller_page_camarades.php') ?>
-		</div>
-		<div ng-show="tab === 12">
 			<?php require_once('controller_page_camarades.php') ?>
 		</div>
 
