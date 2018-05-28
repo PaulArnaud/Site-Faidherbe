@@ -118,9 +118,7 @@ class Users
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) FROM a_etudie A WHERE A.id_khlasse= E.id_khlasse) FROM  khlasse E,typekhlasse T WHERE T.id_typekhlasse = E.id_type');
       $req->execute();
-      while($data=$req->fetch()){
-          $result[] = $data;
-      }
-      return $result;
+      $data=$req->fetch()){
+      return $data;
   }
 } ?>
