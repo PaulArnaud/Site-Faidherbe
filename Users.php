@@ -121,4 +121,30 @@ class Users
       }
       return $result;
   }
+
+  public static function Get_Mykhlasse(){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $cook = $_COOKIE["cookieperso"];
+    $req = $bdheroku->prepare('SELECT T.nomkhlasse,annee 
+    FROM  khlasse E,typekhlasse T,a_etudie A,users U 
+    WHERE T.id_typekhlasse = E.id_type AND A.id_user = U.id_user AND A.id_khlasse= E.id_khlasse  AND U.cookiecode = :cook ');
+    $req->bindParam(':cook',$cook);
+    $req->execute();
+    while($data=$req->fetch()){
+        $result[] = $data;
+    }
+    return $result;
+  }
+
+  public static function Get_Myschool(){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $cook = $_COOKIE["cookieperso"];
+    $req = $bdheroku->prepare('SELECT nomecole,domaine FROM ecole E, users U, a_etudie_postfaidherbe P where P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.cookiecode = : cook');
+    $req->bindParam(':cook',$cook);
+    $req->execute();
+    $data=$req->fetch();
+    return $data;
+    }
 } ?>

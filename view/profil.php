@@ -2,7 +2,7 @@
 <body>
     <main role="main" class="container">
         <h1 id="hautdepage" class="text-center"><u> Mon profil </u></h1>
-        <a href="/view/pageprincipale/Infoperso.php" class="btn-dark btn-lg" role="button">Modifier mes infos</a>
+        <a href ng-click="tab = 9" class="btn-dark btn-lg" role="button">Modifier mes infos</a>
         <div class="album py-5 bg-light">
             <div class="card text-white bg-dark mb-3">
                 <div class="card-header">
@@ -16,11 +16,9 @@
                     </h5>
                     <p class="card-text">
                         <br>
-                        Promo :                                
+                        Khlâsse 1ère année :   <?php echo $khlasse[0]['nomkhlasse'] ?>                          
                         <br>
-                        Khlâsse 1ère année :                                
-                        <br>
-                        Khlâsse 2ème année :                            
+                        Khlâsse 2ème année :   <?php echo $khlasse[1]['nomkhlasse'] ?>                             
                     </p>
                 </div>
             </div>
@@ -30,11 +28,9 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Etude postFaidherbe :                          
+                        Etude postFaidherbe : <?php echo $ecole['nomecole'] ?>                          
                         <br>
-                        Domaine d'activité :                                
-                        <br>
-                        Zone d'activité :                            
+                        Domaine d'activité :  <?php echo $ecole['domaine'] ?>                        
                     </p>
                 </div>
             </div>
