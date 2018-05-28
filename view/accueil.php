@@ -28,6 +28,10 @@
 				</ul>
 			</div>
 		</nav>
+
+		<div>
+		<?php var_dump($_COOKIE['cookiperso']); ?>
+		</div>
 		<br>
 	</body>
 </html>
