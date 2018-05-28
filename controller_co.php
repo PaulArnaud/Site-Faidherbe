@@ -1,7 +1,7 @@
 
 <?php
 require_once("Users.php");
-$email=htmlspecialchars($_POST['Email']);
+$email=htmlspecialchars($_GET['Email']);
 echo $email;
 $password=htmlspecialchars($_POST['password']);
 if(empty($email) || empty($password)){
