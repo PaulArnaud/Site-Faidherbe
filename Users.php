@@ -8,7 +8,7 @@ class Users
 	{
 		require_once('connect.php');
 		$bdheroku = myPDO();
-		$req = $bdheroku->prepare("SELECT id_user FROM user WHERE cokiecode='".$cookiecode."'");
+		$req = $bdheroku->prepare("SELECT id_user FROM users WHERE cokiecode='".$cookiecode."'");
 		$req->execute();
 		$data=$req->fetch();
 		return $data["usersid"]; //Verifier si null
@@ -17,7 +17,7 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT email FROM user WHERE id_user= :userid");
+    $req = $bdheroku->prepare("SELECT email FROM users WHERE id_user= :userid");
     $req->bindParam(':userid',$userid);
     $req->execute();
     $data = $req->fetch();
