@@ -3,13 +3,15 @@
 require_once("Users.php");
 $email=htmlspecialchars($_GET['Email'])
 $password=htmlspecialchars($_GET['password']);
+
+var_dump(Users::Check_Password($email,$password));
 /*
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
 }
 else
-{*/
+{
   //$password=sha1(sha1($password));
 
   if(Users::Check_Password($email,$password)){
@@ -18,11 +20,11 @@ else
     var_dump($cookie);/*
 		setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
 		Users::Set_User_Cookie($email,$cookie);
-		header("Location: Accueil.php");*/
+		header("Location: Accueil.php");
   }
   else {
     $message="Mauvais mdp";
     header("Location: Erreur.php?=".$message);
   }
-//}
+}*/
 ?>
