@@ -7,8 +7,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="lib/angular.min.js"></script>
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
+	<body ng-init="tab = 1" >
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 1">Accueil</a></li>
@@ -32,9 +32,10 @@
 			</div>
 		</nav>
 		<div>
-		<?php echo 'prout';
+		<?php 
+		echo 'prout';
 		var_dump($_COOKIE['cookieperso']);
-		
+
 		?>
 		</div>	
 		<div ng-show="tab === 1">
