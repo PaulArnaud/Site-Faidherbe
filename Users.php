@@ -158,4 +158,13 @@ class Users
     }
     return $result;
   }
+
+  public static function Set_Khlasse($type,$year){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  VALUES ((select count(*) from khlasse)+1,(select id_typekhlasse from typekhlasse where nomkhlasse =:typekh),:ann');
+    $req->bindParam(':typekh',$type);
+    $req->bindParam(':ann',$year);
+    $req->execute();
+  }
 } ?>
