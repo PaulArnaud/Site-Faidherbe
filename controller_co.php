@@ -2,6 +2,7 @@
 <?php
 require_once("Users.php");
 $email=htmlspecialchars($_POST['Email']);
+echo $email;
 $password=htmlspecialchars($_POST['password']);
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
