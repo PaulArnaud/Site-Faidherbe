@@ -36,6 +36,7 @@
 		echo 'prout';
 		var_dump(isLogged());
 		$user=Users::Get_User_Id($_COOKIE['cookieperso']);
+		var_dump($user);
    		var_dump(!empty($user));
 
 		?>
