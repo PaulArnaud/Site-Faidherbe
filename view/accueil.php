@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" ng-app="">
 	<head>
 		<title>Accueil FaidherbeEnPoche </title>
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
@@ -13,7 +13,7 @@
 					<li class="nav-item"><a class="nav-link"  href="accueil.php">Accueil</a></li>
 					<?php if(isLogged()){ ?>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 2"> Khlâsse </a></li>
-					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> Mon profil </a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 3"> Mon profil </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 4"> Forum </a></li>
 					<?php } ?>
 					<?php if(isAdmin()){ ?>
