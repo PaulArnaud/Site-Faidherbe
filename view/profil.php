@@ -11,7 +11,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                             <?php echo $profil['nom']; echo $profil['prenom'];?>                      
+                             <?php echo $profil["nom"]; echo $profil['prenom'];?>                      
                         </h5>
                         <p class="card-text">
                             <br>
