@@ -5,7 +5,7 @@ $email=htmlspecialchars($_GET['Email']);
 $password=htmlspecialchars($_GET['password']);
 var_dump(Users::Check_Password($email,$password));
 echo '123';
-$cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20)
+//$cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20)
 var_dump($cookie);
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
