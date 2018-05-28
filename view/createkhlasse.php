@@ -1,7 +1,7 @@
 <body>
-	<main class="container">
+	<main class="card">
 		<form action="controller_newkhlasse.php" method="post" >
-			<div class="row container">
+			<div class="row card-body">
 				<div class="form-group col-md-4">
                     <div>
                     <label for="inputState">Type de Khlasse</label>
