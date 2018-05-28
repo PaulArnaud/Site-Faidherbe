@@ -1,5 +1,5 @@
 <?php
-require('connect.php');
+
 //require('model.php');
 
 class khlasse extends model{
@@ -31,6 +31,7 @@ class khlasse extends model{
     }
 
     public static function getAllKhlasse(){
+        require_once('connect.php');
         $req = myPDO()->query ('SELECT * FROM  khlasse');
         $object = $req -> fetchAll(PDO::FETCH_CLASS, "khlasse");
         return $object;
