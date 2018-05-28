@@ -1,9 +1,9 @@
 <body>
-	<main class="card">
+	<main class="card text-center">
 		<form action="controller_newkhlasse.php" method="post" >
 			<div class="row card-body">
 				<div class="form-group col-md-4">
-                    <div>
+                    <div class="col">
                     <label for="inputState">Type de Khlasse</label>
                     <select id="inputState" class="form-control" name="type">
                         <option selected>Choose...</option>
