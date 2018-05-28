@@ -23,7 +23,7 @@ echo '456';
 echo $data['userpassword'];
 echo '789';
 */
-
+/*
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
@@ -42,5 +42,5 @@ else
     $message="Mauvais mdp";
     header("Location: Erreur.php?=".$message);
   }
-}
+}*/
 ?>
