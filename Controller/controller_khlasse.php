@@ -1,5 +1,4 @@
 <?php
-echo '789';
 require('/models/khlasse.php');
 
 class khlasseController{
