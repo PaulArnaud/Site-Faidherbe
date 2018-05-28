@@ -6,7 +6,7 @@ echo $email;
 
 $password=htmlspecialchars($_GET['password']);
 echo $password;
-echo Users::Check_Password($email,$password);
+var_dump(Users::Check_Password($email,$password));
 echo '123';
 /*
 try {
