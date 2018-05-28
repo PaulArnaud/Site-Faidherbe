@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="/lib/angular.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
