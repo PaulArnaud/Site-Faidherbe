@@ -12,10 +12,12 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link"  href="accueil.php">Accueil</a></li>
 					<?php if(isLogged()){ ?>
-					<li class="nav-item"><a class="nav-link"  href="Personnal_orders.php">Mes commandes</a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 2"> Khlâsse </a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab =3"> Mon profil </a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 4"> Forum </a></li>
 					<?php } ?>
 					<?php if(isAdmin()){ ?>
-					<li class="nav-item"><a class="nav-link"  href="Administrateur.php">Administrateur</a></li>
+					<li class="nav-item"><a class="nav-link"  href ng-click ="tab = 5">Administrateur</a></li>
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
 					<li class="nav-item"><a class="nav-link" href="Connexion.php">Connexion</a></li>
@@ -28,13 +30,18 @@
 				</ul>
 			</div>
 		</nav>
-
-		<div>
-		<?php var_dump($_COOKIE['cookieperso']);
-		$isloged = isLogged();
-		var_dump($isloged);
-		 ?>
+		<div ng-show="tab === 1">
+			<?php include('view/presentation.php') ?>
 		</div>
-		<br>
+		<div ng-show="tab === 2">
+			<?php include('view/khlasse.php') ?>
+		</div>
+		<div ng-show="tab === 3">
+			<?php include('view/profil.php') ?>
+		</div>
+		<div ng-show="tab === 4">
+			<?php include('view/forum.php') ?>
+		</div>
 	</body>
 </html>
+
