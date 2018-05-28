@@ -169,12 +169,10 @@ class Users
     $req2->bindParam(':typekh',$type);
     $req2 -> execute();
     $res2 = $req2 -> fetch();
-
     $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  VALUES (:id_khlasse,:id_type,:annee)');
-    
     $req->bindParam(':id_khlasse',$res1);
     $req->bindParam(':id_type',$res2);
-    $req->bindParam(':ann',$year);
+    $req->bindParam(':annee',$year);
 
     try {
       $req->execute();
@@ -183,6 +181,6 @@ class Users
       // error during execute (bad request)
       http_response_code(400);
   }
-  return $res1,$res2 ; 
+  return $res1 ; 
   }
 } ?>
