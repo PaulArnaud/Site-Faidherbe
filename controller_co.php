@@ -4,7 +4,7 @@ require_once("Users.php");
 $email=htmlspecialchars($_GET['Email']);
 echo $email;
 
-$password=htmlspecialchars($_POST['password']);
+$password=htmlspecialchars($_GET['password']);
 echo $password;
 echo Users::Check_Password($email,$password);
 
