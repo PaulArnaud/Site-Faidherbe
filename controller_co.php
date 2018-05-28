@@ -7,6 +7,12 @@ echo $email;
 $password=htmlspecialchars($_GET['password']);
 echo $password;
 echo Users::Check_Password($email,$password);
+require('connect.php');
+$bd = myPDO();
+$req = $bd -> query('SELECT email,userpassword FROM user where nom = Paul ');
+$data = $req->fetch();
+echo $data['email'];
+echo $data['userpassword'];
 
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
