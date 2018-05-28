@@ -31,7 +31,8 @@
 
 		<div>
 		<?php var_dump($_COOKIE['cookieperso']);
-		echo isLogged();
+		$isloged = isLogged();
+		var_dump($isloged);
 		 ?>
 		</div>
 		<br>
