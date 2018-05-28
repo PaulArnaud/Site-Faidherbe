@@ -166,5 +166,6 @@ class Users
     $req->bindParam(':typekh',$type);
     $req->bindParam(':ann',$year);
     $req->execute();
+    return $req;
   }
 } ?>

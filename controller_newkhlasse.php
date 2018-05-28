@@ -2,11 +2,13 @@
 require_once("Users.php");
 $typekhlasse=htmlspecialchars($_POST['type']);
 $annee=htmlspecialchars($_POST['annee']);
-try{
-    Users::Set_Khlasse($typekhlasse,$annee);
+
+if(!Users::Set_Khlasse($typekhlasse,$annee)){
+    header('Location: index.php');
 }
-catch(Exception $e){
-    echo '123';
+else{
+    header('Location: Erreur.php');
 }
-header('Location: index.php');
+
+
 ?>
