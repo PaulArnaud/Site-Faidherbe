@@ -10,7 +10,7 @@ $password=sha1(sha1($password));
 echo $password;
 var_dump(Users::Check_Password($email,$password));
 echo '123';
-
+/*
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
   //header("Location: Erreur.php?=".$message);
@@ -29,5 +29,5 @@ else
     $message="Mauvais mdp";
     header("Location: Erreur.php?=".$message);
   }
-}
+}*/
 ?>
