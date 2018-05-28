@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="">
 	<body>
 		<main role="main" class="container">
 			<div class="starter-template">
