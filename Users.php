@@ -105,7 +105,7 @@ class Users
   {
       require_once('connect.php');
       $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT nomptype,annee,(SELECT count(*) FROM a_etudie A WHERE A.id_khlasse= E.id_khlasse) FROM  khlasse E,typekhlasse');
+      $req = $bdheroku->prepare('SELECT T.nomkhlasse,annee,(SELECT count(*) FROM a_etudie A WHERE A.id_khlasse= E.id_khlasse) FROM  khlasse E,typekhlasse T WHERE T.id_typekhlasse = E.id_type');
       $req->execute();
       while($data=$req->fetch()){
           $result[] = $data;
