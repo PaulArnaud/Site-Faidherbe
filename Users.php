@@ -85,7 +85,8 @@ class Users
     $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
-    return($data['userspassword'] == $userpw);
+    return($data['email']);
+    //return($data['userspassword'] == $userpw);
   }
   /*
   public static function Delete_User($userid)
