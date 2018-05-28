@@ -1,7 +1,7 @@
 <body>
-	<main>
+	<main class="container">
 		<form action="controller_newkhlasse.php" method="post" >
-			<div class="row">
+			<div class="row container">
 				<div class="form-group col-md-4">
                     <div>
                     <label for="inputState">Type de Khlasse</label>
@@ -12,7 +12,7 @@
                     <div class="col">
                         <input type="text" class="form-control" name="annee">
                     </div>
-                    <button class="btn btn-lg btn-dark" type="submit" ng-click="tab=2"> Enregistrer </button>
+                    <button class="btn btn-lg btn-dark" type="submit"> Enregistrer </button>
                 </div>
 			</div>
 		</form>
