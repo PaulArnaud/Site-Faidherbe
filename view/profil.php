@@ -2,7 +2,6 @@
 <body>
     <main role="main" class="container">
         <h1 id="hautdepage" class="text-center"><u> Mon profil </u></h1>
-        <a href ng-click="tab = 9" class="btn-dark btn-lg" role="button">Modifier mes infos</a>
         <div class="album py-5 bg-light">
             <div class="card text-white bg-dark mb-3">
                 <div class="card-header">
@@ -68,5 +67,10 @@
             </div>-->
         </div>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <a href ng-click="tab = 9" class="btn-dark btn-lg" role="button">Modifier mes infos</a>
+      </div>
+    </footer>
 </body>
 
