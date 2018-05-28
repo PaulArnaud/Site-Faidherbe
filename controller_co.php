@@ -9,7 +9,10 @@ if(empty($email) || empty($password)){
 }
 if(Users::Check_Password($email,$password)){
   $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
-  setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
+  $cookiegood = setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
+  if (!$cookiegood){
+    $_COOKIE['name'] = 'pute';
+  }
   Users::Set_User_Cookie($email,$cookie);
   header("Location: accueil.php");
 }

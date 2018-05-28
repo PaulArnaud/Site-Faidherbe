@@ -30,7 +30,8 @@
 		</nav>
 
 		<div>
-		<?php var_dump($_COOKIE['cookiperso']); ?>
+		<?php var_dump($_COOKIE['cookiperso']);
+			var_dump($_COOKIE); ?>
 		</div>
 		<br>
 	</body>
