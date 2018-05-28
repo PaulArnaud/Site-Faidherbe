@@ -6,12 +6,12 @@
                     <label for="inputState">State</label>
                     <select id="inputState" class="form-control" name="type">
                         <option selected>Choose...</option>
-                        <?php /*foreach ($types as $value){echo '<option>'.$value['nomkhlasse]'.'</option>';} */?></select>
+                        <?php var_dump($types);/*foreach ($types as $value){echo '<option>'.$value['nomkhlasse]'.'</option>';} */?></select>
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" name="annee">
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit"> Enregistrer </button>
+                    <button class="btn btn-lg btn-dark" type="submit"> Enregistrer </button>
 			</div>
 		</form>
 	</main>
