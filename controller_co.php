@@ -8,9 +8,14 @@ $password=htmlspecialchars($_GET['password']);
 echo $password;
 echo Users::Check_Password($email,$password);
 echo '123';
-require('connect.php');
+try {
+  require('/connect.php');
+}
+catch (Exception $e){
+  echo erreur bd;
+}
 $bd = myPDO();
-$req = $bd -> query('SELECT email,userpassword FROM user where nom = Paul ');
+$req = $bd -> query('SELECT email,userpassword FROM users where nom = "Arnaud" ');
 $data = $req->fetch();
 echo $data['email'];
 echo '456';

@@ -41,7 +41,7 @@ class Users
   {
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT * FROM user');
+    $req = $bdheroku->prepare('SELECT * FROM users');
     $req->execute();
     while($data=$req->fetch())
 		{
@@ -52,7 +52,7 @@ class Users
   public static function Get_Users_Role($userid){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT isAdmin FROM user WHERE id_user= :usersid");
+    $req = $bdheroku->prepare("SELECT isAdmin FROM users WHERE id_user= :usersid");
     $req->bindParam(':usersid',$userid);
     $req->execute();
     $data = $req->fetch();
@@ -62,7 +62,7 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('UPDATE user SET cookiecode= :cookie WHERE email= :email');
+    $req = $bdheroku->prepare('UPDATE users SET cookiecode= :cookie WHERE email= :email');
     $req->bindParam(':cookie',$usercookie);
     $req->bindParam(':email',$email);
     $req->execute();
@@ -71,7 +71,7 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT userpassword FROM user WHERE email= :email');
+    $req = $bdheroku->prepare('SELECT userpassword FROM users WHERE email= :email');
     $req->bindParam(':email',$email);
     $data = $req->fetch();
     return($data['userpassword']==$userPassword);
@@ -81,7 +81,7 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare("SELECT userpassword FROM user WHERE email= :email");
+    $req = $bdheroku->prepare("SELECT userpassword FROM users WHERE email= :email");
     $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
