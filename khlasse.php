@@ -1,20 +1,9 @@
 <?php
-echo'224';
-/*
+
 class Khlasse{
 
-    public static function Get_All_Khlasse()
-    {
-      require_once('connect.php');
-      $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT * FROM  khlasse');
-      $req->execute();
-      while($data=$req->fetch())
-          {
-              $result[] = $data;
-          }
-        return $result;
-    }
+
+    
     public static function getType($id_type){
         require_once('connect.php');
         $type = myPDO()->query('SELECT nomkhlasse FROM typekhlasse WHERE id_type =: pa ');
@@ -73,6 +62,6 @@ class Khlasse{
     }
 
 
-}*/
+}
 
 ?>

@@ -89,6 +89,8 @@ class Users
     return($data['userpassword'] === $userpw);
     //return($data['userspassword'] == $userpw);
   }
+
+
   /*
   public static function Delete_User($userid)
   {
@@ -98,4 +100,19 @@ class Users
     $req->bindParam(':usersid',$userid);
     $req->execute();
   }*/
+
+
+
+  public static function Get_All_Khlasse()
+  {
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $req = $bdheroku->prepare('SELECT * FROM  khlasse');
+    $req->execute();
+    while($data=$req->fetch())
+        {
+            $result[] = $data;
+        }
+      return $result;
+  }
 } ?>
