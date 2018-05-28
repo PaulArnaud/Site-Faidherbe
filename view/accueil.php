@@ -21,7 +21,7 @@
 					<li class="nav-item"><a class="nav-link"  href ng-click ="tab = 5"><i class="material-icons">security</i></a></li>
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
-					<li class="nav-item"><a class="nav-link" href="Connexion.php"><i class="material-icons">power_setting</i></a></li>
+					<li class="nav-item"><a class="nav-link" href="Connexion.php"><i class="material-icons">power_settings_new</i></a></li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
 					<li class="nav-item ">
