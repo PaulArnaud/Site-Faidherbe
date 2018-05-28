@@ -2,7 +2,7 @@
 	<main role="main" class="container text-center">
 		<div class="starter-template">
 			<h1> Site du Faidherbard </h1>
-			<h2> Tableau des camarades de la Khlasse :<?php echo $khlasse['nomkhlasse'];?> de l'année : <?php echo $khlasse['annee'];?>  </h2>
+			<h2> Tableau des camarades de la Khlasse :<?php /*echo $khlasse['nomkhlasse'];*/?> de l'année : <?php /*echo $khlasse['annee'];*/?>  </h2>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm table-bordered table-dark table-hover">
 					<thead class="thead-dark">
@@ -20,7 +20,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<?php foreach ($camarades as $value) {echo '<tr id="'.$value['id_user'].'">';echo '<td class="text-center">'.$value['nom'].'</td>';echo '<td class="text-center">'.$value['prenom'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light " href=#>''</a>';echo '</tr>';}?></tr>
+							<?php /*foreach ($camarades as $value) {echo '<tr id="'.$value['id_user'].'">';echo '<td class="text-center">'.$value['nom'].'</td>';echo '<td class="text-center">'.$value['prenom'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light " >''</a>';echo '</tr>';}*/?></tr>
 						</tbody>
 					</table>
 				</div>

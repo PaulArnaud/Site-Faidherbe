@@ -180,7 +180,7 @@ class Users
   public static function Get_All_Camarades($khlasseID){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku -> prepare('SELECT id_user,nom,prenom FROM user U,a_etudie A,khlasse K WHERE U.id_user = A.id_user AND A.id_khlasse=K.id_khlasse AND id_khlasse = :idkhlasse');
+    $req = $bdheroku -> prepare('SELECT U.id_user,U.nom,U.prenom FROM users U,a_etudie A,khlasse K WHERE U.id_user = A.id_user AND A.id_khlasse=K.id_khlasse AND K.id_khlasse = :idkhlasse');
     $req->bindParam(':idkhlasse',$khlasseID);
     $req->execute();
     while($data=$req->fetch()){

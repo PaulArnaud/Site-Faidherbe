@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="lib/angular.min.js"></script>
 	</head>
-	<body ng-init="tab = 1" >
+	<body ng-init="tab = 1">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
@@ -75,6 +75,9 @@
 			<?php require_once('controller_page_newkhlasse.php') ?>
 		</div>
 		<div ng-show="tab === 11">
+			<?php require_once('controller_page_camarades.php') ?>
+		</div>
+		<div ng-show="tab === 12">
 			<?php require_once('controller_page_camarades.php') ?>
 		</div>
 
