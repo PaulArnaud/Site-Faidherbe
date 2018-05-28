@@ -85,7 +85,7 @@ class Users
     $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
-    return($data['email']);
+    return($data['userpassword']);
     //return($data['userspassword'] == $userpw);
   }
   /*
