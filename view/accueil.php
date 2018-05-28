@@ -5,13 +5,13 @@
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<script src="/lib/angular.min.js"></script>
+		<script src="lib/angular.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link"  href="accueil.php">Accueil</a></li>
+					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 1">Accueil</a></li>
 					<?php if(isLogged()){ ?>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 2"> Khlâsse </a></li>
 					<li class="nav-item"><a class="nav-link" href ng-click ="tab = 3"> Mon profil </a></li>
