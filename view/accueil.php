@@ -32,7 +32,7 @@
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
 					<li class="nav-item">
-						<a class="nav-link"  href ng-click="tab = 10"><i class="material-icons">power_settings_new</i></a>
+						<a class="nav-link"  href="Connexion.php"><i class="material-icons">power_settings_new</i></a>
 					</li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
@@ -43,11 +43,7 @@
 				</ul>
 			</div>
 		</nav>
-						
-		<div ng-show="tab === 10">
-			<?php require('Connexion.php') ?>
-		</div>
-
+					
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
 		</div>
