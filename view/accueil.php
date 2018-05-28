@@ -69,10 +69,10 @@
 			<?php require('view/chapeau.php') ?>
 		</div>
 		<div ng-show="tab === 9">
-			<?php require('controller_page_infoperso.php') ?>
+			<?php require_once('controller_page_infoperso.php') ?>
 		</div>
 		<div ng-show="tab === 10">
-			<?php require('controller_page_newkhlasse.php') ?>
+			<?php require_once('controller_page_newkhlasse.php') ?>
 		</div>
 
 
