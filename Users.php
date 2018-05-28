@@ -53,7 +53,7 @@ class Users
   public static function Get_Users_Role($userid){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT users.isadmin FROM users WHERE id_user= :usersid');
+    $req = $bdheroku->prepare('SELECT isadmin FROM users WHERE id_user= :usersid');
     $req->bindParam(':usersid',$userid);
     $req->execute();
     $data = $req->fetch();
