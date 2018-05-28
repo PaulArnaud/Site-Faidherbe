@@ -24,7 +24,7 @@
 					<li class="nav-item"><a class="nav-link" href="Connexion.php"><i class="material-icons">power_setting</i></a></li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
-					<li class="nav-item my-2 my-sm-0 ">
+					<li class="nav-item px-3 ">
 						<a class="nav-link"  title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="material-icons">exit_to_app</i></a>
 					</li>
 					<?php } ?>
