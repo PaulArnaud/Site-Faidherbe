@@ -1,5 +1,5 @@
 <body>
-	<main role="main" class="container">
+	<main role="main" class="container text-center">
 		<div class="starter-template">
 			<h1> Site du Faidherbard </h1>
 			<h2> Tableau des Khlâsses </h2>
