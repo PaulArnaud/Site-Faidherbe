@@ -1,7 +1,8 @@
 <?php
 require_once("Users.php");
-//$khlasseID = htmlspecialchars($_GET['id']);
-$khlasse = Users::Get_Khlasse(1);
-$camarades = Users::Get_All_Camarades(1);
+$khlasseID = $_COOKIE['cookiecamarades'];
+
+$khlasse = Users::Get_Khlasse($khlasseID);
+$camarades = Users::Get_All_Camarades($khlasseID);
 require_once("view/camarades.php");
 ?>

@@ -47,12 +47,14 @@
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
 		</div>
+		<?php if isLogged(){?>
 		<div ng-show="tab === 2">
 			<?php require_once('controller_page_khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
 			<?php require_once('controller_page_profil.php') ?>
 		</div>
+		<?php } ?>
 		<div ng-show="tab === 4">
 			<?php require('view/forum.php') ?>
 		</div>
@@ -68,6 +70,7 @@
 		<div ng-show="tab === 8">
 			<?php require('view/chapeau.php') ?>
 		</div>
+		<?php if isLogged(){?>
 		<div ng-show="tab === 9">
 			<?php require_once('controller_page_infoperso.php') ?>
 		</div>
@@ -77,6 +80,7 @@
 		<div ng-show="tab === 11">
 			<?php require_once('controller_page_camarades.php') ?>
 		</div>
+		<?php } ?>
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
