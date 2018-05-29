@@ -27,9 +27,9 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Etude postFaidherbe : <?php echo $ecoleuser['nomecole'] ?>                          
+                        Etude postFaidherbe : <?php //echo $ecoleuser['nomecole'] ?>                          
                         <br>
-                        Domaine d'activité :  <?php echo $ecoleuser['domaine'] ?>                        
+                        Domaine d'activité :  <?php //echo $ecoleuser['domaine'] ?>                        
                     </p>
                 </div>
             </div>
