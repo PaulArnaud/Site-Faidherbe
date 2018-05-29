@@ -4,7 +4,11 @@
 			
 			<h1> Site du Faidherbard </h1>
 			<h2> Tableau des camarades de la Khlasse :<?php echo $khlasse['nomkhlasse'];?> de l'année : <?php echo $khlasse['annee'];?>  </h2>
-			<?php var_dump($_COOKIE["cookiecamarades"]); ?>
+			<?php 
+			$id = 1;
+			setcookie("cookiecamarades",$id,60,"/");
+			var_dump($_COOKIE["cookiecamarades"]); 
+			?>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm table-bordered table-dark table-hover">
 					<thead class="thead-dark">
