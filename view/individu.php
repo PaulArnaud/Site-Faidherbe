@@ -43,9 +43,9 @@
                         <br>
                         Numéro Portable :  <?php echo $infouser['num_portable']; ?>                           
                         <br>
-                        Facebook : <a href ="<?php echo $infouser['facebook']; ?> ">                              
+                        <a href ="<?php echo $infouser['facebook']; ?> "> Facebook </a>                             
                         <br>
-                        Linkedin : <?php echo $infouser['linkedin']; ?>                        
+                        <a href=" <?php echo $infouser['linkedin']; ?> ">  Linkedin </a>                       
                     </p>
                 </div>
             </div>
