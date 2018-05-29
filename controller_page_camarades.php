@@ -1,7 +1,8 @@
 <?php
 require_once("Users.php");
-$khlasseID = $GLOBALS['var1'];
+$khlasseID = $_GET['idkhlasse'];
 $khlasse = Users::Get_Khlasse($khlasseID);
 $camarades = Users::Get_All_Camarades($khlasseID);
-require_once("view/camarades.php");
+$pagecamarade = true
+require_once("accueil.php";)
 ?>

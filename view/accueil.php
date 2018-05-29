@@ -79,9 +79,11 @@
 		<div ng-show="tab === 10">
 			<?php require_once('controller_page_newkhlasse.php') ?>
 		</div>
-		<div ng-show="tab === 11">
-			<?php require_once('controller_page_camarades.php') ?>
-		</div>
+		<?php if ( $pagecamarades ){
+			require_once('view/camarades.php')
+		 } 
+		 ?>
+
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
