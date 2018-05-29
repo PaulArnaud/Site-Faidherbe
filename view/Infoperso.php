@@ -56,6 +56,7 @@
 			<div class="input-group mb-3">
 				<select class="custom-select" id="inputGroupSelect01" name="khlasse1">
 					<option selected>Séléctionner la khlâsse </option>
+                    <?php foreach ($khlasses as $value){echo '<option>'.$value['id_khlasse'].'---'.$value['nomkhlasse'].'---'.$value['annee'].'</option>';} ?></select>
 				</select>
 			</div>
 			<h6>
@@ -66,6 +67,7 @@
 			<div class="input-group mb-3">
 				<select class="custom-select" id="inputGroupSelect01" name="khlasse2" >
 					<option selected>Séléctionner la khlâsse </option>
+                    <?php foreach ($khlasses as $value){echo '<option>'.$value['id_khlasse'].'---'.$value['nomkhlasse'].'---'.$value['annee'].'</option>';} ?></select>
 				</select>
 			</div>
 			<h5>
@@ -79,7 +81,7 @@
 			<div class="input-group">
 				<select class="custom-select" id="inputGroupSelect01" name="ecole" >
 					<option selected>Séléctionner l'école </option>
-                    <?php foreach ($ecoles as $value){echo '<option>'.$value['nomecole'].'---'.$value['id_ecole'].'</option>';} ?></select>
+                    <?php foreach ($ecoles as $value){echo '<option>'.$value['id_ecole'].'---'.$value['nomecole'].'---'.$value['domaine'].'</option>';} ?></select>
 				</select>
 			</div>
 			<div class="input-group-append">
