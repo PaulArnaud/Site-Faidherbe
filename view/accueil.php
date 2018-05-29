@@ -43,53 +43,46 @@
 				</ul>
 			</div>
 		</nav>
-
-
-		<?php if (!$GLOBALS['camarades']){ echo "		
-		<div ng-show='tab === 1'>
+					
+		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
 		</div>
 
 
-		<div ng-show='tab === 2'>
+		<div ng-show="tab === 2">
 			<?php require_once('controller_page_khlasse.php') ?>
 		</div>
-		<div ng-show='tab === 3'>
+		<div ng-show="tab === 3">
 			<?php require_once('controller_page_profil.php') ?>
 		</div>
 
 
-		<div ng-show='tab === 4'>
+		<div ng-show="tab === 4">
 			<?php require('view/forum.php') ?>
 		</div>
-		<div ng-show='tab === 5'>
+		<div ng-show="tab === 5">
 			<?php require('view/gallerie.php') ?>
 		</div>
-		<div ng-show='tab === 6'>
+		<div ng-show="tab === 6">
 			<?php require('view/fonction.php') ?>
 		</div>
-		<div ng-show='tab === 7'>
+		<div ng-show="tab === 7">
 			<?php require('view/chants.php') ?>
 		</div>
-		<div ng-show='tab === 8'>
+		<div ng-show="tab === 8">
 			<?php require('view/chapeau.php') ?>
 		</div>
 
-		<div ng-show='tab === 9'>
+		<div ng-show="tab === 9">
 			<?php require_once('controller_page_infoperso.php') ?>
 		</div>
-		<div ng-show='tab === 10'>
+		<div ng-show="tab === 10">
 			<?php require_once('controller_page_newkhlasse.php') ?>
-		</div>"
-
-		} 
-		else {
-			require_once('view/camarades.php');
-		}
-		?>
+		</div>
 		
-
-
+		<div ng-show="tab === 11">
+		<?php if ($GLOBALS['camarades']){require_once('view/camarades.php');} ?>
+		</div>
 
 
 
