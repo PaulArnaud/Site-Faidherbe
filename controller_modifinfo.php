@@ -14,7 +14,7 @@ var_dump($prenom);
 var_dump($portable);
 var_dump($facebook);
 var_dump($linkedin);*/
-Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin)
+Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin);
 //Users::Insert_A_Etudie($kh1,$kh2)
 //Users::Insert_A_Etudie_PF($ecole);
 echo("<div ng-init='tab=3' > </div>");
