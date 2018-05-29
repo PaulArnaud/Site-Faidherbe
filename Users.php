@@ -237,7 +237,7 @@ class Users
     return $data;
     }
 
-
+/*
     public static function Update_My_Data($params1,$params2,$params3,$params4,$params5){
       require_once('connect.php');
       $bdheroku = myPDO();
@@ -250,7 +250,7 @@ class Users
       $req->bindParam(':params5',$params5);
       $req1->bindParam(':cook',$cook);
       $req->execute();
-    }
+    }*/
     
     public static function Insert_A_Etudie($params){
       require_once('connect.php');
