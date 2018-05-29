@@ -7,7 +7,7 @@
 			
 			<?php
 			setcookie('cookie_name', 'blablabla', (time() + 3600));
-			var_dump($_COOKIE['cookie_name']); 
+			var_dump($_COOKIE); 
 			?>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm table-bordered table-dark table-hover">
