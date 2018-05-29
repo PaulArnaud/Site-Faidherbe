@@ -219,7 +219,7 @@ class Users
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-      $req = $bdheroku->prepare("UPDATE users  SET nom = :params1,prenom= :params2 ,num_portable= '{:params2}',facebook= :params4,linkedin = :params5 WHERE cookiecode = :cook ")
+      $req = $bdheroku->prepare("UPDATE users  SET nom = :params1,prenom= :params2 ,num_portable= {:params2}, facebook= :params4,linkedin = :params5 WHERE cookiecode = :cook ")
       $req->bindParam(':params1',$params1);
       $req->bindParam(':params2',$params2);
       $req->bindParam(':params3',$params3);
