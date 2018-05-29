@@ -8,8 +8,10 @@ $linkedin = $_POST['linkedin'];
 $kh1 = $_POST['khlasse1'];
 $kh2 = $_POST['khlasse2'];
 $ecole = $_POST['ecole'];
+$id_khlasse1 = explode('-',$kh1);
 
-var_dump($nom);
+var_dump($id_khlasse1);
+var_dump($id_khlasse1[0]);
 var_dump($prenom);
 var_dump($portable);
 var_dump($facebook);
