@@ -252,22 +252,22 @@ class Users
       $req->execute();
     }
     */
-    public static function Insert_A_Etudie($params6){
+    public static function Insert_A_Etudie($params){
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-    $req1 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse '));
+    $req1 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse) ');
       $req1->bindParam(':cook',$cook);
-      $req1->bindParam(':idkhlasse',$params6);
+      $req1->bindParam(':idkhlasse',$params);
       $req1 -> execute();
     }
-    public static function Insert_A_Etudie($params6){
+    public static function Insert_A_Etudie($params){
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req3 = $bdheroku->prepare('INSERT INTO a_etudie_postfaidherbe VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idecole )');
       $req3->bindParam(':cook',$cook);
-      $req3->bindParam(':idecole',$params6);
+      $req3->bindParam(':idecole',$params);
       $req3 -> execute();
     }
 } ?>
