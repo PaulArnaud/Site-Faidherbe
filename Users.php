@@ -228,7 +228,11 @@ class Users
       $req->bindParam(':params4',$params4);
       $req->bindParam(':params5',$params5);
       $req->bindParam(':cook',$cook);
-      $req->execute();
+      try{
+        $req->execute();
+      }catch (Exception $e){
+        echo 'problème';
+      }
     }
     
     public static function Insert_A_Etudie($params){
@@ -238,7 +242,11 @@ class Users
       $req1 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse)');
       $req1->bindParam(':cook',$cook);
       $req1->bindParam(':idkhlasse',$params);
-      $req1 -> execute();
+      try{
+        $req1->execute();
+      }catch (Exception $e){
+        echo 'problème';
+      }
     }
     public static function Insert_A_Etudie_PF($params){
       require_once('connect.php');
@@ -247,6 +255,10 @@ class Users
       $req3 = $bdheroku->prepare('INSERT INTO a_etudie_postfaidherbe VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idecole)');
       $req3->bindParam(':cook',$cook);
       $req3->bindParam(':idecole',$params);
-      $req3 -> execute();
+      try{
+        $req3->execute();
+      }catch (Exception $e){
+        echo 'problème';
+      }
     }
 } ?>
