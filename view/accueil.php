@@ -79,7 +79,7 @@
 		<div ng-show="tab === 10">
 			<?php require_once('controller_page_newkhlasse.php') ?>
 		</div>
-		<?php if ( $pagecamarades ){
+		<?php if ( $GLOBALS['camarades'] ){
 			require_once('view/camarades.php')
 		 } 
 		 ?>

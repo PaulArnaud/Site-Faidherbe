@@ -3,6 +3,6 @@ require_once("Users.php");
 $khlasseID = $_GET['idkhlasse'];
 $khlasse = Users::Get_Khlasse($khlasseID);
 $camarades = Users::Get_All_Camarades($khlasseID);
-$pagecamarade = true
-require_once("accueil.php";)
+$GLOBALS['camarades'] = true;
+require_once("accueil.php");
 ?>
