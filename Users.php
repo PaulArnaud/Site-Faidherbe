@@ -225,7 +225,7 @@ class Users
       $req->bindParam(':params3',$params3);
       $req->bindParam(':params4',$params4);
       $req->bindParam(':params5',$params5);
-      $req1->bindParam(':cook',$cook);
+      $req->bindParam(':cook',$cook);
       $req->execute();
     }
     
