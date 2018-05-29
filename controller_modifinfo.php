@@ -8,8 +8,8 @@ $linkedin = $_POST['linkedin'];
 //$kh1 = $_POST['khlasse1'];
 //$kh2 = $_POST['khlasse2'];
 //$ecole = $_POST['ecole'];
-echo $nom;
-/*vard_dump($prenom);
+
+vard_dump($prenom);/*
 vard_dump($portable);
 vard_dump($facebook);
 vard_dump($linkedin);*/
