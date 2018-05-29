@@ -1,10 +1,11 @@
 <body>
 	<main role="main" class="container text-center">
 		<div class="starter-template">
-			
-			<div ng-show="kh > 0">
-				<p> test 123 </p>
-			</div>
+			<?php var_dump($GLOBALS);
+			var_dump($khlasseID);
+			var_dump($var1);
+			var_dump($var2);
+			?>
 			<h1> Site du Faidherbard </h1>
 			<h2> Tableau des camarades de la Khlasse :<?php echo $khlasse['nomkhlasse'];?> de l'année : <?php echo $khlasse['annee'];?>  </h2>
 			<div class="table-responsive">
