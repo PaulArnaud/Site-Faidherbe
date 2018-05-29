@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="lib/angular.min.js"></script>
 	</head>
+	<?var_dump($_COOKIE);?>
 	<body ng-init="tab = 1">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
