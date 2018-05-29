@@ -1,5 +1,4 @@
 <body>
-<?php $GLOBALS['camarades'] = false; ?>
 	<main role="main" class="container text-center">
 		<div class="starter-template">
 			<h1> Site du Faidherbard </h1>
@@ -27,4 +26,5 @@
 				</div>
 			</div>
 		</main>
+		<?php $GLOBALS['camarades'] = false; ?>
 </body>
