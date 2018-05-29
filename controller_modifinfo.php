@@ -9,14 +9,14 @@ $linkedin = $_POST['linkedin'];
 //$kh2 = $_POST['khlasse2'];
 //$ecole = $_POST['ecole'];
 
-var_dump($nom);
+/*var_dump($nom);
 var_dump($prenom);
 var_dump($portable);
 var_dump($facebook);
-var_dump($linkedin);
-//Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin)
+var_dump($linkedin);*/
+Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin)
 //Users::Insert_A_Etudie($kh1,$kh2)
 //Users::Insert_A_Etudie_PF($ecole);
-//echo("<div ng-init='tab=3' > </div>");
-//header('Location: accueil.php');
+echo("<div ng-init='tab=3' > </div>");
+header('Location: accueil.php');
 
