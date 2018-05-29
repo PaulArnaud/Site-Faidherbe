@@ -20,7 +20,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['id_khlasse'].'">';echo '<td class="text-center">'.$value['annee'].'</td>';echo '<td class="text-center">'.$value['nomkhlasse'].'</td>';echo '<td class="text-center"> <button class="btn btn-outline-light " type="submit" href="controller_page_camarades.php?'.$value['id_khlasse'].'" ng-click="tab=11">'.$value[3].'</button>';echo '</tr>';}?></tr>
+							<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['id_khlasse'].'">';echo '<td class="text-center">'.$value['annee'].'</td>';echo '<td class="text-center">'.$value['nomkhlasse'].'</td>';echo '<td class="text-center"> <button class="btn btn-outline-light " type="submit" href="controller_page_camarades.php?idkhlasse='.$value['id_khlasse'].'" ng-click="tab=11">'.$value[3].'</button>';echo '</tr>';}?></tr>
 						</tbody>
 					</table>
 				</div>
