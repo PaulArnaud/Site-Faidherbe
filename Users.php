@@ -261,7 +261,7 @@ class Users
       $req1->bindParam(':idkhlasse',$params);
       $req1 -> execute();
     }
-    public static function Insert_A_Etudie($params){
+    public static function Insert_A_Etudie_PF($params){
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
