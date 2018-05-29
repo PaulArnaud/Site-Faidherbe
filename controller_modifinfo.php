@@ -19,4 +19,5 @@ Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin)
 //Users::Insert_A_Etudie_PF($ecole);
 echo("<div ng-init='tab=3' > </div>");
 header('Location: accueil.php');
+?>
 
