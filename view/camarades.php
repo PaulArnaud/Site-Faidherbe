@@ -31,3 +31,4 @@
 			</div>
 		</main>
 </body>
+<?php $GLOBALS['camarades'] = false; ?>
