@@ -318,5 +318,21 @@ class Users
       }
       return $result;
     }
+
+    public static function Del_A_Etudie(){
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $cook = $_COOKIE["cookieperso"];
+      $id = Get_User_Id($cook)   
+      $req = $bdheroku->prepare(' DELETE FROM a_etudie
+      WHERE id_user= :id');
+      $req->bindParam(':id',$id);
+      try{
+        $req3->execute();
+        return true;
+      }catch (Exception $e){
+        return false;
+      }
+    }
   
 } ?>

@@ -11,6 +11,7 @@ $ecole = $_POST['ecole'];
 $id_khlasse1 = explode('-',$kh1);
 $id_khlasse2 = explode('-',$kh2);
 $id_ecole = explode('-',$ecole);
+Users::Del_A_Etudie();
 Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin);
 Users::Insert_A_Etudie($id_khlasse1[0]);
 Users::Insert_A_Etudie($id_khlasse2[0]);
