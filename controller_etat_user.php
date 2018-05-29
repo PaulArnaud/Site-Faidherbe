@@ -20,7 +20,7 @@ function loggedOnly(){
 
 function unloggedOnly(){
   if(isLogged()){
-    header("Location: Accueil.php");
+    header("Location: accueil.php");
   }
 }
 
