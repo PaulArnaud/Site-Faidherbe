@@ -99,6 +99,18 @@ class Users
       return $result;
   }
 
+  public static function Get_All_Ecole()
+  {
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $req = $bdheroku->prepare('SELECT id_ecole,nomecole FROM ecole');
+      $req->execute();
+      while($data=$req->fetch()){
+          $result[] = $data;
+      }
+      return $result;
+  }
+
   public static function Get_Mykhlasse(){
     require_once('connect.php');
     $bdheroku = myPDO();

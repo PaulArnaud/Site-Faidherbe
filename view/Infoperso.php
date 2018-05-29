@@ -79,6 +79,7 @@
 			<div class="input-group">
 				<select class="custom-select" id="inputGroupSelect01" name="ecole" >
 					<option selected>Séléctionner l'école </option>
+                    <?php foreach ($ecoles as $value){echo '<option>'.$value['nomecole'].'---'.$value['id_ecole'].'</option>';} ?></select>
 				</select>
 			</div>
 			<div class="input-group-append">
