@@ -3,8 +3,8 @@ require_once("Users.php");
 
 function isLogged(){
   if(isset($_COOKIE['cookieperso'])){
-    $cookie=$_COOKIE['cookieperso'];
-    $user=Users::Get_User_Id($cookie);
+    $cookierecup=$_COOKIE['cookieperso'];
+    $user=Users::Get_User_Id($cookierecup);
     return(!empty($user));
   }
   else {
