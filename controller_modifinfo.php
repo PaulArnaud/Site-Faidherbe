@@ -2,7 +2,7 @@
 require_once("Users.php");
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
-$portable = $_POST['num_portable'];
+$portable = $_POST['portable'];
 $facebook = $_POST['facebook'];
 $linkedin = $_POST['linkedin'];
 //$kh1 = $_POST['khlasse1'];
