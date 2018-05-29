@@ -20,8 +20,7 @@
 					</thead>
 					<tbody>
 						<tr>
-                        <?php foreach ($camarades as $value) {echo '<tr id="'.$value['id_user'].'">';echo '<td class="text-center">'.$value['nom'].'</td>';echo '<td class="text-center">'.$value['prenom'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light " href ng-click="tab=11"></a>';echo '</tr>';}?></tr>
-						</tbody>
+						<?php foreach ($camarades as $value) {echo '<tr id="'.$value['id_user'].'">';echo '<td class="text-center">'.$value['nom'].'</td>';echo '<td class="text-center">'.$value['prenom'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light" ng-click="tab=0" href="controller_page_individu.php?iduser='.$value['id_user'].'">Voir Profil</a>';echo '</tr>';}?></tr>						</tbody>
 					</table>
 				</div>
 			</div>

@@ -198,4 +198,42 @@ class Users
     $data=$req->fetch();
     return $data;
   }
+
+
+  public static function Get_Khlasse_User($IDuser){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $req = $bdheroku->prepare('SELECT T.nomkhlasse,annee 
+    FROM  khlasse E,typekhlasse T,a_etudie A,users U 
+    WHERE T.id_typekhlasse = E.id_type AND A.id_user = U.id_user AND A.id_khlasse= E.id_khlasse  AND U.id_user = :user ');
+    $req->bindParam(':user',$IDuser);
+    $req->execute();
+    while($data=$req->fetch()){
+        $result[] = $data;
+    }
+    return $result;
+  }
+
+
+  public static function Get_Info_User($IDuser){
+    require_once('connect.php');
+      $bdheroku = myPDO();
+      $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin FROM  users WHERE id_user = :user');
+      $req->bindParam(':user',$IDuser);
+      $req->execute();
+      $data=$req->fetch();
+      return $data;
+  }
+
+  public static function Get_School_User($IDuser){
+    require_once('connect.php');
+    $bdheroku = myPDO();
+    $req = $bdheroku->prepare('SELECT nomecole,domaine 
+    FROM ecole E, users U, a_etudie_postfaidherbe P 
+    WHERE P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.id_user = :user');
+    $req->bindParam(':user',$IDuser);
+    $req->execute();
+    $data=$req->fetch();
+    return $data;
+    }
 } ?>
