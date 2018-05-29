@@ -3,52 +3,50 @@
         <h3> Modification des informations personnelles </h3>
         <h5> Général </h5>
         <h6> <u> Nom </u></h6>
-        <form class="form-signin container" action="controller_connexion.php" method="post">
+        <form class="form-signin container" action="controller_modifinfo.php" method="post">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="<? echo $profil['nom'];?> ">
+            <input type="text" name="nom" class="form-control" placeholder="<? echo $profil['nom'];?> ">
         </div>
         <h6> <u> Prénom </u></h6>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="<? echo $profil['prenom'];?> ">
-        </div>
-        <h6> <u> Adresse Mail </u></h6>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="<?php echo $profil['email']; ?> ">
+            <input type="text"  name ="prenom" class="form-control" placeholder="<? echo $profil['prenom'];?> ">
         </div>
         <h6> <u> Téléphone Portable </u></h6>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="<?php echo $profil['num_portable']; ?> ">
+            <input type="text" name="portable" class="form-control" placeholder="<?php echo $profil['num_portable']; ?> ">
         </div>
         <h6> <u> Facebook </u></h6>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="<?php echo $profil['facebook']; ?> ">
+            <input type="text" name ="facebook" class="form-control" placeholder="<?php echo $profil['facebook']; ?> ">
         </div>
         <h6> <u> Linkedin </u></h6>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="<?php echo $profil['linkedin']; ?>">
+            <input type="text" name ="linkedin" class="form-control" placeholder="<?php echo $profil['linkedin']; ?>">
         </div>
         <h5> Faidherbe </h5>
             <h6> <u> 1ère Année </u></h6>
             <div class="input-group mb-3"> 
-                <select class="custom-select" id="inputGroupSelect01">
+                <select class="custom-select" id="inputGroupSelect01" name="khlasse1">
                     <option selected>Séléctionner la khlâsse </option>
 
                 </select>
             </div>
             <h6> <u> 2ème Année </u></h6>
             <div class="input-group mb-3"> 
-                <select class="custom-select" id="inputGroupSelect01">
+                <select class="custom-select" id="inputGroupSelect01" name="khlasse2" >
                     <option selected>Séléctionner la khlâsse </option>
                 </select>
             </div>
         <h5> Post Faidherbe </h5>
             <h6> <u> Ecole/Etude </u></h6>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="<?php echo 'polytechnique' ?>">
+                <select class="custom-select" id="inputGroupSelect01" name="ecole" >
+                    <option selected>Séléctionner l'école </option>
+                </select>
             </div>
 
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Enregistrer</button>
+                <button class="btn btn-outline-secondary" type="submit">Enregistrer</button>
             </div>
         </form>
 
