@@ -238,7 +238,7 @@ class Users
     }
 
 
-    public static function Update_My_Data($params1,$params2,$params3,$params4,$params5,$params6,$params7,$params8){
+    public static function Update_My_Data($params1,$params2,$params3,$params4,$params5){
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
@@ -250,23 +250,23 @@ class Users
       $req->bindParam(':params5',$params5);
       $req1->bindParam(':cook',$cook);
       $req->execute();
-
-    
-      $req1 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse '));
+    }
+    public static function Insert_A_Etudie($params6){
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $cook = $_COOKIE["cookieperso"];
+    $req1 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse '));
       $req1->bindParam(':cook',$cook);
       $req1->bindParam(':idkhlasse',$params6);
       $req1 -> execute();
-
-      $req2 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse )');
-      $req2->bindParam(':cook',$cook);
-      $req2->bindParam(':idkhlasse',$params7);
-      $req2 -> execute();
-
+    }
+    public static function Insert_A_Etudie($params6){
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $cook = $_COOKIE["cookieperso"];
       $req3 = $bdheroku->prepare('INSERT INTO a_etudie_postfaidherbe VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idecole )');
       $req3->bindParam(':cook',$cook);
-      $req3->bindParam(':idecole',$params8);
+      $req3->bindParam(':idecole',$params6);
       $req3 -> execute();
-
-
     }
 } ?>
