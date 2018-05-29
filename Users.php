@@ -323,7 +323,7 @@ class Users
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-      $id = Get_User_Id($cook)   
+      $id = Get_User_Id($cook); 
       $req = $bdheroku->prepare(' DELETE FROM a_etudie
       WHERE id_user= :id');
       $req->bindParam(':id',$id);
