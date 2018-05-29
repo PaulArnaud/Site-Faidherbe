@@ -11,7 +11,7 @@
 		</h6>
 		<form class="form-signin container" action="controller_modifinfo.php" method="post">
 			<div class="input-group">
-				<input type="text" name="nom" class="form-control" placeholder="<? echo $profil['nom'];?> ">
+				<input required type="text" name="nom" class="form-control" placeholder="<? echo $profil['nom'];?> ">
 			</div>
 			<h6>
 				<u>
@@ -19,7 +19,7 @@
 				</u>
 			</h6>
 			<div class="input-group">
-				<input type="text"  name ="prenom" class="form-control" placeholder="<? echo $profil['prenom'];?> ">
+				<input required type="text"  name ="prenom" class="form-control" placeholder="<? echo $profil['prenom'];?> ">
 			</div>
 			<h6>
 				<u>
@@ -27,7 +27,7 @@
 				</u>
 			</h6>
 			<div class="input-group">
-				<input type="text" name="portable" class="form-control" placeholder="<?php echo $profil['num_portable']; ?> ">
+				<input required type="text" name="portable" class="form-control" placeholder="<?php echo $profil['num_portable']; ?> ">
 			</div>
 			<h6>
 				<u>
@@ -35,7 +35,7 @@
 				</u>
 			</h6>
 			<div class="input-group">
-				<input type="text" name ="facebook" class="form-control" placeholder="<?php echo $profil['facebook']; ?> ">
+				<input required type="text" name ="facebook" class="form-control" placeholder="<?php echo $profil['facebook']; ?> ">
 			</div>
 			<h6>
 				<u>
@@ -43,7 +43,7 @@
 				</u>
 			</h6>
 			<div class="input-group">
-				<input type="text" name ="linkedin" class="form-control" placeholder="<?php echo $profil['linkedin']; ?>">
+				<input required type="text" name ="linkedin" class="form-control" placeholder="<?php echo $profil['linkedin']; ?>">
 			</div>
 			<h5>
 				 Faidherbe 
@@ -54,7 +54,7 @@
 				</u>
 			</h6>
 			<div class="input-group mb-3">
-				<select class="custom-select" id="inputGroupSelect01" name="khlasse1">
+				<select required class="custom-select" id="inputGroupSelect01" name="khlasse1">
 					<option selected>Séléctionner la khlâsse </option>
                     <?php foreach ($khlasses as $value){echo '<option>'.$value['id_khlasse'].'---'.$value['nomkhlasse'].'---'.$value['annee'].'</option>';} ?></select>
 				</select>
@@ -65,7 +65,7 @@
 				</u>
 			</h6>
 			<div class="input-group mb-3">
-				<select class="custom-select" id="inputGroupSelect01" name="khlasse2" >
+				<select required class="custom-select" id="inputGroupSelect01" name="khlasse2" >
 					<option selected>Séléctionner la khlâsse </option>
                     <?php foreach ($khlasses as $value){echo '<option>'.$value['id_khlasse'].'---'.$value['nomkhlasse'].'---'.$value['annee'].'</option>';} ?></select>
 				</select>
@@ -79,7 +79,7 @@
 				</u>
 			</h6>
 			<div class="input-group">
-				<select class="custom-select" id="inputGroupSelect01" name="ecole" >
+				<select required class="custom-select" id="inputGroupSelect01" name="ecole" >
 					<option selected>Séléctionner l'école </option>
                     <?php foreach ($ecoles as $value){echo '<option>'.$value['id_ecole'].'---'.$value['nomecole'].'---'.$value['domaine'].'</option>';} ?></select>
 				</select>
