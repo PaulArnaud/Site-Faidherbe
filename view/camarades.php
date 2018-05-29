@@ -1,8 +1,9 @@
 <body>
+<?php $GLOBALS['camarades'] = false; ?>
 	<main role="main" class="container text-center">
 		<div class="starter-template">
 			<h1> Site du Faidherbard </h1>
-			<h2> Tableau des camarades de la Khlasse :<?php echo $var1['nomkhlasse'];?> de l'année : <?php echo $var1['annee'];?>  </h2>
+			<h2> Camarades de la Khlasse :<?php echo $var1['nomkhlasse'];?> de l'année : <?php echo $var1['annee'];?>  </h2>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm table-bordered table-dark table-hover">
 					<thead class="thead-dark">
@@ -27,4 +28,3 @@
 			</div>
 		</main>
 </body>
-<?php $GLOBALS['camarades'] = false; ?>
