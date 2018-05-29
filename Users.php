@@ -250,7 +250,7 @@ class Users
       $req->bindParam(':params5',$params5);
       $req1->bindParam(':cook',$cook);
       $req->execute();
-    }*/
+    }
     
     public static function Insert_A_Etudie($params){
       require_once('connect.php');
@@ -269,5 +269,5 @@ class Users
       $req3->bindParam(':cook',$cook);
       $req3->bindParam(':idecole',$params);
       $req3 -> execute();
-    }
+    }*/
 } ?>
