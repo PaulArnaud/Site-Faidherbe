@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="lib/angular.min.js"></script>
 	</head>
-	<body ng-init="tab = 0">
+	<body ng-init="tab = 1">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
