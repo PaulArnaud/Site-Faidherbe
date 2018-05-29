@@ -47,6 +47,7 @@
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
 		</div>
+		
 		<?php if isLogged(){?>
 		<div ng-show="tab === 2">
 			<?php require_once('controller_page_khlasse.php') ?>
@@ -55,6 +56,7 @@
 			<?php require_once('controller_page_profil.php') ?>
 		</div>
 		<?php } ?>
+
 		<div ng-show="tab === 4">
 			<?php require('view/forum.php') ?>
 		</div>
@@ -70,6 +72,7 @@
 		<div ng-show="tab === 8">
 			<?php require('view/chapeau.php') ?>
 		</div>
+
 		<?php if isLogged(){?>
 		<div ng-show="tab === 9">
 			<?php require_once('controller_page_infoperso.php') ?>
