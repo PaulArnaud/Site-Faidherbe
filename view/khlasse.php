@@ -27,14 +27,14 @@
 			</div>
 		</main>
 
-		<footer class="footer">
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
 			<div class="container">
 				<a href ng-click="tab = 10 " class="btn-dark btn-lg" role="button"> Ajouter une khlasse </a>
 			</div>
 			<div class="container">
 				<a href ng-click="tab = 13 " class="btn-dark btn-lg" role="button"> Ajouter une école </a>
 			</div>
-		</footer>
+		</div>
 </body>
 
 
