@@ -220,18 +220,19 @@ class Users
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req = $bdheroku->prepare('UPDATE users  
-      SET nom = :params1 , prenom = :params2 , num_portable = :params2 , facebook = :params4 , linkedin = :params5 
+      SET nom = :params1 , prenom = :params2 , facebook = :params4 , linkedin = :params5 
       WHERE cookiecode = :cook');
       $req->bindParam(':params1',$params1);
       $req->bindParam(':params2',$params2);
-      $req->bindParam(':params3',$params3);
+      //$req->bindParam(':params3',$params3);
       $req->bindParam(':params4',$params4);
       $req->bindParam(':params5',$params5);
       $req->bindParam(':cook',$cook);
       try{
         $req->execute();
+        return true;
       }catch (Exception $e){
-        echo 'problème';
+        return false;
       }
     }
     
@@ -244,8 +245,9 @@ class Users
       $req1->bindParam(':idkhlasse',$params);
       try{
         $req1->execute();
+        return true;
       }catch (Exception $e){
-        echo 'problème';
+        return false;
       }
     }
     public static function Insert_A_Etudie_PF($params){
@@ -257,8 +259,9 @@ class Users
       $req3->bindParam(':idecole',$params);
       try{
         $req3->execute();
+        return true;
       }catch (Exception $e){
-        echo 'problème';
+        return false;
       }
     }
 } ?>
