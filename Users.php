@@ -237,7 +237,7 @@ class Users
     return $data;
     }
 
-
+/*
     public static function Update_My_Data($params1,$params2,$params3,$params4,$params5,$params6,$params7,$params8){
       require_once('connect.php');
       $bdheroku = myPDO();
@@ -268,5 +268,5 @@ class Users
       $req3 -> execute();
 
 
-    }
+    }*/
 } ?>
