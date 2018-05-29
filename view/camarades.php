@@ -6,7 +6,7 @@
 			<h2> Tableau des camarades de la Khlasse :<?php echo $khlasse['nomkhlasse'];?> de l'année : <?php echo $khlasse['annee'];?>  </h2>
 			<?php 
 			$id = 1;
-			setcookie("cookiecamarades",$id,60,"/");
+			setcookie("cookiecamarades",$id,time()+(60*60),"/");
 			var_dump($_COOKIE["cookiecamarades"]); 
 			?>
 			<div class="table-responsive">
