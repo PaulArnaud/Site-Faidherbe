@@ -8,7 +8,9 @@ class Users
 	{
 		require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT id_user FROM users WHERE cookiecode= :cc');
+    $req = $bdheroku->prepare('SELECT id_user 
+    FROM users 
+    WHERE cookiecode= :cc');
     $req->bindParam(':cc',$cookiecode);
 		$req->execute();
 		$data=$req->fetch();
@@ -18,7 +20,9 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT email FROM users WHERE id_user= :userid');
+    $req = $bdheroku->prepare('SELECT email 
+    FROM users 
+    WHERE id_user= :userid');
     $req->bindParam(':userid',$userid);
     $req->execute();
     $data = $req->fetch();
@@ -29,7 +33,8 @@ class Users
   {
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT * FROM users');
+    $req = $bdheroku->prepare('SELECT * 
+    FROM users');
     $req->execute();
     while($data=$req->fetch())
 		{
@@ -40,7 +45,9 @@ class Users
   public static function Get_Users_Role($userid){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT isadmin FROM users WHERE id_user= :usersid');
+    $req = $bdheroku->prepare('SELECT isadmin 
+    FROM users 
+    WHERE id_user= :usersid');
     $req->bindParam(':usersid',$userid);
     $req->execute();
     $data = $req->fetch();
@@ -50,7 +57,9 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('UPDATE users SET cookiecode= :cookie WHERE email= :email');
+    $req = $bdheroku->prepare('UPDATE users 
+    SET cookiecode= :cookie 
+    WHERE email= :email');
     $req->bindParam(':cookie',$usercookie);
     $req->bindParam(':email',$email);
     $req->execute();
@@ -59,7 +68,9 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT userpassword FROM users WHERE email= :email');
+    $req = $bdheroku->prepare('SELECT userpassword 
+    FROM users 
+    WHERE email= :email');
     $req->bindParam(':email',$email);
     $data = $req->fetch();
     return($data['userpassword']==$userPassword);
@@ -69,7 +80,9 @@ class Users
   {
     require_once('connect.php');
 		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT userpassword,email FROM users WHERE email= :email');
+    $req = $bdheroku->prepare('SELECT userpassword,email 
+    FROM users 
+    WHERE email= :email');
     $req->bindParam(':email',$email);
     $req->execute();
     $data = $req->fetch();
@@ -81,7 +94,9 @@ class Users
     require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-      $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin FROM  users WHERE cookiecode = :cook');
+      $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin 
+      FROM  users 
+      WHERE cookiecode = :cook');
       $req->bindParam(':cook',$cook);
       $req->execute();
       $data=$req->fetch();
@@ -91,7 +106,11 @@ class Users
   {
       require_once('connect.php');
       $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) FROM a_etudie A WHERE A.id_khlasse= E.id_khlasse) FROM  khlasse E,typekhlasse T WHERE T.id_typekhlasse = E.id_type');
+      $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) 
+      FROM a_etudie A 
+      WHERE A.id_khlasse= E.id_khlasse) 
+      FROM  khlasse E,typekhlasse T 
+      WHERE T.id_typekhlasse = E.id_type');
       $req->execute();
       while($data=$req->fetch()){
           $result[] = $data;
@@ -103,7 +122,8 @@ class Users
   {
       require_once('connect.php');
       $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT id_ecole,nomecole FROM ecole');
+      $req = $bdheroku->prepare('SELECT id_ecole,nomecole 
+      FROM ecole');
       $req->execute();
       while($data=$req->fetch()){
           $result[] = $data;
@@ -126,11 +146,13 @@ class Users
     return $result;
   }
 
-  public static function Get_Myschool(){
+  public static function Get_MySchool(){
     require_once('connect.php');
     $bdheroku = myPDO();
     $cook = $_COOKIE["cookieperso"];
-    $req = $bdheroku->prepare('SELECT nomecole,domaine FROM ecole E, users U, a_etudie_postfaidherbe P where P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.cookiecode = :cook');
+    $req = $bdheroku->prepare('SELECT nomecole,domaine 
+    FROM ecole E, users U, a_etudie_postfaidherbe P
+    WHERE P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.cookiecode = :cook');
     $req->bindParam(':cook',$cook);
     $req->execute();
     $data=$req->fetch();
@@ -151,7 +173,8 @@ class Users
   public static function Set_Khlasse($type,$year){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  VALUES((SELECT count(*) FROM khlasse)+1,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse = :typekhlasse), :annee)');
+    $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  
+    VALUES((SELECT count(*) FROM khlasse)+1,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse = :typekhlasse), :annee)');
     $req->bindParam(':typekhlasse',$type);
     $req->bindParam(':annee',$year);
     try {
@@ -169,7 +192,9 @@ class Users
   public static function Get_All_Camarades($khlasseID){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku -> prepare('SELECT U.id_user,U.nom,U.prenom FROM users U,a_etudie A,khlasse K WHERE U.id_user = A.id_user AND A.id_khlasse=K.id_khlasse AND K.id_khlasse = :idkhlasse');
+    $req = $bdheroku -> prepare('SELECT U.id_user,U.nom,U.prenom 
+    FROM users U,a_etudie A,khlasse K 
+    WHERE U.id_user = A.id_user AND A.id_khlasse=K.id_khlasse AND K.id_khlasse = :idkhlasse');
     $req->bindParam(':idkhlasse',$khlasseID);
     $req->execute();
     while($data=$req->fetch()){
@@ -181,7 +206,9 @@ class Users
   public static function Get_Khlasse($khlasseID){
     require_once('connect.php');
     $bdheroku = myPDO();
-    $req = $bdheroku -> prepare('SELECT nomkhlasse,annee FROM typekhlasse T,khlasse K WHERE K.id_type = T.id_typekhlasse AND K.id_khlasse = :idkhlasse');
+    $req = $bdheroku -> prepare('SELECT nomkhlasse,annee 
+    FROM typekhlasse T,khlasse K 
+    WHERE K.id_type = T.id_typekhlasse AND K.id_khlasse = :idkhlasse');
     $req->bindParam(':idkhlasse',$khlasseID);
     $req->execute();
     $data=$req->fetch();
@@ -207,7 +234,9 @@ class Users
   public static function Get_Info_User($IDuser){
     require_once('connect.php');
       $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin FROM  users WHERE id_user = :user');
+      $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin 
+      FROM  users 
+      WHERE id_user = :user');
       $req->bindParam(':user',$IDuser);
       $req->execute();
       $data=$req->fetch();
@@ -232,11 +261,11 @@ class Users
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req = $bdheroku->prepare('UPDATE users  
-      SET nom = :params1 , prenom = :params2 , facebook = :params4 , linkedin = :params5 
+      SET nom = :params1 , prenom = :params2 ,num_portable = :params3 facebook = :params4 , linkedin = :params5 
       WHERE cookiecode = :cook');
       $req->bindParam(':params1',$params1);
       $req->bindParam(':params2',$params2);
-      //$req->bindParam(':params3',$params3);
+      $req->bindParam(':params3',$params3);
       $req->bindParam(':params4',$params4);
       $req->bindParam(':params5',$params5);
       $req->bindParam(':cook',$cook);
@@ -252,7 +281,8 @@ class Users
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-      $req1 = $bdheroku->prepare('INSERT INTO a_etudie VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse)');
+      $req1 = $bdheroku->prepare('INSERT INTO a_etudie 
+      VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idkhlasse)');
       $req1->bindParam(':cook',$cook);
       $req1->bindParam(':idkhlasse',$params);
       try{
@@ -266,7 +296,8 @@ class Users
       require_once('connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
-      $req3 = $bdheroku->prepare('INSERT INTO a_etudie_postfaidherbe VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idecole)');
+      $req3 = $bdheroku->prepare('INSERT INTO a_etudie_postfaidherbe 
+      VALUES ((SELECT id_user FROM users WHERE cookiecode = :cook), :idecole)');
       $req3->bindParam(':cook',$cook);
       $req3->bindParam(':idecole',$params);
       try{
