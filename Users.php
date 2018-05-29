@@ -224,7 +224,7 @@ class Users
       $data=$req->fetch();
       return $data;
   }
-/*
+
   public static function Get_School_User($IDuser){
     require_once('connect.php');
     $bdheroku = myPDO();
@@ -236,6 +236,4 @@ class Users
     $data=$req->fetch();
     return $data;
     }
-
-    */
 } ?>

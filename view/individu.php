@@ -9,15 +9,15 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
-                        Prenom : <? //echo $infouser['prenom'];?>    
+                        Prenom : <? echo $infouser['prenom'];?>    
                         <br>
-                        Nom : <?php //echo $infouser["nom"];?>                    
+                        Nom : <?php echo $infouser["nom"];?>                    
                     </h5>
                     <p class="card-text">
                         <br>
-                        Khlâsse 1ère année :   <?php //echo $khlasseuser[0]['nomkhlasse'] ?>                          
+                        Khlâsse 1ère année :   <?php echo $khlasseuser[0]['nomkhlasse'] ?>                          
                         <br>
-                        Khlâsse 2ème année :   <?php //echo $khlasseuser[1]['nomkhlasse'] ?>                             
+                        Khlâsse 2ème année :   <?php echo $khlasseuser[1]['nomkhlasse'] ?>                             
                     </p>
                 </div>
             </div>
@@ -27,9 +27,9 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Etude postFaidherbe : <?php //echo $ecoleuser['nomecole'] ?>                          
+                        Etude postFaidherbe : <?php echo $ecoleuser['nomecole'] ?>                          
                         <br>
-                        Domaine d'activité :  <?php //echo $ecoleuser['domaine'] ?>                        
+                        Domaine d'activité :  <?php echo $ecoleuser['domaine'] ?>                        
                     </p>
                 </div>
             </div>
@@ -39,13 +39,13 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Adresse Mail : <?php// echo $infouser['email']; ?>                        
+                        Adresse Mail : <?php echo $infouser['email']; ?>                        
                         <br>
-                        Numéro Portable :  <?php //echo $infouser['num_portable']; ?>                           
+                        Numéro Portable :  <?php echo $infouser['num_portable']; ?>                           
                         <br>
-                        Facebook : <?php //echo $infouser['facebook']; ?>                               
+                        Facebook : <?php echo $infouser['facebook']; ?>                               
                         <br>
-                        Linkedin : <?php //echo $infouser['linkedin']; ?>                        
+                        Linkedin : <?php echo $infouser['linkedin']; ?>                        
                     </p>
                 </div>
             </div>
