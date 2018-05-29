@@ -23,21 +23,8 @@ class Users
     $req->execute();
     $data = $req->fetch();
     return $data['email'];
-  }/*
-  public static function Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode)
-  {
-    require_once('../config/connect.php');
-		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('INSERT INTO user(nom, prenom, email, userscookiecode, userpassword) VALUES (:firstname,:lastname,:mail,:gender,:cookiecode,:password)');
-    $req->bindParam(':firstname',$firstname);
-		$req->bindParam(':lastname',$lastname);
-		$req->bindParam(':nick',$nick);
-		$req->bindParam(':mail',$mail);
-    $req->bindParam(':gender',$gender);
-    $req->bindParam(':cookiecode',$cookiecode);
-    $req->bindParam(':password',$password);
-    $req->execute();
-  }*/
+  }
+
   public static function Get_All_Users()
   {
     require_once('connect.php');
@@ -90,16 +77,6 @@ class Users
     //return($data['userspassword'] == $userpw);
   }
 
-
-  /*
-  public static function Delete_User($userid)
-  {
-    require_once('../config/connect.php');
-		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('DELETE FROM Users WHERE usersid= :usersid');
-    $req->bindParam(':usersid',$userid);
-    $req->execute();
-  }*/
   public static function Get_Info(){
     require_once('connect.php');
       $bdheroku = myPDO();
@@ -237,7 +214,7 @@ class Users
     return $data;
     }
 
-/*
+
     public static function Update_My_Data($params1,$params2,$params3,$params4,$params5){
       require_once('connect.php');
       $bdheroku = myPDO();
@@ -269,5 +246,5 @@ class Users
       $req3->bindParam(':cook',$cook);
       $req3->bindParam(':idecole',$params);
       $req3 -> execute();
-    }*/
+    }
 } ?>
