@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="lib/angular.min.js"></script>
 	</head>
-	<body ng-init="tab = 1">
+	<body ng-init="tab = 0">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
@@ -80,10 +80,10 @@
 			<?php require_once('controller_page_newkhlasse.php') ?>
 		</div>
 		
-		<?php /*if ( $GLOBALS['camarades'] ){
-			require_once('view/camarades.php')
-		 } */
-		 ?>
+		<?php if ($GLOBALS['camarades']){
+			require_once('view/camarades.php');
+		 } 
+		?>
 
 
 
