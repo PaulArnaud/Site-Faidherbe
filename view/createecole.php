@@ -1,6 +1,6 @@
 <body>
 	<main class="card text-center">
-		<form action="/controller/controller_newecole.php" method="post" >
+		<form action="Controller/controller_newecole.php" method="post" >
 				<div class="form-group col-md-4">
                     <div class="col">
                     <label for="inputState">Créer une école </label>

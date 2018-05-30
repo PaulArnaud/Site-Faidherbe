@@ -9,7 +9,7 @@
 				 Nom 
 			</u>
 		</h6>
-		<form class="form-signin container" action="/controller/controller_modifinfo.php" method="post">
+		<form class="form-signin container" action="Controller/controller_modifinfo.php" method="post">
 			<div class="input-group">
 				<input required type="text" name="nom" class="form-control" placeholder="<? echo $profil['nom'];?> ">
 			</div>
