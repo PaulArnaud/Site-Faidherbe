@@ -1,7 +1,7 @@
 <?php
 require_once('models/test.php');
-$users = Users::Get_All_Users();
-$ecoles = Users::Get_All_Ecole();
-$khlasses = Users::Get_All_Khlasse();
+$users = test::Get_All_Users();
+$ecoles = test::Get_All_Ecole();
+$khlasses = test::Get_All_Khlasse();
 require_once('view/admin.php');
 ?>

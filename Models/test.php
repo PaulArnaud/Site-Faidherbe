@@ -1,5 +1,5 @@
 <?php
-class Users
+class test
 {/*
   public static function Get_User_Id($cookiecode)
 	//User_Cookie_Code => User_Id
