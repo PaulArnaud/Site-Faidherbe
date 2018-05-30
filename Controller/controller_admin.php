@@ -1,5 +1,5 @@
 <?php
-require_once("Users.php");
+require_once("../Users.php");
 $user = $_POST['user'];
 $ecole = $_POST['ecole'];
 $khlasse = $_POST['khlasse'];
@@ -15,5 +15,5 @@ if (!empty($khlasse)){
     $id_khlasse = explode('-',$khlasse);
     Users::Del_Khlasse($id_khlasse[0]);
 }
-header('Location: accueil.php');
+header('Location: ../accueil.php');
 ?>
