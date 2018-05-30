@@ -64,5 +64,20 @@ class Khlasse
         }
   
       }
+
+
+      public static function Get_All_Camarades($khlasseID){
+        require_once('config/connect.php');
+        $bdheroku = myPDO();
+        $req = $bdheroku -> prepare('SELECT U.id_user,U.nom,U.prenom 
+        FROM users U,a_etudie A,khlasse K 
+        WHERE U.id_user = A.id_user AND A.id_khlasse=K.id_khlasse AND K.id_khlasse = :idkhlasse');
+        $req->bindParam(':idkhlasse',$khlasseID);
+        $req->execute();
+        while($data=$req->fetch()){
+          $result[] = $data;
+        }
+        return $result;
+      }
 }
 ?>

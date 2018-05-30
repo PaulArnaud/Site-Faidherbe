@@ -1,11 +1,7 @@
 <?php
 class Users
 {
-  public static function Get_User_Id($cookiecode)
-	//User_Cookie_Code => User_Id
-	//données : $userCookieCode string correspondant à un code cookie
-	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
-	{
+  public static function Get_User_Id($cookiecode)	{
 		require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT id_user 
@@ -16,7 +12,7 @@ class Users
 		$data=$req->fetch();
 		return $data['id_user']; //Verifier si null
 	}
-  public static function Get_Users_Mail($userid)
+  public static function Get_User_Mail($userid)
   {
     require_once('config/connect.php');
 		$bdheroku = myPDO();
@@ -42,7 +38,7 @@ class Users
 		}
 		return $result;
   }
-  public static function Get_Users_Role($userid){
+  public static function Get_User_Role($userid){
     require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT isadmin 
@@ -63,17 +59,6 @@ class Users
     $req->bindParam(':cookie',$usercookie);
     $req->bindParam(':email',$email);
     $req->execute();
-  }
-  public static function checkLogin($email,$userPassword)
-  {
-    require_once('config/connect.php');
-		$bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT userpassword 
-    FROM users 
-    WHERE email= :email');
-    $req->bindParam(':email',$email);
-    $data = $req->fetch();
-    return($data['userpassword']==$userPassword);
   }
   
   public static function Check_Password($email,$userpw)
@@ -132,33 +117,7 @@ class Users
     return $data;
     }
 
-  public static function Get_Types(){
-    require_once('config/connect.php');
-    $bdheroku = myPDO();
-    $req = $bdheroku->prepare('SELECT nomkhlasse FROM typekhlasse');
-    $req->execute();
-    while($data=$req->fetch()){
-      $result[] = $data;
-    }
-    return $result;
-  }
 
-
-
-
-  public static function Get_All_Camarades($khlasseID){
-    require_once('config/connect.php');
-    $bdheroku = myPDO();
-    $req = $bdheroku -> prepare('SELECT U.id_user,U.nom,U.prenom 
-    FROM users U,a_etudie A,khlasse K 
-    WHERE U.id_user = A.id_user AND A.id_khlasse=K.id_khlasse AND K.id_khlasse = :idkhlasse');
-    $req->bindParam(':idkhlasse',$khlasseID);
-    $req->execute();
-    while($data=$req->fetch()){
-      $result[] = $data;
-    }
-    return $result;
-  }
 
 
   public static function Get_Khlasse_User($IDuser){
@@ -251,17 +210,6 @@ class Users
       }catch (Exception $e){
         return false;
       }
-    }
-
-    public static function Get_Years(){
-      require_once('config/connect.php');
-      $bdheroku = myPDO();
-      $req = $bdheroku->prepare('SELECT année FROM année');
-      $req->execute();
-      while($data=$req->fetch()){
-        $result[] = $data;
-      }
-      return $result;
     }
 
     public static function Del_A_Etudie(){

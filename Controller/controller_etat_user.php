@@ -28,7 +28,7 @@ function isAdmin(){
   if(isset($_COOKIE['cookieperso'])){
     $cookie=$_COOKIE['cookieperso'];
     $userid=Users::Get_User_Id($cookie);
-    $role=Users::Get_Users_Role($userid);
+    $role=Users::Get_User_Role($userid);
 
     if($role===true){
       return true;
