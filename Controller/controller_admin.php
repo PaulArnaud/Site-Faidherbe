@@ -1,6 +1,7 @@
 <?php
 require_once("../Users.php");
 require_once("../Ecole.php");
+require_once("../Khlasse.php");
 $user = $_POST['user'];
 $ecole = $_POST['ecole'];
 $khlasse = $_POST['khlasse'];
@@ -14,7 +15,7 @@ if (!empty($ecole)){
 }
 if (!empty($khlasse)){
     $id_khlasse = explode('-',$khlasse);
-    Users::Del_Khlasse($id_khlasse[0]);
+    Khlasse::Del_Khlasse($id_khlasse[0]);
 }
 header('Location: ../controller_page_accueil.php');
 ?>
