@@ -16,7 +16,7 @@ if(empty($email) || empty($password)){
     header("Location: ../accueil.php");
   }
   else{
-    header("Location: controller_page_connexion");
+    header("Location: controller_page_connexion.php");
   }
 }
 ?>
