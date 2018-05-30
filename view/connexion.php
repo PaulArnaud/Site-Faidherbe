@@ -2,9 +2,9 @@
 <html lang="en" ng-app="FaidherbeEnPoche">
 	<head>
     <meta charset="utf-8">
-		<link rel="stylesheet" href="lib/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="lib/angular.min.js"></script>
-		<link href="css/signin.css" rel="stylesheet">
+		<link rel="stylesheet" href="../lib/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="../lib/angular.min.js"></script>
+		<link href="../css/signin.css" rel="stylesheet">
 		<title> Ceci est la page de connexion </title>
 	</head>
 	<body class="text-center">
