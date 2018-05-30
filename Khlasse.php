@@ -5,7 +5,7 @@ class Khlasse
       require_once('config/connect.php');
       $bdheroku = myPDO();
       $maxId = $bdheroku->query('SELECT MAX(id_khlasse) FROM khlasse');
-      return $maxId->fetch()[0];
+      return $maxId->fetch();
     }
 
     public static function Get_All_Khlasse()
