@@ -16,5 +16,5 @@ if (!empty($khlasse)){
     $id_khlasse = explode('-',$khlasse);
     Users::Del_Khlasse($id_khlasse[0]);
 }
-header('Location: ../accueil.php');
+header('Location: ../controller_page_accueil.php');
 ?>

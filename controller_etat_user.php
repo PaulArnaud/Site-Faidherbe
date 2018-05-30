@@ -14,13 +14,13 @@ function isLogged(){
 
 function loggedOnly(){
   if(!isLogged()){
-    header("Location: Connexion.php");
+    header("Location: controller_page_connexion.php");
   }
 }
 
 function unloggedOnly(){
   if(isLogged()){
-    header("Location: accueil.php");
+    header("Location: controller_page_accueil.php");
   }
 }
 
@@ -36,12 +36,5 @@ function isAdmin(){
     else return false;
   }
   else return false;
-}
-
-function adminOnly(){
-  if(!isAdmin())
-  {
-    header("Location: Erreur.php?err=Vous n'avez pas accès à cette page!");
-  }
 }
  ?>
