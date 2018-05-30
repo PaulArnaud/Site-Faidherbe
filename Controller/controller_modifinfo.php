@@ -1,5 +1,5 @@
 <?php
-require_once("../Users.php");
+require_once("Users.php");
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $portable = $_POST['portable'];
@@ -16,6 +16,6 @@ Users::Update_My_Data($nom,$prenom,$portable,$facebook,$linkedin);
 Users::Insert_A_Etudie($id_khlasse1[0]);
 Users::Insert_A_Etudie($id_khlasse2[0]);
 Users::Insert_A_Etudie_PF($id_ecole[0]);
-header('Location: controller_page_accueil.php');
+header('Location: Controller/controller_page_accueil.php');
 ?>
 

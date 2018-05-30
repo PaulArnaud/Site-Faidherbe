@@ -1,4 +1,4 @@
 <?php
 setcookie("cookieperso","",0, "/");
-header("Location: controller_page_accueil.php");
+header("Location: Controller/controller_page_accueil.php");
 ?>
