@@ -1,5 +1,6 @@
 <?php
 require_once("../Users.php");
+require_once("../Ecole.php");
 $user = $_POST['user'];
 $ecole = $_POST['ecole'];
 $khlasse = $_POST['khlasse'];
@@ -9,7 +10,7 @@ if (!empty($user)){
 }
 if (!empty($ecole)){
     $id_ecole = explode('-',$ecole);
-    Users::Del_Ecole($id_ecole[0]);
+    Ecole::Del_Ecole($id_ecole[0]);
 }
 if (!empty($khlasse)){
     $id_khlasse = explode('-',$khlasse);
