@@ -18,8 +18,6 @@ class Khlasse
         return $result;
     }
 
-
-
     public static function Set_Khlasse($type,$year){
         require_once('config/connect.php');
         $bdheroku = myPDO();
@@ -62,7 +60,6 @@ class Khlasse
         }catch (Exception $e){
           return false;
         }
-  
       }
 
 
@@ -79,5 +76,6 @@ class Khlasse
         }
         return $result;
       }
+      
 }
 ?>

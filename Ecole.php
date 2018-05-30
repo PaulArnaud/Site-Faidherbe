@@ -1,6 +1,7 @@
 <?php
 class Ecole
 {
+
     public static function Set_Ecole($nom,$dom){
         require_once('config/connect.php');
         $bdheroku = myPDO();
@@ -30,7 +31,6 @@ class Ecole
         }catch (Exception $e){
           return false;
         }
-  
       }
 
       public static function Get_All_Ecole()
@@ -45,5 +45,6 @@ class Ecole
           }
           return $result;
       }
+      
 }
 ?>

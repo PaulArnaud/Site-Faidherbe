@@ -1,5 +1,6 @@
 <?php
 class TypeKhlasse{
+
     public static function Get_Types(){
         require_once('config/connect.php');
         $bdheroku = myPDO();
@@ -10,6 +11,7 @@ class TypeKhlasse{
         }
         return $result;
       }
+      
 }
 ?>
 
