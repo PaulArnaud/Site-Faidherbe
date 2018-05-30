@@ -5,7 +5,7 @@ class Ecole
         require_once('config/connect.php');
         $bdheroku = myPDO();
         $req = $bdheroku->prepare('INSERT INTO ecole(id_ecole,nomecole,domaine)  
-        VALUES((SELECT count(*) FROM ecole)+1,:nom, :dom)');
+        VALUES((SELECT MAX(id_ecole) FROM ecole)+1,:nom, :dom)');
         $req->bindParam(':nom',$nom);
         $req->bindParam(':dom',$dom);
         try {
