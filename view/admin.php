@@ -1,3 +1,6 @@
+
+<section>
+
 <form class="form-signin container card" action="controller_admin.php" method="post">
 	<div class="container">
 		<div class="input-group mb-3">
@@ -27,3 +30,5 @@
 		<button class="btn btn-outline-secondary" type="submit">Supprimer</button>
 	</div>
 </form>
+
+</section>
