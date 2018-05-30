@@ -9,7 +9,7 @@
 	</head>
 	<body class="text-center">
 
-		<form class="form-signin container" action="controller/controller_connexion.php" method="post">
+		<form class="form-signin container" action="controller_connexion.php" method="post">
 			<img class="mb-4" src="/img/logo faidherbe.jpg" alt="" width="150" height="150">
 			<h1 class="h3 mb-3 font-weight-normal"> Bienvenue </h1>
 
