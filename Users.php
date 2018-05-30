@@ -352,5 +352,50 @@ class Users
         return false;
       }
     }
+
+    public static function Del_User($id){
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $req = $bdheroku->prepare(' DELETE FROM users
+      WHERE id_user= :id');
+      $req->bindParam(':id',$id);
+      try{
+        $req->execute();
+        return true;
+      }catch (Exception $e){
+        return false;
+      }
+
+    }
+
+    public static function Del_Ecole($id){
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $req = $bdheroku->prepare(' DELETE FROM ecole
+      WHERE id_ecole= :id');
+      $req->bindParam(':id',$id);
+      try{
+        $req->execute();
+        return true;
+      }catch (Exception $e){
+        return false;
+      }
+
+    }
+
+    public static function Del_Khlasse($id){
+      require_once('connect.php');
+      $bdheroku = myPDO();
+      $req = $bdheroku->prepare(' DELETE FROM khlasse
+      WHERE id_khlasse= :id');
+      $req->bindParam(':id',$id);
+      try{
+        $req->execute();
+        return true;
+      }catch (Exception $e){
+        return false;
+      }
+
+    }
   
 } ?>

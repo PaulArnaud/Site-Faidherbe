@@ -90,6 +90,10 @@
 		<div ng-show="tab === 12">
 		<?php if ($GLOBALS['individu']){require_once('view/individu.php');} ?>
 		</div>
+
+		<div ng-show="tab === 20">
+			<?php require('controller_page_admin.php') ?>
+		</div>
 		
 
 
