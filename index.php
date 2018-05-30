@@ -1,5 +1,4 @@
 <?php
-
 $GLOBALS['camarades'] = false;
 $GLOBALS['individu'] = false;
 try {

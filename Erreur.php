@@ -1,3 +1,3 @@
 <?php
-require_once("controller_page_erreur.php");
+require_once("controller/controller_page_erreur.php");
 ?>
