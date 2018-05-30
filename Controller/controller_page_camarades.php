@@ -1,6 +1,6 @@
 <?php
-require_once("Users.php");
-require_once("Khlasse.php");
+require_once("../Users.php");
+require_once("../Khlasse.php");
 $khlasseID = $_GET['idkhlasse'];
 $var1 = Khlasse::Get_Khlasse($khlasseID);
 $var2 = Users::Get_All_Camarades($khlasseID);

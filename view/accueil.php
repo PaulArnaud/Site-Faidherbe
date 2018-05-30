@@ -32,12 +32,12 @@
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
 					<li class="nav-item">
-						<a class="nav-link"  href="controller_page_connexion.php"><i class="material-icons">power_settings_new</i></a>
+						<a class="nav-link"  href="Controller/controller_page_connexion.php"><i class="material-icons">power_settings_new</i></a>
 					</li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
 					<li class="nav-item ">
-						<a class="nav-link"  title="Déconnexion" href="controller_deconnexion.php"><i class="material-icons">exit_to_app</i></a>
+						<a class="nav-link"  title="Déconnexion" href="Controller/controller_deconnexion.php"><i class="material-icons">exit_to_app</i></a>
 					</li>
 					<?php } ?>
 				</ul>
@@ -50,10 +50,10 @@
 
 
 		<div ng-show="tab === 2">
-			<?php require_once('controller_page_khlasse.php') ?>
+			<?php require_once('Controller/controller_page_khlasse.php') ?>
 		</div>
 		<div ng-show="tab === 3">
-			<?php require_once('controller_page_profil.php') ?>
+			<?php require_once('Controller/controller_page_profil.php') ?>
 		</div>
 
 
@@ -74,13 +74,13 @@
 		</div>
 
 		<div ng-show="tab === 9">
-			<?php require_once('controller_page_infoperso.php') ?>
+			<?php require_once('Controller/controller_page_infoperso.php') ?>
 		</div>
 		<div ng-show="tab === 10">
-			<?php require_once('controller_page_newkhlasse.php') ?>
+			<?php require_once('Controller/controller_page_newkhlasse.php') ?>
 		</div>
 		<div ng-show="tab === 13">
-			<?php require_once('controller_page_newecole.php') ?>
+			<?php require_once('Controller/controller_page_newecole.php') ?>
 		</div>
 		
 		<div ng-show="tab === 11">
@@ -92,7 +92,7 @@
 		</div>
 
 		<div ng-show="tab === 20">
-			<?php require('controller_page_admin.php') ?>
+			<?php require('Controller/controller_page_admin.php') ?>
 		</div>
 		
 
