@@ -27,7 +27,7 @@
 				</u>
 			</h6>
 			<div class="input-group">
-				<input required type="text" name="portable" class="form-control" placeholder="<?php echo $profil['num_portable']; ?> ">
+				<input type="text" name="portable" class="form-control" placeholder="<?php echo $profil['num_portable']; ?> ">
 			</div>
 			<h6>
 				<u>
