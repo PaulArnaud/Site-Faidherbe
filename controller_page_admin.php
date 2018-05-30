@@ -1,5 +1,5 @@
 <?php
-require_once('../models/test.php');
+include_once('models/test.php');
 $users = test::Get_All_Users();
 $ecoles = test::Get_All_Ecole();
 $khlasses = test::Get_All_Khlasse();
