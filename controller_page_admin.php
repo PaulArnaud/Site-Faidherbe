@@ -1,5 +1,7 @@
 <?php
-require_once('models/test.php');
+opendir('models');
+readdir('models');
+//require_once('models/test.php');
 //$users = test::Get_All_Users();
 //$ecoles = test::Get_All_Ecole();
 //$khlasses = test::Get_All_Khlasse();
