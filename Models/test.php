@@ -1,6 +1,6 @@
 <?php
-class test
-{/*
+class test {
+  /*
   public static function Get_User_Id($cookiecode)
 	//User_Cookie_Code => User_Id
 	//données : $userCookieCode string correspondant à un code cookie
@@ -29,8 +29,7 @@ class test
     return $data['email'];
   }*/
 
-  public static function Get_All_Users()
-  {
+  public static function Get_All_Users() {
     require_once('../config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT * 
@@ -102,8 +101,7 @@ class test
       $data=$req->fetch();
       return $data;
   }*/
-  public static function Get_All_Khlasse()
-  {
+  public static function Get_All_Khlasse(){
       require_once('../config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) 
@@ -118,8 +116,7 @@ class test
       return $result;
   }
 
-  public static function Get_All_Ecole()
-  {
+  public static function Get_All_Ecole(){
       require_once('../config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT id_ecole,nomecole 
