@@ -1,5 +1,5 @@
 <?php
-require_once("Users.php");
+require_once("../Users.php");
 
 function isLogged(){
   if(isset($_COOKIE['cookieperso'])){
