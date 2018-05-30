@@ -6,7 +6,7 @@ class Users
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
 	{
-		require_once('connect.php');
+		require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT id_user 
     FROM users 
@@ -18,7 +18,7 @@ class Users
 	}
   public static function Get_Users_Mail($userid)
   {
-    require_once('connect.php');
+    require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT email 
     FROM users 
@@ -31,7 +31,7 @@ class Users
 
   public static function Get_All_Users()
   {
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT * 
     FROM users');
@@ -43,7 +43,7 @@ class Users
 		return $result;
   }
   public static function Get_Users_Role($userid){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT isadmin 
     FROM users 
@@ -55,7 +55,7 @@ class Users
   }
   public static function Set_User_Cookie($email,$usercookie)
   {
-    require_once('connect.php');
+    require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('UPDATE users 
     SET cookiecode= :cookie 
@@ -66,7 +66,7 @@ class Users
   }
   public static function checkLogin($email,$userPassword)
   {
-    require_once('connect.php');
+    require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT userpassword 
     FROM users 
@@ -78,7 +78,7 @@ class Users
   
   public static function Check_Password($email,$userpw)
   {
-    require_once('connect.php');
+    require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT userpassword,email 
     FROM users 
@@ -91,7 +91,7 @@ class Users
   }
 
   public static function Get_Info(){
-    require_once('connect.php');
+    require_once('config/connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin 
@@ -104,7 +104,7 @@ class Users
   }
   public static function Get_All_Khlasse()
   {
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) 
       FROM a_etudie A 
@@ -120,7 +120,7 @@ class Users
 
   public static function Get_All_Ecole()
   {
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT id_ecole,nomecole 
       FROM ecole');
@@ -132,7 +132,7 @@ class Users
   }
 
   public static function Get_Mykhlasse(){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $cook = $_COOKIE["cookieperso"];
     $req = $bdheroku->prepare('SELECT T.nomkhlasse,annee 
@@ -147,7 +147,7 @@ class Users
   }
 
   public static function Get_MySchool(){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $cook = $_COOKIE["cookieperso"];
     $req = $bdheroku->prepare('SELECT nomecole,domaine 
@@ -160,7 +160,7 @@ class Users
     }
 
   public static function Get_Types(){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT nomkhlasse FROM typekhlasse');
     $req->execute();
@@ -171,7 +171,7 @@ class Users
   }
 
   public static function Set_Khlasse($type,$year){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  
     VALUES((SELECT count(*) FROM khlasse)+1,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse = :typekhlasse), :annee)');
@@ -190,7 +190,7 @@ class Users
 
 
   public static function Get_All_Camarades($khlasseID){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku -> prepare('SELECT U.id_user,U.nom,U.prenom 
     FROM users U,a_etudie A,khlasse K 
@@ -204,7 +204,7 @@ class Users
   }
 
   public static function Get_Khlasse($khlasseID){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku -> prepare('SELECT nomkhlasse,annee 
     FROM typekhlasse T,khlasse K 
@@ -217,7 +217,7 @@ class Users
 
 
   public static function Get_Khlasse_User($IDuser){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT T.nomkhlasse,annee 
     FROM  khlasse E,typekhlasse T,a_etudie A,users U 
@@ -232,7 +232,7 @@ class Users
 
 
   public static function Get_Info_User($IDuser){
-    require_once('connect.php');
+    require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin 
       FROM  users 
@@ -244,7 +244,7 @@ class Users
   }
 
   public static function Get_School_User($IDuser){
-    require_once('connect.php');
+    require_once('config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT nomecole,domaine 
     FROM ecole E, users U, a_etudie_postfaidherbe P 
@@ -257,7 +257,7 @@ class Users
 
 
     public static function Update_My_Data($params1,$params2,$params3,$params4,$params5){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req = $bdheroku->prepare('UPDATE users  
@@ -278,7 +278,7 @@ class Users
     }
     
     public static function Insert_A_Etudie($params){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req1 = $bdheroku->prepare('INSERT INTO a_etudie 
@@ -293,7 +293,7 @@ class Users
       }
     }
     public static function Insert_A_Etudie_PF($params){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $req3 = $bdheroku->prepare('INSERT INTO a_etudie_postfaidherbe 
@@ -309,7 +309,7 @@ class Users
     }
 
     public static function Get_Years(){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT année FROM année');
       $req->execute();
@@ -320,7 +320,7 @@ class Users
     }
 
     public static function Del_A_Etudie(){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $cook = $_COOKIE["cookieperso"];
       $id = Users::Get_User_Id($cook); 
@@ -336,7 +336,7 @@ class Users
     }
 
     public static function Set_Ecole($nom,$dom){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('INSERT INTO ecole(id_ecole,nomecole,domaine)  
       VALUES((SELECT count(*) FROM ecole)+1,:nom, :dom)');
@@ -354,7 +354,7 @@ class Users
     }
 
     public static function Del_User($id){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare(' DELETE FROM users
       WHERE id_user= :id');
@@ -369,7 +369,7 @@ class Users
     }
 
     public static function Del_Ecole($id){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare(' DELETE FROM ecole
       WHERE id_ecole= :id');
@@ -384,7 +384,7 @@ class Users
     }
 
     public static function Del_Khlasse($id){
-      require_once('connect.php');
+      require_once('config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare(' DELETE FROM khlasse
       WHERE id_khlasse= :id');
