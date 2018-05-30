@@ -51,6 +51,7 @@
 
 		<div ng-show="tab === 2">
 			<?php require_once('Controller/controller_page_khlasse.php') ?>
+			<?php echo dirname(__FILE__); ?>
 		</div>
 		<div ng-show="tab === 3">
 			<?php require_once('Controller/controller_page_profil.php') ?>
