@@ -1,5 +1,5 @@
 <?php
-$a = opendir(/app/models);
+$a = opendir(dirname(__FILE__));
 var_dump(readdir($a));
 //require_once('models/test.php');
 //$users = test::Get_All_Users();
