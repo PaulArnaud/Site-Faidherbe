@@ -1,5 +1,5 @@
 <?php
-require_once("models/Users.php");
+require_once("Users.php");
 $khlasseID = $_GET['idkhlasse'];
 $var1 = Users::Get_Khlasse($khlasseID);
 $var2 = Users::Get_All_Camarades($khlasseID);
