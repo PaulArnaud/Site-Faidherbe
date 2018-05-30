@@ -1,6 +1,6 @@
 <?php
 class Users
-{
+{/*
   public static function Get_User_Id($cookiecode)
 	//User_Cookie_Code => User_Id
 	//données : $userCookieCode string correspondant à un code cookie
@@ -27,11 +27,11 @@ class Users
     $req->execute();
     $data = $req->fetch();
     return $data['email'];
-  }
+  }*/
 
   public static function Get_All_Users()
   {
-    require_once('../config/connect.php');
+    require_once('/config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT * 
     FROM users');
@@ -41,7 +41,7 @@ class Users
 			$result[] = $data;
 		}
 		return $result;
-  }
+  }/*
   public static function Get_Users_Role($userid){
     require_once('../config/connect.php');
     $bdheroku = myPDO();
@@ -101,10 +101,10 @@ class Users
       $req->execute();
       $data=$req->fetch();
       return $data;
-  }
+  }*/
   public static function Get_All_Khlasse()
   {
-      require_once('../config/connect.php');
+      require_once('/config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) 
       FROM a_etudie A 
@@ -120,7 +120,7 @@ class Users
 
   public static function Get_All_Ecole()
   {
-      require_once('../config/connect.php');
+      require_once('/config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT id_ecole,nomecole 
       FROM ecole');
@@ -129,7 +129,7 @@ class Users
           $result[] = $data;
       }
       return $result;
-  }
+  }/*
 
   public static function Get_Mykhlasse(){
     require_once('../config/connect.php');
@@ -396,6 +396,6 @@ class Users
         return false;
       }
 
-    }
+    }*/
   
 } ?>
