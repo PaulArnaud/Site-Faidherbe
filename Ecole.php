@@ -13,7 +13,6 @@ class Ecole
           return true;
         }
         catch (Exception $e) {
-          // error during execute (bad request)
           http_response_code(400);
           return false;
         }
