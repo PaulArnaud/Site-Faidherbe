@@ -6,7 +6,7 @@ class Users
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
 	{
-		require_once('/config/connect.php');
+		require_once('config/connect.php');
 		$bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT id_user 
     FROM users 
