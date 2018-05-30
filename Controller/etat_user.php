@@ -14,13 +14,13 @@ function isLogged(){
 
 function loggedOnly(){
   if(!isLogged()){
-    header("Location: Controller/controller_page_connexion.php");
+    header("Location: controller_page_connexion.php");
   }
 }
 
 function unloggedOnly(){
   if(isLogged()){
-    header("Location: Controller/controller_page_accueil.php");
+    header("Location: controller_page_accueil.php");
   }
 }
 
