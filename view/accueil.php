@@ -37,7 +37,7 @@
 					<?php } ?>
 					<?php if(isLogged()){ ?>
 					<li class="nav-item ">
-						<a class="nav-link"  title="Déconnexion" href="Controller/controller_deconnexion.php"><i class="material-icons">exit_to_app</i></a>
+						<a class="nav-link"  title="Déconnexion" href="controller_deconnexion.php"><i class="material-icons">exit_to_app</i></a>
 					</li>
 					<?php } ?>
 				</ul>
