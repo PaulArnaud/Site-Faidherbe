@@ -1,5 +1,5 @@
 <?php
-require_once("../Users.php");
+//require_once("../Users.php");
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $portable = $_POST['portable'];
