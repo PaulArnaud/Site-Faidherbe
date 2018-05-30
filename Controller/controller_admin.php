@@ -1,6 +1,6 @@
 <?php
 require_once("../Users.php");
-require_once("../Models/Ecole.php");
+require_once("../Ecole.php");
 $user = $_POST['user'];
 $ecole = $_POST['ecole'];
 $khlasse = $_POST['khlasse'];
