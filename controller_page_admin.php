@@ -1,9 +1,7 @@
 <?php
-$a = opendir('/models');
-var_dump(readdir($a));
-//require_once('models/test.php');
-//$users = test::Get_All_Users();
-//$ecoles = test::Get_All_Ecole();
-//$khlasses = test::Get_All_Khlasse();
-//require_once('view/admin.php');
+require_once('Users.php');
+$users = Users::Get_All_Users();
+$ecoles = Users::Get_All_Ecole();
+$khlasses = Users::Get_All_Khlasse();
+require_once('view/admin.php');
 ?>
