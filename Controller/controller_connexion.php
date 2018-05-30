@@ -3,6 +3,7 @@
 require_once("Users.php");
 $email=htmlspecialchars($_POST['Email']);
 $password=htmlspecialchars($_POST['password']);
+echo '123';
 
 if(empty($email) || empty($password)){
   $message="Merci de remplir tous les champs!";
@@ -12,7 +13,7 @@ if(Users::Check_Password($email,$password)){
   $cookieconnexion=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
   $cookiegood = setcookie("cookieperso", $cookieconnexion, time()+(60*60*24*30), "/");
   Users::Set_User_Cookie($email,$cookieconnexion);
-  header("Location: controller_page_accueil.php");
+  header("Location: Controller/controller_page_accueil.php");
 }
 /*
 else
