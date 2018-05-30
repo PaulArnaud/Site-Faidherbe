@@ -1,16 +1,6 @@
 <?php
 class Khlasse
 {
-    public static function Get_Idmax_Khlasse(){
-      require_once('config/connect.php');
-      $bdheroku = myPDO();
-      $maxId = $bdheroku->query('SELECT MAX(id_khlasse) FROM khlasse');
-      if (empty($maxId->fetch()[0])){
-        return 0;
-      }else{
-        return $maxId->fetch()[0];
-      }
-    }
 
     public static function Get_All_Khlasse()
     {
@@ -31,12 +21,10 @@ class Khlasse
 
 
     public static function Set_Khlasse($type,$year){
-        $id = Get_Idmax_Khlasse();
         require_once('config/connect.php');
         $bdheroku = myPDO();
         $req = $bdheroku->prepare('INSERT INTO khlasse(id_khlasse,id_type,annee)  
-        VALUES(:id,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse = :typekhlasse), :annee)');
-        $req->bindParam(':id',$id);
+        VALUES((SELECT MAX(id_khlasse) FROM khlasse)+1,(SELECT id_typekhlasse FROM typekhlasse WHERE nomkhlasse = :typekhlasse), :annee)');
         $req->bindParam(':typekhlasse',$type);
         $req->bindParam(':annee',$year);
         try {
