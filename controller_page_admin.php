@@ -1,6 +1,5 @@
 <?php
-
-require_once('/models/Users.php');
+require_once('models/Users.php');
 $users = Users::Get_All_Users();
 $ecoles = Users::Get_All_Ecole();
 $khlasses = Users::Get_All_Khlasse();
