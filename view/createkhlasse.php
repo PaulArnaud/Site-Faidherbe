@@ -1,6 +1,6 @@
 <body>
 	<main class="card text-center">
-		<form action="controller_newkhlasse.php" method="post" >
+		<form action="Controller/controller_newkhlasse.php" method="post" >
 				<div class="form-group col-md-4">
                     <div class="col">
                     <label for="inputState">Créer une khlasse</label>
