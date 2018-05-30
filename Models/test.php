@@ -31,7 +31,7 @@ class test
 
   public static function Get_All_Users()
   {
-    require_once('/config/connect.php');
+    require_once('../config/connect.php');
     $bdheroku = myPDO();
     $req = $bdheroku->prepare('SELECT * 
     FROM users');
@@ -104,7 +104,7 @@ class test
   }*/
   public static function Get_All_Khlasse()
   {
-      require_once('/config/connect.php');
+      require_once('../config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT E.id_khlasse,T.nomkhlasse,annee,(SELECT count(*) 
       FROM a_etudie A 
@@ -120,7 +120,7 @@ class test
 
   public static function Get_All_Ecole()
   {
-      require_once('/config/connect.php');
+      require_once('../config/connect.php');
       $bdheroku = myPDO();
       $req = $bdheroku->prepare('SELECT id_ecole,nomecole 
       FROM ecole');
