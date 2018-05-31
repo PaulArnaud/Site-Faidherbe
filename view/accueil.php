@@ -50,10 +50,18 @@
 
 
 		<div ng-show="tab === 2">
-			<?php require_once('Controller/controller_page_khlasse.php') ?>
+			<?php
+				$listkhlasse = Khlasse::Get_All_Khlasse();
+				require_once("view/khlasse.php");
+			?>
 		</div>
 		<div ng-show="tab === 3">
-			<?php require_once('Controller/controller_page_profil.php') ?>
+			<?php 
+				$profil = Users::Get_Info();
+				$khlasse = Users::Get_Mykhlasse();
+				$ecole = Users::Get_MySchool();
+				require_once("view/profil.php");
+			?>
 		</div>
 
 
@@ -75,32 +83,54 @@
 
 		<div ng-show="tab === 9">
 			<?php 
-			require_once("Users.php");
-			require_once("Ecole.php");
-			require_once("Khlasse.php");
-			$profil = Users::Get_Info();
-			$khlasses = Khlasse::Get_All_Khlasse();
-			$ecoles = Ecole::Get_All_Ecole();
-			require_once("view/Infoperso.php"); 
+				require_once("Users.php");
+				require_once("Ecole.php");
+				require_once("Khlasse.php");
+				$profil = Users::Get_Info();
+				$khlasses = Khlasse::Get_All_Khlasse();
+				$ecoles = Ecole::Get_All_Ecole();
+				require_once("view/Infoperso.php"); 
 			?>
 		</div>
 		<div ng-show="tab === 10">
-			<?php require_once('Controller/controller_page_newkhlasse.php') ?>
+			<?php 
+				$types = TypeKhlasse::Get_Types();
+				$years = Annee::Get_Years();
+				require_once("view/createkhlasse.php");
+			?>
 		</div>
 		<div ng-show="tab === 13">
-			<?php require_once('Controller/controller_page_newecole.php') ?>
+			<?php
+				require_once("view/createecole.php");
+			?>
 		</div>
 		
 		<div ng-show="tab === 11">
-		<?php if ($GLOBALS['camarades']){require_once('view/camarades.php');} ?>
+			<?php 
+				if ($GLOBALS['camarades']){
+				require_once('view/camarades.php');
+				} 
+			?>
 		</div>
 
 		<div ng-show="tab === 12">
-		<?php if ($GLOBALS['individu']){require_once('view/individu.php');} ?>
+			<?php 
+				if ($GLOBALS['individu']){
+					require_once('view/individu.php');
+				} 
+			?>
 		</div>
 
 		<div ng-show="tab === 20">
-			<?php require('Controller/controller_page_admin.php') ?>
+			<?php
+			require_once('Users.php');
+			require_once("Ecole.php");
+			require_once("Khlasse.php");
+			$users = Users::Get_All_Users();
+			$ecoles = Ecole::Get_All_Ecole();
+			$khlasses = Khlasse::Get_All_Khlasse();
+			require_once('view/admin.php');
+			?>
 		</div>
 		
 
