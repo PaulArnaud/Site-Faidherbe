@@ -51,7 +51,7 @@ function myFunction() {
 </script>
 
 				<?php 
-				echo $_POST['stored_id_khlasse'];
+				var_dump($_POST['stored_id_khlasse']);
 				?>
 
 
