@@ -53,6 +53,8 @@
 			</div>
 		</nav>
 
+		<?php 
+		if (empty($_POST['action']) { ?>
 		<div ng-show="tab=== 21">
 			<?php
 				require_once("view/connexion.php"); 
@@ -117,22 +119,8 @@
 			?>
 		</div>
 		
-		<div ng-show="tab === 11">
-		<h1> ici même </h1>
-			<?php /*
-				if ($GLOBALS['camarades']){
-				require_once('view/camarades.php');
-				} */
-			?>
-		</div>
 
-		<div ng-show="tab === 12">
-			<?php 
-				if ($GLOBALS['individu']){
-					require_once('view/individu.php');
-				} 
-			?>
-		</div>
+		
 
 		<div ng-show="tab === 20">
 			<?php
@@ -143,11 +131,23 @@
 			?>
 		</div>
 
-		<div ng-show="tab === 0">
-			
+		<? }?>
+
+		<div ng-show="tab === 11">
+			<?php 
+				if ($GLOBALS['camarades']){
+				require_once('view/camarades.php');
+				} 
+			?>
 		</div>
 
-		
+		<div ng-show="tab === 12">
+			<?php 
+				if ($GLOBALS['individu']){
+					require_once('view/individu.php');
+				} 
+			?>
+		</div>
 		
 
 
