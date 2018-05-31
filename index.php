@@ -1,7 +1,7 @@
 <?php
 $GLOBALS['camarades'] = false;
 $GLOBALS['individu'] = false;
-$_POST['action'] = NULL ;
+$_POST['action'] = '';
 try {
     require_once("accueil.php");
 }catch (Exception $e){
