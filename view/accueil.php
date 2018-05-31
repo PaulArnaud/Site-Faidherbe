@@ -15,6 +15,7 @@
 			require_once("Users.php");
 			require_once("Khlasse.php");
 			require_once("Ecole.php");
+			require_once("Controller/controller_etat_user.php");
 		?>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
@@ -40,7 +41,7 @@
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
 					<li class="nav-item">
-						<a class="nav-link"  href="Controller/controller_page_connexion.php"><i class="material-icons">power_settings_new</i></a>
+						<a class="nav-link"  href ng-click ="tab=0"><i class="material-icons">power_settings_new</i></a>
 					</li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
@@ -52,6 +53,13 @@
 			</div>
 		</nav>
 		
+		<div ng-show="tab === 0">
+			<?php
+				unloggedOnly();
+				require_once("view/connexion.php");
+			?>
+		</div>
+
 		
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
