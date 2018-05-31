@@ -55,9 +55,7 @@
 
 		<div ng-show="tab=== 21">
 			<?php
-				if (!isLogged()){
-					require_once("view/connexion.php"); 
-				}
+				require_once("view/connexion.php"); 
 			?>
 		</div>
 		
