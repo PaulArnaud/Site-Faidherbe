@@ -8,6 +8,14 @@
 		<script src="lib/angular.min.js"></script>
 	</head>
 	<body ng-init="tab = 1">
+
+		<?php 
+			require("Annee.php");
+			require("TypeKhlasse.php");
+			require_once("Users.php");
+			require_once("Khlasse.php");
+			require_once("Ecole.php");
+		?>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
@@ -43,7 +51,8 @@
 				</ul>
 			</div>
 		</nav>
-					
+		
+		
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
 		</div>
@@ -83,9 +92,6 @@
 
 		<div ng-show="tab === 9">
 			<?php 
-				require_once("Users.php");
-				require_once("Ecole.php");
-				require_once("Khlasse.php");
 				$profil = Users::Get_Info();
 				$khlasses = Khlasse::Get_All_Khlasse();
 				$ecoles = Ecole::Get_All_Ecole();
@@ -123,9 +129,6 @@
 
 		<div ng-show="tab === 20">
 			<?php
-			require_once('Users.php');
-			require_once("Ecole.php");
-			require_once("Khlasse.php");
 			$users = Users::Get_All_Users();
 			$ecoles = Ecole::Get_All_Ecole();
 			$khlasses = Khlasse::Get_All_Khlasse();
