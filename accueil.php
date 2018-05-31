@@ -16,6 +16,9 @@
 			require_once("Khlasse.php");
 			require_once("Ecole.php");
 			require_once("Controller/controller_etat_user.php");
+			var_dump($GLOBALS['action']);
+			var_dump($GLOBALS['camarades']);
+			var_dump($GLOBALS['individu']);
 		?>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
@@ -119,9 +122,6 @@
 			?>
 		</div>
 		
-
-		
-
 		<div ng-show="tab === 20">
 			<?php
 			$users = Users::Get_All_Users();
