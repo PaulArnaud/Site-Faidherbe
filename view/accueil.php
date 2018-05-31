@@ -53,6 +53,12 @@
 			</div>
 		</nav>
 
+		<div ng-show="tab===0">
+						<?php
+							unloggedOnly();
+							require_once("view/connexion.php"); 
+						?>
+		</div>
 		
 		<div ng-show="tab === 1">
 			<?php require('view/presentation.php') ?>
