@@ -52,14 +52,6 @@
 				</ul>
 			</div>
 		</nav>
-		
-		<div ng-show="tab === 0">
-			<?php 
-			require_once("etat_user.php");
-			unloggedOnly();
-			require_once("../view/connexion.php");
-			?>
-		</div>
 
 		
 		<div ng-show="tab === 1">
