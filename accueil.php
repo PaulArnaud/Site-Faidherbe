@@ -118,10 +118,11 @@
 		</div>
 		
 		<div ng-show="tab === 11">
-			<?php 
+		<h1> ici même </h1>
+			<?php /*
 				if ($GLOBALS['camarades']){
 				require_once('view/camarades.php');
-				} 
+				} */
 			?>
 		</div>
 
@@ -143,7 +144,7 @@
 		</div>
 
 		<div ng-show="tab === 0">
-			<h1> ici même </h1>
+			
 		</div>
 
 		
