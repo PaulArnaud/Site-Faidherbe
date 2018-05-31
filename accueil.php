@@ -155,6 +155,8 @@
 		</div>
 			<? } } 
 			var_dump($GLOBALS['action']);
+			var_dump($GLOBALS['camarades']);
+			var_dump($GLOBALS['individu']);
 			?>
 		
 
