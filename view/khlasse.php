@@ -42,7 +42,13 @@ function Store_Id_Khlasse($value){
 					</table>
 				</div>
 
-				<button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+				<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
 
 				<?php 
 				echo $_POST['stored_id_khlasse'];
