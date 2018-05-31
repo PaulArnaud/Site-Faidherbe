@@ -37,7 +37,7 @@ class Ecole
       {
           require_once('config/connect.php');
           $bdheroku = myPDO();
-          $req = $bdheroku->prepare('SELECT id_ecole,nomecole 
+          $req = $bdheroku->prepare('SELECT id_ecole,nomecole,domaine 
           FROM ecole');
           $req->execute();
           while($data=$req->fetch()){
