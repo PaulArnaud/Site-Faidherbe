@@ -131,7 +131,9 @@
 			?>
 		</div>
 
-		<? }?>
+		<? }
+		else { 
+			if ($GLOBALS['action'] == 1){?>
 
 		<div ng-show="tab === 11">
 			<?php 
@@ -141,6 +143,9 @@
 			?>
 		</div>
 
+			<? } 
+			else if ($GLOBALS['action'] == 2 ){ ?>
+
 		<div ng-show="tab === 12">
 			<?php 
 				if ($GLOBALS['individu']){
@@ -148,6 +153,7 @@
 				} 
 			?>
 		</div>
+			<? } } ?>
 		
 
 
