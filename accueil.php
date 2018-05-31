@@ -54,7 +54,7 @@
 		</nav>
 
 		<?php 
-		if (empty($_POST['action']) { ?>
+		if ($GLOBALS['action'] == 0 ) { ?>
 		<div ng-show="tab=== 21">
 			<?php
 				require_once("view/connexion.php"); 
