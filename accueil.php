@@ -16,9 +16,6 @@
 			require_once("Khlasse.php");
 			require_once("Ecole.php");
 			require_once("Controller/controller_etat_user.php");
-			var_dump($GLOBALS['action']);
-			var_dump($GLOBALS['camarades']);
-			var_dump($GLOBALS['individu']);
 		?>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
@@ -56,8 +53,6 @@
 			</div>
 		</nav>
 
-		<?php 
-		if ($GLOBALS['action'] == 0 ) { ?>
 		<div ng-show="tab=== 21">
 			<?php
 				require_once("view/connexion.php"); 
@@ -130,35 +125,6 @@
 			require_once('view/admin.php');
 			?>
 		</div>
-
-		<? }
-		else { 
-			if ($GLOBALS['action'] == 1){?>
-
-		<div>
-			<?php 
-				if ($GLOBALS['camarades']){
-				require_once('view/camarades.php');
-				} 
-			?>
-		</div>
-
-			<? } 
-			else if ($GLOBALS['action'] == 2 ){ ?>
-
-		<div>
-			<?php 
-				if ($GLOBALS['individu']){
-					require_once('view/individu.php');
-				} 
-			?>
-		</div>
-			<? } } 
-			var_dump($GLOBALS['action']);
-			var_dump($GLOBALS['camarades']);
-			var_dump($GLOBALS['individu']);
-			?>
-		
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
