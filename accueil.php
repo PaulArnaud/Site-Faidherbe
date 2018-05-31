@@ -135,7 +135,7 @@
 		else { 
 			if ($GLOBALS['action'] == 1){?>
 
-		<div ng-show="tab === 11">
+		<div>
 			<?php 
 				if ($GLOBALS['camarades']){
 				require_once('view/camarades.php');
@@ -146,7 +146,7 @@
 			<? } 
 			else if ($GLOBALS['action'] == 2 ){ ?>
 
-		<div ng-show="tab === 12">
+		<div>
 			<?php 
 				if ($GLOBALS['individu']){
 					require_once('view/individu.php');

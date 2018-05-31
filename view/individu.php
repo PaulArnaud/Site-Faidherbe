@@ -68,4 +68,5 @@
         </div>
     </main>
 </body>
-<?php $GLOBALS['individu'] = false; ?>
+<?php $GLOBALS['individu'] = false;
+$GLOBALS['action'] = 0; ?>
