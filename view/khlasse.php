@@ -1,7 +1,7 @@
 
 <script type="text/javascript">
-function Store_Id_Khlasse($value){
-    $_POST['stored_id_khlasse'] = $value;
+function Store_Id_Khlasse(value){
+    $_POST['stored_id_khlasse'] = value;
 }
 </script>
 
