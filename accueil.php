@@ -141,6 +141,12 @@
 			require_once('view/admin.php');
 			?>
 		</div>
+
+		<div ng-show="tab === 0">
+			<h1> ici même </h1>
+		</div>
+
+		
 		
 
 
