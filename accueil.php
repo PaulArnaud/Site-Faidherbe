@@ -40,12 +40,12 @@
 					</li>
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
-					<li class="nav-item">
+					<li class="nav-item justify-content-end">
 						<a class="nav-link"  href ng-click="tab=21" ><i class="material-icons">power_settings_new</i></a>
 					</li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
-					<li class="nav-item ">
+					<li class="nav-item justify-content-end">
 						<a class="nav-link"  title="Déconnexion" href="Controller/controller_deconnexion.php"><i class="material-icons">exit_to_app</i></a>
 					</li>
 					<?php } ?>
