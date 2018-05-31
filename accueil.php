@@ -53,24 +53,24 @@
 			</div>
 		</nav>
 
-		<div ng-show="tab=== 21">
+		<div ng-show="tab=== 21" class="align-items-center">
 			<?php
 				require_once("view/connexion.php"); 
 			?>
 		</div>
 		
-		<div ng-show="tab === 1">
+		<div ng-show="tab === 1" class="align-items-center">
 			<?php require('view/presentation.php') ?>
 		</div>
 
 
-		<div ng-show="tab === 2">
+		<div ng-show="tab === 2" class="align-items-center">
 			<?php
 				$listkhlasse = Khlasse::Get_All_Khlasse();
 				require_once("view/khlasse.php");
 			?>
 		</div>
-		<div ng-show="tab === 3">
+		<div ng-show="tab === 3" class="align-items-center">
 			<?php 
 				$profil = Users::Get_Info();
 				$khlasse = Users::Get_Mykhlasse();
@@ -80,23 +80,23 @@
 		</div>
 
 
-		<div ng-show="tab === 4">
+		<div ng-show="tab === 4" class="align-items-center">
 			<?php require('view/forum.php') ?>
 		</div>
-		<div ng-show="tab === 5">
+		<div ng-show="tab === 5" class="align-items-center">
 			<?php require('view/gallerie.php') ?>
 		</div>
-		<div ng-show="tab === 6">
+		<div ng-show="tab === 6" class="align-items-center">
 			<?php require('view/fonction.php') ?>
 		</div>
-		<div ng-show="tab === 7">
+		<div ng-show="tab === 7" class="align-items-center">
 			<?php require('view/chants.php') ?>
 		</div>
-		<div ng-show="tab === 8">
+		<div ng-show="tab === 8" class="align-items-center">
 			<?php require('view/chapeau.php') ?>
 		</div>
 
-		<div ng-show="tab === 9">
+		<div ng-show="tab === 9" class="align-items-center">
 			<?php 
 				$profil = Users::Get_Info();
 				$khlasses = Khlasse::Get_All_Khlasse();
@@ -104,20 +104,20 @@
 				require_once("view/Infoperso.php"); 
 			?>
 		</div>
-		<div ng-show="tab === 10">
+		<div ng-show="tab === 10" class="align-items-center">
 			<?php 
 				$types = TypeKhlasse::Get_Types();
 				$years = Annee::Get_Years();
 				require_once("view/createkhlasse.php");
 			?>
 		</div>
-		<div ng-show="tab === 13">
+		<div ng-show="tab === 13" class="align-items-center">
 			<?php
 				require_once("view/createecole.php");
 			?>
 		</div>
 		
-		<div ng-show="tab === 20">
+		<div ng-show="tab === 20" class="align-items-center">
 			<?php
 			$users = Users::Get_All_Users();
 			$ecoles = Ecole::Get_All_Ecole();
