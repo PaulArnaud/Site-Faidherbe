@@ -26,5 +26,4 @@
 			</div>
 		</main>
 </body>
-<?php $GLOBALS['camarades'] = false;
-$GLOBALS['action'] = 0; ?>
+<?php $GLOBALS['camarades'] = false; ?>
