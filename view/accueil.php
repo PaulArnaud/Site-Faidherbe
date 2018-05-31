@@ -41,7 +41,7 @@
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
 					<li class="nav-item">
-						<a class="nav-link"  href="Controller/controller_page_connexion.php"><i class="material-icons">power_settings_new</i></a>
+						<a class="nav-link"  href ng-click="tab=21"><i class="material-icons">power_settings_new</i></a>
 					</li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
