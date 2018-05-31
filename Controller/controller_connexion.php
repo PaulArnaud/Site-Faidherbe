@@ -14,7 +14,7 @@ if (empty($email) || empty($password)) {
         Users::Set_User_Cookie($email, $cookieconnexion);
         header("Location: ../accueil.php");
     } else {
-        header("Location: controller_page_connexion.php");
+        header("Location: ../accueil.php");
     }
 }
 ?>

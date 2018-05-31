@@ -78,8 +78,7 @@
 				require_once("view/profil.php");
 			?>
 		</div>
-
-
+		
 		<div ng-show="tab === 4">
 			<?php require('view/forum.php') ?>
 		</div>
