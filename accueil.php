@@ -30,9 +30,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href ng-click ="tab = 3"><i class="material-icons">person</i></a>
 					</li>
-					<li class="nav-item">
+					<!--<li class="nav-item">
 						<a class="nav-link" href ng-click ="tab = 4"><i class="material-icons">chat</i></a>
-					</li>
+					</li>-->
 					<?php } ?>
 					<?php if(isAdmin()){ ?>
 					<li class="nav-item">

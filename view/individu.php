@@ -10,7 +10,7 @@
 <body>
     <main role="main" class="container">
         <h1 id="hautdepage" class="text-center"><u> Son profil </u></h1>
-        <div class="album py-5 bg-light">
+        <div class="album py-5 bg-light container">
             <div class="card text-white bg-dark mb-3">
                 <div class="card-header">
                     Ses informations générales                        

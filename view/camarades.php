@@ -9,7 +9,7 @@
 
 <body>
 	<main role="main" class="container text-center">
-		<div class="starter-template">
+		<div class="starter-template container">
 			<h1> Site du Faidherbard </h1>
 			<h2> Camarades de la Khlasse :<?php echo $var1['nomkhlasse'];?> de l'année : <?php echo $var1['annee'];?>  </h2>
 			<div class="table-responsive">
