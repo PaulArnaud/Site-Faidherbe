@@ -1,10 +1,4 @@
 
-<script type="text/javascript">
-function Store_Id_Khlasse(value){
-    <?php $_POST['stored_id_khlasse']= value ?>;
-}
-</script>
-
 <body>
 	<main role="main" class="container text-center">
 
@@ -37,34 +31,10 @@ function Store_Id_Khlasse(value){
 					</thead>
 					<tbody>
 						<tr>
-							<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['id_khlasse'].'">';echo '<td class="text-center">'.$value['annee'].'</td>';echo '<td class="text-center">'.$value['nomkhlasse'].'</td>';echo '<td class="text-center"> <button class="btn btn-outline-light" onclick="Store_Id_Khlasse('.$value['id_khlasse'].')" > '.$value[3].' </button>';echo '</tr>';}?></tr>
+							<?php foreach ($listkhlasse as $value) {echo '<tr id="'.$value['id_khlasse'].'">';echo '<td class="text-center">'.$value['annee'].'</td>';echo '<td class="text-center">'.$value['nomkhlasse'].'</td>';echo '<td class="text-center"> <a class="btn btn-outline-light" href="Controller/controller_page_camarades.php?idkhlasse='.$value['id_khlasse'].'">'.$value[3].'</a>';echo '</tr>';}?></tr>
 						</tbody>
 					</table>
 				</div>
-
-				<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-
-<script>
-function myFunction() {
-    document.getElementById("demo").style.color = "red";
-}
-</script>
-
-				<?php 
-				var_dump($_POST['stored_id_khlasse']);
-				?>
-
-
-
-
-
-
-
-
-
-
-
-
 			</div>
 		</main>
 
