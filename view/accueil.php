@@ -41,7 +41,7 @@
 					<?php } ?>
 					<?php if(!isLogged()){ ?>
 					<li class="nav-item">
-						<a class="nav-link"  href ng-click ="tab=0"><i class="material-icons">power_settings_new</i></a>
+						<a class="nav-link"  href="Controller/controller_page_connexion.php"><i class="material-icons">power_settings_new</i></a>
 					</li>
 					<?php } ?>
 					<?php if(isLogged()){ ?>
@@ -54,9 +54,10 @@
 		</nav>
 		
 		<div ng-show="tab === 0">
-			<?php
-				unloggedOnly();
-				require_once("view/connexion.php");
+			<?php 
+			require_once("etat_user.php");
+			unloggedOnly();
+			require_once("../view/connexion.php");
 			?>
 		</div>
 
