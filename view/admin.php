@@ -1,7 +1,7 @@
 
-<section>
 
-<form class="form-signin container card vertical-align" action="Controller/controller_admin.php" method="post">
+
+<form class="form-signin container card vertical-align align-items-center"  action="Controller/controller_admin.php" method="post">
 	<div class="container">
 		<div class="input-group mb-3">
 			<select class="custom-select"  name="user" >
@@ -31,4 +31,3 @@
 	</div>
 </form>
 
-</section>
