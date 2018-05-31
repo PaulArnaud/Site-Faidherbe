@@ -1,6 +1,6 @@
 
 <script type="text/javascript">
-public static function Store_Id_Khlasse($value){
+function Store_Id_Khlasse($value){
     $_POST['stored_id_khlasse'] = $value;
 }
 </script>
