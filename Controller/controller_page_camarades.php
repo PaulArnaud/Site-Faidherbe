@@ -8,5 +8,4 @@ $GLOBALS['action'] = 1;
 
 
 header('Location: ../accueil.php');
-exit();
 ?>
