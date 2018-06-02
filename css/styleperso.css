@@ -1,3 +1,4 @@
-.color-navbar {
-    background-color: seagreen!important;
-}
+.navbar-default {
+    /* Couleur de fond de la barre de navigation */
+    background-color: rgb(7, 173, 179);
+   }
