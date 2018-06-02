@@ -8,16 +8,6 @@
 		</div>
 	</div>
 
-	<div class=" bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-		<div class="my-3 py-3">
-			<h2 class="display-5"> La Gallerie </h2>
-			<p class="lead">
-				Retrouvez ici toutes les photos les plus belles de ces années folles.
-			</p>
-			<a class="btn btn-outline-light" href ng-click="tab = 5">Gallerie</a>
-		</div>
-	</div>
-
 	<div class=" position-relative bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
 		<div class="my-3 p-3">
 			<h2 class="display-5">Les Fonctions</h2>
@@ -37,17 +27,7 @@
 			<a class="btn btn-outline-light" href ng-click="tab = 7">Chants</a>
 		</div>
 	</div>
-	<!--
-	<div class=" position-relative bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-		<div class="my-3 p-3">
-			<h2 class="display-5">Les Evénements</h2>
-			<p class="lead">
-				Retrouvez tous les différents événements incontournables de Faidherbe.
-			</p>
-			<a class="btn btn-outline-light" href="../pageevenements/evenements.php">Evénements</a>
-		</div>
-	</div>
-	-->
+
 	<div class=" position-relative bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
 		<div class="my-3 p-3">
 			<h2 class="display-5">Les Khâlots</h2>

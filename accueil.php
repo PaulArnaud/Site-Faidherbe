@@ -30,9 +30,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href ng-click ="tab = 3"><i class="material-icons">person</i></a>
 					</li>
-					<!--<li class="nav-item">
-						<a class="nav-link" href ng-click ="tab = 4"><i class="material-icons">chat</i></a>
-					</li>-->
 					<?php } ?>
 					<?php if(isAdmin()){ ?>
 					<li class="nav-item">
@@ -82,9 +79,6 @@
 
 		<div ng-show="tab === 4" class="align-items-center">
 			<?php require('view/forum.php') ?>
-		</div>
-		<div ng-show="tab === 5" class="align-items-center">
-			<?php require('view/gallerie.php') ?>
 		</div>
 		<div ng-show="tab === 6" class="align-items-center">
 			<?php require('view/fonction.php') ?>

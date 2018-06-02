@@ -1,0 +1,8 @@
+		<div ng-show="tab === 5" class="align-items-center">
+			<?php require('view/gallerie.php') ?>
+		</div>
+
+
+        					<!--<li class="nav-item">
+						<a class="nav-link" href ng-click ="tab = 4"><i class="material-icons">chat</i></a>
+					</li>-->
