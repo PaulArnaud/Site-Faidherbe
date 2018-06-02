@@ -21,6 +21,7 @@
 				ltrim($db["path"], "/")
 			));
 			var_dump($pdo);
+			echo $pdo -> query('SELECT * FROM users');
 			
 			require("Annee.php");
 			require("TypeKhlasse.php");
