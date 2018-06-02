@@ -10,7 +10,7 @@
 	<body ng-init="tab = 1">
 
 		<?php 
-			echo $_SERVER["DATABASE_URL"];
+			$bd = new PDO($_SERVER["DATABASE_URL"]) ; 
 			require("Annee.php");
 			require("TypeKhlasse.php");
 			require_once("Users.php");
