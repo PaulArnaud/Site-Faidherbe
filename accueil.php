@@ -20,7 +20,7 @@
 			require_once("Models/Ecole.php");
 			require_once("Controller/controller_etat_user.php");
 		?>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header color-navbar" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
