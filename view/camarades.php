@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr" ng-app="">
 	<head>
-		<title> Page camarades </title>
+		<title> Les camardes  </title>
 		<link rel="stylesheet" href="../lib/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="../lib/angular.min.js"></script>
