@@ -2,19 +2,16 @@
 require_once("../Models/Users.php");
 $email    = htmlspecialchars($_POST['Email']);
 $password = htmlspecialchars($_POST['password']);
+$pw = sha1(sha1($password));
 
 
-if (empty($email) || empty($password)) {
-    $message = "Merci de remplir tous les champs!";
-    //header("Location: Erreur.php?=".$message);
+if (Users::Check_Password($email, $password)) {
+    $cookieconnexion = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
+    $cookiegood      = setcookie("cookieperso", $cookieconnexion, time() + (60 * 60 * 24 * 30), "/");
+    Users::Set_User_Cookie($email, $cookieconnexion);
+    header("Location: ../accueil.php");
 } else {
-    if (Users::Check_Password($email, $password)) {
-        $cookieconnexion = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
-        $cookiegood      = setcookie("cookieperso", $cookieconnexion, time() + (60 * 60 * 24 * 30), "/");
-        Users::Set_User_Cookie($email, $cookieconnexion);
-        header("Location: ../accueil.php");
-    } else {
-        header("Location: ../accueil.php");
-    }
+    header("Location: ../accueil.php");
 }
+
 ?>
