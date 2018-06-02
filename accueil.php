@@ -50,11 +50,7 @@
 			</div>
 		</nav>
 
-		<div ng-show="tab=== 21" class="align-items-center">
-			<?php
-				require_once("view/connexion.php"); 
-			?>
-		</div>
+
 		
 		<div ng-show="tab === 1" class="align-items-center">
 			<?php require('view/presentation.php') ?>
@@ -117,6 +113,11 @@
 			$ecoles = Ecole::Get_All_Ecole();
 			$khlasses = Khlasse::Get_All_Khlasse();
 			require_once('view/admin.php');
+			?>
+		</div>
+		<div ng-show="tab=== 21" class="align-items-center">
+			<?php
+				require_once("view/connexion.php"); 
 			?>
 		</div>
 
