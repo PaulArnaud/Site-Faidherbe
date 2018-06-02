@@ -10,6 +10,7 @@
 	<body ng-init="tab = 1">
 
 		<?php 
+			 phpinfo();
 			require("Annee.php");
 			require("TypeKhlasse.php");
 			require_once("Users.php");
