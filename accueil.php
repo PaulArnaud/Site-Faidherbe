@@ -10,7 +10,6 @@
 	<body ng-init="tab = 1">
 
 		<?php 
-			echo sha1(sha1('allofaidherbe'));
 			require_once("Models/Annee.php");
 			require_once("Models/TypeKhlasse.php");
 			require_once("Models/Users.php");
