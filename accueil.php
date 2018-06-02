@@ -10,12 +10,12 @@
 	<body ng-init="tab = 1">
 
 		<?php 
-			require("Annee.php");
-			require("TypeKhlasse.php");
-			require_once("Users.php");
-			require_once("Khlasse.php");
-			require_once("Ecole.php");
-			require_once("Controller/controller_etat_user.php");
+			require("Models/Annee.php");
+			require("Models/TypeKhlasse.php");
+			require("Models/Users.php");
+			require("Models/Khlasse.php");
+			require("Models/Ecole.php");
+			require("Controller/controller_etat_user.php");
 		?>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
