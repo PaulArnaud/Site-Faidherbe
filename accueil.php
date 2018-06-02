@@ -20,6 +20,7 @@
 				$db["pass"],
 				ltrim($db["path"], "/")
 			));
+			
 			$req = $pdo->prepare('SELECT année FROM année');
 			$req->execute();
 			while($data=$req->fetch()){
