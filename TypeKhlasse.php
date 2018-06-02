@@ -2,9 +2,10 @@
 class TypeKhlasse{
 
     public static function Get_Types(){
-        require_once('config/connect.php');
-        $bdheroku = myPDO();
-        $req = $bdheroku->prepare('SELECT nomkhlasse FROM typekhlasse');
+      $db = parse_url(getenv("DATABASE_URL"));
+      $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s",$db["host"],$db["port"],$db["user"],$db["pass"],ltrim($db["path"], "/")));
+
+        $req = $pdo->prepare('SELECT nomkhlasse FROM typekhlasse');
         $req->execute();
         while($data=$req->fetch()){
           $result[] = $data;
