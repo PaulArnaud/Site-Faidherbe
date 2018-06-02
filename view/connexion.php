@@ -12,8 +12,8 @@
 		<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 		<input type="password" id="inputPassword" name ="password" class="form-control" placeholder="Mot de Passe" required>
 		<button class="btn btn-lg btn-primary btn-block" type="submit"> Se connecter </button>
-		<div class="container">
-			<button type="button" class="btn btn-lg btn-block" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+			<button type="button" class="btn btn-lg btn-block" data-toggle="modal" data-target="#myModal">S'inscrire</button>
 			<!-- Modal -->
 			<div class="modal fade" id="myModal" role="dialog">
 				<div class="modal-dialog">
@@ -31,7 +31,7 @@
 										<a href="mailto:paularnaud59390@gmail.com"> faidherbeenpoche@gmail.com  </a>
 									</u>
 								</strong>
-								.Ecrivez un petit message sympathique, en expliquant les raisons qui vous poussent à venir dans ce petit coin de nostalgie.Soyez gentils et prouvez nous que vous avez bien été à Faidherbe !
+								. Ecrivez un petit message sympathique, en expliquant les raisons qui vous poussent à venir dans ce petit coin de nostalgie. Soyez gentils et prouvez nous que vous avez bien été à Faidherbe !
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -40,7 +40,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		<p class="mt-5 mb-3 text-muted">
 			            &copy; Faidherbard        
 		</p>
