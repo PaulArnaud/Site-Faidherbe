@@ -10,24 +10,6 @@
 	<body ng-init="tab = 1">
 
 		<?php 
-			$db = parse_url(getenv("DATABASE_URL"));
-
-			$pdo = new PDO("pgsql:" . sprintf(
-				"host=%s;port=%s;user=%s;password=%s;dbname=%s",
-				$db["host"],
-				$db["port"],
-				$db["user"],
-				$db["pass"],
-				ltrim($db["path"], "/")
-			));
-
-			$req = $pdo->prepare('SELECT année FROM année');
-			$req->execute();
-			while($data=$req->fetch()){
-			$result[] = $data;
-			}
-			var_dump($result);
-
 			require("Annee.php");
 			require("TypeKhlasse.php");
 			require_once("Users.php");
