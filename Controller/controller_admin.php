@@ -18,5 +18,5 @@ if (!empty($khlasse)){
     $id_khlasse = explode('-',$khlasse);
     Khlasse::Del_Khlasse($id_khlasse[0]);
 }
-header('Location: ../accueil.php');*/
+header('Location: ../accueil.php');
 ?>
