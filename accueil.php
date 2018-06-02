@@ -3,7 +3,7 @@
 	<head>
 		<title>Accueil FaidherbeEnPoche </title>
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
-		<link rel="stylesheet" href="css/signin.css">
+
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
