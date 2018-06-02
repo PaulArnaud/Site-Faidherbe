@@ -3,7 +3,6 @@
 	<head>
 		<title>Accueil FaidherbeEnPoche </title>
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="lib/angular.min.js"></script>
 	</head>
@@ -50,7 +49,11 @@
 			</div>
 		</nav>
 
-
+		<div ng-show="tab=== 21" class="align-items-center">
+			<?php
+				require_once("view/connexion.php"); 
+			?>
+		</div>
 		
 		<div ng-show="tab === 1" class="align-items-center">
 			<?php require('view/presentation.php') ?>
@@ -113,11 +116,6 @@
 			$ecoles = Ecole::Get_All_Ecole();
 			$khlasses = Khlasse::Get_All_Khlasse();
 			require_once('view/admin.php');
-			?>
-		</div>
-		<div ng-show="tab=== 21" class="align-items-center">
-			<?php
-				require_once("view/connexion.php"); 
 			?>
 		</div>
 
