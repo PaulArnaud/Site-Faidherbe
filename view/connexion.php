@@ -19,55 +19,31 @@
 		</p>
 	</form>
 
-<script type="text/javascript"> 
-$(document).ready(function()
-{ 
 
-    $("#id-popup").modal("show");// affiche la popup au chargement de la page
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
 
-
-}); 
-</script>
-
-	<div class="container"> 
-    
-    <!-- exemple de popup -->
-    <p><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#id-popup">Afficher la PopUp</button></p>
-    
-
-    <!-- construction de la popup 
-          data-backdrop="false" pour supprimer le voile au-dessus de la popup
-          data-keyboard="false" pour supprimer la touche Echap --> 
-    <div class="modal fade" id="id-popup" tabindex="-1" role="dialog" aria-labelledby="titrePopUp" aria-hidden="true"> 
-    
-      <div class="modal-dialog"> 
-
-        <div class="modal-content"> 
-            
-          <!-- le titre de la popup --> 
-          <div class="modal-header"> 
-          <h4 class="modal-title" id="titrePopUp">Bienvenue sur Développement Facile 
-          <!-- lla croix de fermeture de la popup --> 
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> </h4>
-          </div> 
-          
-          <!-- le contenu HTML de la popup --> 
-          <div class="modal-body"> 
-          <p class="lead"><img src="19-logo.png" class="pull-right"/> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p> 
-          <p>Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker</p> 
-          </div>
-          
-          <!-- le pied de page de la popup --> 
-          <div class="modal-footer"> 
-          <a href="http://www.developpement-facile.com" class="btn btn-primary pull-left">Developpement Facile</a> 
-          </div> 
-
-        </div> 
-
-      </div> 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
-
-</div> 
+  </div>
+</div>
 
 </body>
