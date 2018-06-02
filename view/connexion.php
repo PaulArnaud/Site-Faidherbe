@@ -21,8 +21,6 @@
 
 
 <div class="container">
-  <h2>Modal Example</h2>
-  <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
   <!-- Modal -->
@@ -32,14 +30,17 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+			<h4 class="modal-title">Inscription</h4>
+          	<button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <p>Pour vous inscrire, rien de plus simple, envoyez un mail à faidherbeenpoche@gmail.com. 
+			  Ecrivez un petit message sympathique, en expliquant les raisons qui vous poussent à venir dans ce petit coin de nostalgie.
+			  Soyez gentils, et prouvez nous que vous avez bien été à Faidherbe ! 
+		  </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
         </div>
       </div>
       
