@@ -34,7 +34,7 @@
           	<button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Pour vous inscrire, rien de plus simple, envoyez un mail à <a href="mailto:paularnaud59390@gmail.com">faidherbeenpoche@gmail.com</a>. 
+          <p>Pour vous inscrire, rien de plus simple, envoyez un mail à <a href="mailto:paularnaud59390@gmail.com"><strong> <u> faidherbeenpoche@gmail.com </u> </strong> </a>. 
 			  Ecrivez un petit message sympathique, en expliquant les raisons qui vous poussent à venir dans ce petit coin de nostalgie.
 			  Soyez gentils et prouvez nous que vous avez bien été à Faidherbe ! 
 		  </p>
