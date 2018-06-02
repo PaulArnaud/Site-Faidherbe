@@ -20,9 +20,13 @@
 				$db["pass"],
 				ltrim($db["path"], "/")
 			));
-			var_dump($pdo);
-			echo $pdo -> query('SELECT * FROM users');
-			
+			$req = $pdo->prepare('SELECT année FROM année');
+			$req->execute();
+			while($data=$req->fetch()){
+			$result[] = $data;
+			}
+			return $result;
+
 			require("Annee.php");
 			require("TypeKhlasse.php");
 			require_once("Users.php");
