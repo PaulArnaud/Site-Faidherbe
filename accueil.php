@@ -10,8 +10,18 @@
 	<body ng-init="tab = 1">
 
 		<?php 
-			$bd = new PDO($_SERVER["DATABASE_URL"]) ; 
-			var_dump($bd);
+			$db = parse_url(getenv("DATABASE_URL"));
+
+			$pdo = new PDO("pgsql:" . sprintf(
+				"host=%s;port=%s;user=%s;password=%s;dbname=%s",
+				$db["host"],
+				$db["port"],
+				$db["user"],
+				$db["pass"],
+				ltrim($db["path"], "/")
+			));
+			var_dump($pdo);
+			
 			require("Annee.php");
 			require("TypeKhlasse.php");
 			require_once("Users.php");
