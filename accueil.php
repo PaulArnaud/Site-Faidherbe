@@ -20,13 +20,13 @@
 				$db["pass"],
 				ltrim($db["path"], "/")
 			));
-			
+
 			$req = $pdo->prepare('SELECT année FROM année');
 			$req->execute();
 			while($data=$req->fetch()){
 			$result[] = $data;
 			}
-			return $result;
+			var_dump($result);
 
 			require("Annee.php");
 			require("TypeKhlasse.php");
