@@ -11,6 +11,7 @@
 
 		<?php 
 			$bd = new PDO($_SERVER["DATABASE_URL"]) ; 
+			var_dump($bd);
 			require("Annee.php");
 			require("TypeKhlasse.php");
 			require_once("Users.php");
