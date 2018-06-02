@@ -3,6 +3,7 @@
 	<head>
 		<title>Accueil FaidherbeEnPoche </title>
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
+		<link rel="stylesheet" href="css/signin.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,7 +20,7 @@
 			require_once("Models/Ecole.php");
 			require_once("Controller/controller_etat_user.php");
 		?>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header" >
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top site-header" >
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault" >
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
