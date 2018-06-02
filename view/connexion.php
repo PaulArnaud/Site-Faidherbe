@@ -10,7 +10,7 @@
 		<input type="email" id="inputEmail" name="Email" class="form-control text-center" placeholder=" Mail" required autofocus>
 		<label for="inputPassword" class="sr-only"> Mot de Passe </label>
 		<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-		<input type="password" id="inputPassword" name ="password" class="form-control text-center" placeholder="Mot de Passe" required>
+		<input type="password" id="inputPassword" name ="password" class="form-control text-center" placeholder="Mot de Passe" required autocomplete="off" >
 		<button class="btn btn-lg btn-primary btn-block" type="submit"> Se connecter </button>
 
 			<button type="button" class="btn btn-lg btn-block" data-toggle="modal" data-target="#myModal">S'inscrire</button>
