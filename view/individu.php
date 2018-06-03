@@ -8,7 +8,7 @@
 		<script src="../lib/angular.min.js"></script>
 	</head>
 
-<body class ="texte-center bg-light container">
+<body class ="align-items-center bg-light container">
     <main role="main" class="container texte-center">
         <h1 id="hautdepage" class="text-center"><u> Son profil </u></h1>
         <div class="album py-5 bg-light container">

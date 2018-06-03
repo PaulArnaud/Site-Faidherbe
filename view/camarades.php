@@ -8,7 +8,7 @@
 		<script src="../lib/angular.min.js"></script>
 	</head>
 
-<body class="texte-center bg-light container">
+<body class="align-items-center bg-light container">
 	<main role="main" class="container text-center">
 		<div class="starter-template container">
 			<h1> Site du Faidherbard </h1>
