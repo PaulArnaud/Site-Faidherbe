@@ -181,20 +181,17 @@ class Users
         return $data;
     }
 
-    public static function Update_My_Data($params1, $params2, $params3, $params4, $params5)
+    public static function Update_My_Data($params1, $params2)
     {
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
 
         $cook = $_COOKIE["cookieperso"];
         $req = $pdo->prepare('UPDATE users  
-      SET nom = :params1 , prenom = :params2 ,num_portable = :params3 facebook = :params4 , linkedin = :params5 
+      SET :attribut = :valeur
       WHERE cookiecode = :cook');
-        $req->bindParam(':params1', $params1);
-        $req->bindParam(':params2', $params2);
-        $req->bindParam(':params3', $params3);
-        $req->bindParam(':params4', $params4);
-        $req->bindParam(':params5', $params5);
+        $req->bindParam(':attribut', $params1);
+        $req->bindParam(':valeur', $params2);
         $req->bindParam(':cook', $cook);
         try
         {
