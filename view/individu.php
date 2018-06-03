@@ -8,11 +8,11 @@
 		<script src="../lib/angular.min.js"></script>
 	</head>
 
-<body class ="align-center bg-light container">
-    <main role="main" class="container texte-center align-center">
+<body class ="bg-light container">
+    <main role="main" class="container">
         <h1 id="hautdepage" class="text-center"><u> Son profil </u></h1>
-        <div class="album py-5 bg-light container">
-            <div class="card text-white bg-dark mb-3">
+        <div class="album py-5 bg-light container text-center">
+            <div class="card text-white bg-dark mb-3 text-center">
                 <div class="card-header">
                     Ses informations générales                        
                 </div>
