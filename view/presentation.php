@@ -3,7 +3,7 @@
 		<div class="col-md-10 p-lg-1 mx-auto my-5">
 			<h1 class="display-4 font-weight-normal">Bienvenue sur FaidherbeEnPoche</h1>
 			<p class="lead font-weight-normal">
-				Sur ce site vous êtes libres de faire ce que vous voulez dans la limite du respect. Il est conçu dans un objectif de réseau. Vous pourriez donc retrouvez vos anciens compagnons. Alors c'est parti, découvrez la 8ème merveille du monde.
+				Sur ce site vous êtes libres de faire ce que vous voulez dans la limite du respect. Il est conçu dans un objectif de réseau, vous allez donc pouvoir retrouvez vos anciens compagnons et échanger vos informations avec eux. Alors c'est parti, balladez-vous, c'est simple, c'est rapide, c'est dans la poche.
 			</p>
 		</div>
 	</div>
