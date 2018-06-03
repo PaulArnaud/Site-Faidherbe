@@ -2,12 +2,13 @@
 <html lang="fr" ng-app="">
 	<head>
 		<title> Les camardes  </title>
+		<link rel="icon" href="img/logo faidherbe.jpg" type="image/x-icon"/>
 		<link rel="stylesheet" href="../lib/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="../lib/angular.min.js"></script>
 	</head>
 
-<body>
+<body class="texte-center bg-light">
 	<main role="main" class="container text-center">
 		<div class="starter-template container">
 			<h1> Site du Faidherbard </h1>

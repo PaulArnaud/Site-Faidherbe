@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	<div class="input-group-append">
-		<button class="btn btn-outline-secondary" type="submit">Supprimer</button>
+		<button class="btn btn-outline-danger" type="submit">Supprimer</button>
 	</div>
 </form>
 
