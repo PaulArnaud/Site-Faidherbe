@@ -1,4 +1,4 @@
-<body>
+<body class="container">
 	<main class="card text-center">
 		<form action="Controller/controller_newkhlasse.php" method="post" >
 				<div class="form-group col-md-4">

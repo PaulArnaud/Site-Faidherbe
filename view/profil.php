@@ -9,15 +9,15 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
-                        Prenom : <? echo $profil['prenom'];?>    
+                        Prénom : <? echo $profil['prenom'];?>    
                         <br>
                         Nom : <?php echo $profil["nom"];?>                    
                     </h5>
                     <p class="card-text">
                         <br>
-                        Khlâsse 1ère année :   <?php echo $khlasse[0]['nomkhlasse'] ?>                          
+                        Khlâsse  de 1 ère année :   <?php echo $khlasse[0]['nomkhlasse'] ?>                          
                         <br>
-                        Khlâsse 2ème année :   <?php echo $khlasse[1]['nomkhlasse'] ?>                             
+                        Khlâsse de 2 ème année :   <?php echo $khlasse[1]['nomkhlasse'] ?>                             
                     </p>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Etude postFaidherbe : <?php echo $ecole['nomecole'] ?>                          
+                        Etude Post Faidherbe : <?php echo $ecole['nomecole'] ?>                          
                         <br>
                         Domaine d'activité :  <?php echo $ecole['domaine'] ?>                        
                     </p>
