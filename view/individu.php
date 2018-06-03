@@ -7,7 +7,7 @@
 		<script src="../lib/angular.min.js"></script>
 	</head>
 
-<body>
+<body class ="texte-center">
     <main role="main" class="container">
         <h1 id="hautdepage" class="text-center"><u> Son profil </u></h1>
         <div class="album py-5 bg-light container">
@@ -17,15 +17,15 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
-                        Prenom : <? echo $infouser['prenom'];?>    
+                        Prénom : <? echo $infouser['prenom'];?>    
                         <br>
                         Nom : <?php echo $infouser["nom"];?>                    
                     </h5>
                     <p class="card-text">
                         <br>
-                        Khlâsse 1ère année :   <?php echo $khlasseuser[0]['nomkhlasse'] ?>                          
+                        Khlâsse de 1 ère année :   <?php echo $khlasseuser[0]['nomkhlasse'] ?>                          
                         <br>
-                        Khlâsse 2ème année :   <?php echo $khlasseuser[1]['nomkhlasse'] ?>                             
+                        Khlâsse de 2 ème année :   <?php echo $khlasseuser[1]['nomkhlasse'] ?>                             
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Etude postFaidherbe : <?php echo $ecoleuser['nomecole'] ?>                          
+                        Etude Post Faidherbe : <?php echo $ecoleuser['nomecole'] ?>                          
                         <br>
                         Domaine d'activité :  <?php echo $ecoleuser['domaine'] ?>                        
                     </p>
