@@ -270,6 +270,27 @@ class Users
         }
     }
 
+    public static function Del_A_Etudie_PF()
+    {
+        $db = parse_url(getenv("DATABASE_URL"));
+        $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
+
+        $cook = $_COOKIE["cookieperso"];
+        $id = Users::Get_User_Id($cook);
+        $req = $pdo->prepare(' DELETE FROM a_etudie_postfaidherbe
+      WHERE id_user= :id');
+        $req->bindParam(':id', $id);
+        try
+        {
+            $req->execute();
+            return true;
+        }
+        catch(Exception $e)
+        {
+            return false;
+        }
+    }
+
     public static function Del_User($id)
     {
         $db = parse_url(getenv("DATABASE_URL"));
