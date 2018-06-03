@@ -24,8 +24,8 @@ if (!empty($ecole)){
 }
 
 echo Users::Update_My_Data('nom',$nom);
-
-
+$info = Users::Get_Info();
+vad_dump($info);
 //header('Location: ../accueil.php');
 ?>
 
