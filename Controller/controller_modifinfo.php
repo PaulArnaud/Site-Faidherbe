@@ -1,13 +1,13 @@
 <?php
 require_once("../Models/Users.php");
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$portable = $_POST['portable'];
-$facebook = $_POST['facebook'];
-$linkedin = $_POST['linkedin'];
-$kh1 = $_POST['khlasse1'];
-$kh2 = $_POST['khlasse2'];
-$ecole = $_POST['ecole'];
+$nom = htmlspecialchars($_POST['nom']);
+$prenom = htmlspecialchars($_POST['prenom']); 
+$portable = htmlspecialchars($_POST['portable']);
+$facebook = htmlspecialchars($_POST['facebook']);
+$linkedin = htmlspecialchars($_POST['linkedin']);
+$kh1 = htmlspecialchars($_POST['khlasse1']);
+$kh2 = htmlspecialchars($_POST['khlasse2']);
+$ecole =htmlspecialchars($_POST['ecole']);
 $id_khlasse1 = explode('-',$kh1);
 $id_khlasse2 = explode('-',$kh2);
 $id_ecole = explode('-',$ecole);
