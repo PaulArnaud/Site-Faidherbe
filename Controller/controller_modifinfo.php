@@ -37,6 +37,6 @@ if (!empty($facebook)){
 if (!empty($linkedin)){
     Users::Update_My_Linkedin($linkedin);
 }
-//header('Location: ../accueil.php');
+header('Location: ../accueil.php');
 ?>
 
