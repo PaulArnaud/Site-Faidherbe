@@ -12,6 +12,6 @@
                             <input required type="text" name="domaine" class="form-control" placeholder="Domaine d'études ">
                         </div>
                     </div>
-                    <button class="btn btn-lg btn-dark" type="submit"> Enregistrer </button>
+                    <button class="btn btn-lg btn-danger" type="submit"> Enregistrer </button>
                 </div>
 		</form>
