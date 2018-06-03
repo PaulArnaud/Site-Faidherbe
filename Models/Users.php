@@ -204,6 +204,28 @@ class Users
         }
     }
 
+    public static function Update_My_Name($params1)
+    {
+        $db = parse_url(getenv("DATABASE_URL"));
+        $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
+
+        $cook = $_COOKIE["cookieperso"];
+        $req = $pdo->prepare('UPDATE users  
+        SET nom = :valeur
+         WHERE cookiecode = :cook');
+        $req->bindParam(':valeur', $params1);
+        $req->bindParam(':cook', $cook);
+        try
+        {
+            $req->execute();
+            return true;
+        }
+        catch(Exception $e)
+        {
+            return false;
+        }
+    }
+
     public static function Insert_A_Etudie($params)
     {
         $db = parse_url(getenv("DATABASE_URL"));
