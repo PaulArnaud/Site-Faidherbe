@@ -159,8 +159,8 @@ class Users
         $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
 
         $req = $pdo->prepare('SELECT nom,prenom,email,num_portable,facebook,linkedin 
-      FROM  users 
-      WHERE id_user = :user');
+        FROM  users 
+        WHERE id_user = :user');
         $req->bindParam(':user', $IDuser);
         $req->execute();
         $data = $req->fetch();
@@ -173,8 +173,8 @@ class Users
         $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
 
         $req = $pdo->prepare('SELECT nomecole,domaine 
-    FROM ecole E, users U, a_etudie_postfaidherbe P 
-    WHERE P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.id_user = :user');
+        FROM ecole E, users U, a_etudie_postfaidherbe P 
+        WHERE P.id_user=U.id_user AND E.id_ecole=P.id_ecole AND U.id_user = :user');
         $req->bindParam(':user', $IDuser);
         $req->execute();
         $data = $req->fetch();
@@ -189,7 +189,7 @@ class Users
         $cook = $_COOKIE["cookieperso"];
         $req = $pdo->prepare('UPDATE users  
         SET nom = :valeur
-         WHERE cookiecode = :cook');
+        WHERE cookiecode = :cook');
         $req->bindParam(':valeur', $params);
         $req->bindParam(':cook', $cook);
         try
@@ -202,7 +202,7 @@ class Users
             return false;
         }
     }
-    public static function Update_My_FirsName($params)
+    public static function Update_My_FirstName($params)
     {
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
@@ -210,7 +210,7 @@ class Users
         $cook = $_COOKIE["cookieperso"];
         $req = $pdo->prepare('UPDATE users  
         SET prenom = :valeur
-         WHERE cookiecode = :cook');
+        WHERE cookiecode = :cook');
         $req->bindParam(':valeur', $params);
         $req->bindParam(':cook', $cook);
         try
@@ -252,7 +252,7 @@ class Users
         $cook = $_COOKIE["cookieperso"];
         $req = $pdo->prepare('UPDATE users  
         SET facebook = :valeur
-         WHERE cookiecode = :cook');
+        WHERE cookiecode = :cook');
         $req->bindParam(':valeur', $params);
         $req->bindParam(':cook', $cook);
         try

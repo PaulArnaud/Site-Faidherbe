@@ -22,10 +22,21 @@ if (!empty($ecole)){
     Users::Del_A_Etudie_PF();
     Users::Insert_A_Etudie_PF($id_ecole[0]);
 }
-echo $nom;
-echo Users::Update_My_Name($nom);
-$info = Users::Get_Info();
-echo $info['nom'];
+if (!empty($nom)){
+    Users::Update_My_Name($nom);
+}
+if (!empty($prenom)){
+    Users::Update_My_FirstName($prenom);
+}
+if (!empty($portable)){
+    Users::Update_My_Portable($portable);
+}
+if (!empty($facebook)){
+    Users::Update_My_Facebook($facebook);
+}
+if (!empty($linkedin)){
+    Users::Update_My_Linkedin($linkedin);
+}
 //header('Location: ../accueil.php');
 ?>
 
