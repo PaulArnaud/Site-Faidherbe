@@ -85,7 +85,7 @@
 				</select>
 			</div>
 			<div class="input-group-append">
-				<button class="btn btn-outline-secondary" type="submit">Enregistrer</button>
+				<button class="btn btn-outline-danger" type="submit">Enregistrer</button>
 			</div>
 		</form>
 

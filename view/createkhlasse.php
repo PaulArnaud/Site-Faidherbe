@@ -12,6 +12,6 @@
                 <option selected>Choisis une année </option>
                 <?php foreach ($years as $value){echo '<option>'.$value['année'].'</option>';} ?></select>
         </div>
-        <button class="btn btn-lg btn-dark" type="submit"> Enregistrer </button>
+        <button class="btn btn-lg btn-danger" type="submit"> Enregistrer </button>
 </div>
 </form>

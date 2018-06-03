@@ -69,7 +69,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href ng-click="tab = 9" class="btn-dark btn-lg" role="button">Modifier mes infos</a>
+        <a href ng-click="tab = 9" class="btn-danger btn-lg" role="button">Modifier mes infos</a>
       </div>
     </footer>
 </body>
