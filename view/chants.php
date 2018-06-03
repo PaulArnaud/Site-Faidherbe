@@ -1,4 +1,4 @@
-<body ng-init="ch = 1" class="card">
+<body ng-init="ch = 0" class="card">
 		<br>
 		<main role="main" class="container">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top site-header">
@@ -15,6 +15,10 @@
 				</form>
 			</div>
 		</nav>
+
+		<div ng-show="ch === 0">
+			<p> Les chants sont importants à Faidherbe, la pression, la tristesse mais aussi la joie s'exteriorise en criant et en chantant. </p>
+		</div>
 		<div ng-show="ch === 1">
 			<?php require('view/faidherbe.php') ?>
 		</div>
