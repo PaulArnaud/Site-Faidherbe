@@ -14,7 +14,7 @@
 			<p class="lead">
 				Retrouvez ici les fonctions.
 			</p>
-			<a class="btn btn-outline-light" href ng-click="tab = 6">Fonctions</a>
+			<a class="btn btn-outline-light bg-danger" href ng-click="tab = 6">Fonctions</a>
 		</div>
 	</div>
 
