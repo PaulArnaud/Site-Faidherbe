@@ -2,14 +2,14 @@
 <html lang="fr" ng-app="">
 	<head>
 		<title> Le camarade </title>
-        <link rel="icon" href="img/logo faidherbe.jpg" type="image/x-icon"/>
+        <link rel="icon" href="../img/logo faidherbe.jpg" type="image/x-icon"/>
 		<link rel="stylesheet" href="../lib/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="../lib/angular.min.js"></script>
 	</head>
 
-<body class ="texte-center bg-light">
-    <main role="main" class="container">
+<body class ="texte-center bg-light container">
+    <main role="main" class="container texte-center">
         <h1 id="hautdepage" class="text-center"><u> Son profil </u></h1>
         <div class="album py-5 bg-light container">
             <div class="card text-white bg-dark mb-3">
