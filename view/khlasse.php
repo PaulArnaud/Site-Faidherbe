@@ -16,7 +16,7 @@
 			<h2> Tableau des Khlâsses </h2>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm table-bordered table-info table-hover">
-					<thead class="thead-dark">
+					<thead class="thead-info">
 						<tr>
 							<th class="text-center">
 								Année
