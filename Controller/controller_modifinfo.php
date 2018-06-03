@@ -23,9 +23,9 @@ if (!empty($ecole)){
     Users::Insert_A_Etudie_PF($id_ecole[0]);
 }
 
-Users::Update_My_Data('nom',$nom);
+echo Users::Update_My_Data('nom',$nom);
 
 
-header('Location: ../accueil.php');
+//header('Location: ../accueil.php');
 ?>
 
