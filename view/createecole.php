@@ -1,6 +1,5 @@
-<body>
-	<main class="card text-center">
-		<form action="Controller/controller_newecole.php" method="post" >
+
+		<form class="container card vertical-align align-items-center" action="Controller/controller_newecole.php" method="post" >
 				<div class="form-group col-md-4">
                     <div class="col">
                     <label for="inputState">Créer une école </label>
@@ -16,5 +15,3 @@
                     <button class="btn btn-lg btn-dark" type="submit"> Enregistrer </button>
                 </div>
 		</form>
-	</main>
-</body>

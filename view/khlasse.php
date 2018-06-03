@@ -15,8 +15,8 @@
 			<h1> Site du Faidherbard </h1>
 			<h2> Tableau des Khlâsses </h2>
 			<div class="table-responsive">
-				<table class="table table-striped table-sm table-bordered table-primary table-hover">
-					<thead class="thead-primary">
+				<table class="table table-striped table-sm table-bordered table-dark table-hover">
+					<thead class="thead-dark">
 						<tr>
 							<th class="text-center">
 								Année
