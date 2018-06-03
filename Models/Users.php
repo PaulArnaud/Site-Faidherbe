@@ -181,17 +181,16 @@ class Users
         return $data;
     }
 
-    public static function Update_My_Data($params1, $params2)
+    public static function Update_My_Name($params)
     {
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
 
         $cook = $_COOKIE["cookieperso"];
         $req = $pdo->prepare('UPDATE users  
-      SET :attribut = :valeur
-      WHERE cookiecode = :cook');
-        $req->bindParam(':attribut', $params1);
-        $req->bindParam(':valeur', $params2);
+        SET nom = :valeur
+         WHERE cookiecode = :cook');
+        $req->bindParam(':valeur', $params);
         $req->bindParam(':cook', $cook);
         try
         {
@@ -203,17 +202,79 @@ class Users
             return false;
         }
     }
-
-    public static function Update_My_Name($params1)
+    public static function Update_My_FirsName($params)
     {
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
 
         $cook = $_COOKIE["cookieperso"];
         $req = $pdo->prepare('UPDATE users  
-        SET nom = :valeur
+        SET prenom = :valeur
          WHERE cookiecode = :cook');
-        $req->bindParam(':valeur', $params1);
+        $req->bindParam(':valeur', $params);
+        $req->bindParam(':cook', $cook);
+        try
+        {
+            $req->execute();
+            return true;
+        }
+        catch(Exception $e)
+        {
+            return false;
+        }
+    }
+    public static function Update_My_Portable($params)
+    {
+        $db = parse_url(getenv("DATABASE_URL"));
+        $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
+
+        $cook = $_COOKIE["cookieperso"];
+        $req = $pdo->prepare('UPDATE users  
+        SET num_portable = :valeur
+         WHERE cookiecode = :cook');
+        $req->bindParam(':valeur', $params);
+        $req->bindParam(':cook', $cook);
+        try
+        {
+            $req->execute();
+            return true;
+        }
+        catch(Exception $e)
+        {
+            return false;
+        }
+    }
+    public static function Update_My_Facebook($params)
+    {
+        $db = parse_url(getenv("DATABASE_URL"));
+        $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
+
+        $cook = $_COOKIE["cookieperso"];
+        $req = $pdo->prepare('UPDATE users  
+        SET facebook = :valeur
+         WHERE cookiecode = :cook');
+        $req->bindParam(':valeur', $params);
+        $req->bindParam(':cook', $cook);
+        try
+        {
+            $req->execute();
+            return true;
+        }
+        catch(Exception $e)
+        {
+            return false;
+        }
+    }
+    public static function Update_My_Linkedin($params)
+    {
+        $db = parse_url(getenv("DATABASE_URL"));
+        $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s", $db["host"], $db["port"], $db["user"], $db["pass"], ltrim($db["path"], "/")));
+
+        $cook = $_COOKIE["cookieperso"];
+        $req = $pdo->prepare('UPDATE users  
+        SET linkedin = :valeur
+         WHERE cookiecode = :cook');
+        $req->bindParam(':valeur', $params);
         $req->bindParam(':cook', $cook);
         try
         {
